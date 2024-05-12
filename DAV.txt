@@ -1,0 +1,605 @@
+1. The Data Analytics Lifecycle: 
+defines the roadmap for how data is generated, collected, processed, used, and analyzed to achieve business goals. Here are the six 
+phases commonly associated with the Data Analytics Lifecycle:
+
+	- Data Discovery: 
+		In this phase, data professionals explore and identify relevant data sources. They understand the data landscape, including 
+		its	quality, structure, and availability.
+		@ "PONITS TO ELLABORATE:"
+			Learning the Business Domain
+			Framing the Problem, 
+			Identifying Key Stakeholders. 
+			Interviewing the Analytics Sponsor, 
+			Developing Initial Hypotheses Identifying 
+			Potential Data Sources
+
+	- Data Preparation: 
+		Data is cleaned, transformed, and pre-processed to make it suitable for analysis. This step ensures that the data is consistent,
+		accurate, and ready for modeling.
+		@ "PONITS TO ELLABORATE:"
+			Preparing the Analytic Sandbox, 
+			Performing ETLT, 
+			Learning About the Data, 
+			DataConditioning ( data cleaning ), 
+			Survey and visualize
+
+	- Planning of Data Models: 
+		<"ellaborate on EDA">
+		Analysts decide on the appropriate models and algorithms to apply to the data. This involves selecting the right techniques based 
+		on the problem at hand.
+		@ "PONITS TO ELLABORATE:"
+			Data Exploration and Variable Selection, 
+			Model Selection
+
+	- Building of Data Models: 
+		In this phase, data scientists create and train predictive models using the prepared data. They fine-tune parameters, validate 
+		the models, and assess their performance.
+
+	- Communication of Results: 
+		The insights and findings from the models are communicated to stakeholders.
+
+	- Operationalization: 
+		Finally, the successful models are deployed into production systems. They become part of the organization’s decision-making 
+		processes, impacting business operations and strategies.
+
+2. Analytical sandbox: 
+is a testing environment used by data analysts and data scientists to experiment with data and explore various analytical approaches &
+algorithms without affecting the production environment. Here are the key purposes of analytical sandboxes:
+	+ Experimentation: 
+		Analysts can test and validate new analytical approaches, algorithms, and data sets within the sandbox.
+	+ Collaboration: 
+		It allows sharing work with colleagues and collaborating on data analysis.
+	+ Visualization: 
+		Analysts can explore data visualization techniques and create dashboards.
+	+ Isolation: 
+		The sandbox is separate from the production environment, ensuring that experiments don’t impact critical systems.
+The sandbox contains a copy of production data, ensuring accuracy, provides features for collaboration and sharing, & It maintains the 
+same security measures as the production environment to protect sensitive data.
+
+3. ETLT:
+stands for (Extract, Transform, Load, and Transform). It’s a data integration strategy that combines the best of both ETL 
+(extract, transform, load) and ELT (extract, load, transform) approaches. 
+	+ Workflow:
+		Extract raw data from sources.
+		Perform light “tweak” transformations on the data.
+		Load the transformed data into the destination.
+		Transform and integrate data more completely within the data warehouse using the data warehouse to process those transactions. 
+	+ Benefits:
+		Best of both worlds: Data quality, security, compliance, and flexibility.
+		Ideal for scenarios where you need agility and robustness
+
+// ------------------------------------------------------------------------------------------------------------------------------------ //
+																MODULE - 2
+// ------------------------------------------------------------------------------------------------------------------------------------ //
+
+
+1. Multiple linear regression: 
+is a statistical technique used to model the relationship between two or more independent variables and a single dependent variable. 
+Let’s break it down:
+	- Dependent Variable: 
+		This is the outcome we want to predict or explain. For example, it could be something like sales, temperature, or heart 
+		disease incidence.
+	- Independent Variables (Explanatory Variables): 
+		These are the factors that influence the dependent variable. They can be quantitative (numeric) or categorical 
+		(such as gender or region). In multiple linear regression, we consider two or more of these independent variables.
+	- Linear Relationship: 
+		MLR assumes that the relationship between the dependent variable and the independent variables is linear. In other words, we’re 
+		fitting a straight line (or hyperplane in higher dimensions) to the observed data.
+
+Assumptions: 
+	- Homogeneity of Variance: 
+		The error variance doesn’t change significantly across different values of the independent variables.
+	- Independence of Observations: 
+		The data points are collected independently, without hidden relationships among variables.
+	- Normality: 
+		The data follows a normal distribution.
+	- Linearity: 
+		The relationship between the variables is linear.
+
+Formula: The general formula for multiple linear regression is: Y = β0 ​+ β1 * ​X1 ​+ β2 * ​X2 ​+ … + βk * ​Xk ​+ ϵ
+	- Y is the dependent varible
+	- β are co-efficients
+	- ϵ represents the error term (the difference between the predicted and actual values).
+
+Steps:
+	- Co-efficient estimation
+	- Estimating model equations: Model eqaution is obtained from the co-effcients estimated.
+	- Input data
+	- Prediction equation: Y = β0 ​+ β1 * ​X1 ​+ β2 * ​X2 ​+ … + βk * ​Xk ​+ ϵ
+	- Interpretation: Interpret the result obtained from the equation in context of the problem being addressed
+	- Assesment: Assess the quality of prediction usong various measures like root mean squared error, mean squared error, etc.
+	- Validation: Validate the prediction by comparing with the actual observed values.
+
+In linear regression, the: 
+	+ fitted values:
+	 	are the predicted values of the response variable based on the regression equation, while the 
+	+ residuals:
+		represent the differences between the actual and predicted values of the response variable.
+
+By calculating residuals for all data points, we can assess how well the regression model fits the data. Ideally, residuals should be 
+randomly scattered around zero for the entire range of fitted values. When residuals center around zero, it indicates that the model’s 
+predictions are correct on average
+
+
+2. Cross validation:
+it is used to decrese model overfitting and failing from generalizing on new unseen data.
+is a technique used in machine learning to evaluate the performance of a model on unseen data. It involves dividing the available data 
+into multiple folds or subsets, using one of these folds as a validation set, and training the model on the remaining folds. This process 
+is repeated multiple times, each time using a different fold as the validation set. Finally, the results from each validation step are 
+averaged to produce a more robust estimate of the model’s performance. Cross validation is an important step in the machine learning 
+process and helps to ensure that the model selected for deployment is robust and generalizes well to new data.
+
+
+3. Stepwise regression: 
+is a method of fitting a regression model by iteratively adding or removing variables. There are two main types of stepwise regression:
+	+ Forward Selection: 
+		the algorithm starts with an empty model and iteratively adds variables to the model until no further improvement is made.
+	+ Backward Elimination: 
+		the algorithm starts with a model that includes all variables and iteratively removes variables until no further improvement.
+
+
+4. Logistic regression: 
+is a supervised machine learning algorithm used primarily for classification tasks. Logistic regression is an extension of linear 
+regression. It predicts the output of categorical dependent variable, based on multiple input variables using a logistic function
+also called as sigmoid function. The logistic function (also called the sigmoid function) squashes the output of a linear 
+function into the range [0, 1], making it suitable for modelling probabilities. 
+
+	- Logistic Function – Sigmoid Function: 
+		The sigmoid function is a mathematical function used to map the predicted values to probabilities. It maps any real value into 
+		another value within a range of 0 and 1. The value of the logistic regression must be between 0 and 1. It forms an 
+		“S”-shaped curve and is essential for logistic regression.
+			f(x) = 1 / 1 + e^-x
+
+	- Types of Logistic Regression:
+		Binomial: Only two possible types of categorical dependent variables (e.g., Pass/Fail, Yes/No).
+		Multinomial: Three or more possible unordered types of categorical dependent variables (e.g., “cat,” “dogs,” or “sheep”).
+		Ordinal: Three or more possible ordered types of categorical dependent variables (e.g., “low,” “Medium,” or “High”).
+
+- Working:
+	Instead of fitting a regression line, logistic regression fits an “S”-shaped logistic function. Given input features, it predicts 
+	the	probability that an instance belongs to a given class. If the predicted probability is greater than a threshold value 
+	(usually 0.5), the instance is classified into Class 1; otherwise, it belongs to Class 0.	
+
+- Properties:
+	Its dependent variables follow bernoullis theoram
+	Estimation is based on maximum likelihood
+	Does not evaluate coefficient of detrmination
+	Models fitness is accessed through Concordence
+
+- Advantages:
+	Ease of Implementation and Interpretation
+	Efficiency and Speed
+	Less Prone to Overfitting
+	Linear Boundaries and Multiclass Extension
+	Variance and Feature Extraction
+	
+Equation of logistic regression y(x) = e^(a0 + a1 * x1 + a2 * x2 + … + ai * xi) / (1 + e^(a0 + a1 * x1 + a2 * x2 + … + ai * xi))
+
+
+5. Generalized Linear Model (GLM): 
+is a powerful statistical modeling technique that extends ordinary linear regression. GLMs provide a flexible framework for modeling 
+relationships between response variables and predictors. Unlike simple linear regression, GLMs allow the relationship between the 
+response variable and predictors to be more complex. GLM models allow us to build a linear relationship between the response and 
+predictors, even though their underlying relationship is not linear. This is made possible by using a link function, which links the 
+response variable to a linear model. This link function connects the linear predictor (a combination of predictors) to the expected value 
+of the response variable. Examples of link functions include the identity link, log link, and inverse link.
+	Features:
+		+ Flexibility: 
+			GLMs can model a wide range of relationships between the response and predictor variables, including linear, logistic, 
+			Poisson, and exponential relationships.
+		+ Model interpretability: 
+			GLMs provide a clear interpretation of the relationship between the response and predictor variables, as well as the effect 
+			of each predictor on the response.
+		+ Robustness: 
+			GLMs can be robust to outliers and other anomalies in the data.
+		+ Scalability
+		+ Ease of use
+		+ Hypothesis testing
+		+ Regularization: 
+			GLMs can be regularized to reduce overfitting and improve model performance, using techniques such as Lasso, Ridge, or 
+			Elastic Net regression.
+
+
+6. Linear VS Logistic regression:
+	+Linear regression is used to predict the continuous dependent variable using a given set of independent variables.	
+	+Logistic Regression is used to predict the categorical dependent variable using a given set of independent variables.
+
+	+Linear Regression is used for solving Regression problem.	
+	+Logistic regression is used for solving Classification problems.
+
+	+In Linear regression, we predict the value of continuous variables.	
+	+In logistic Regression, we predict the values of categorical variables.
+
+	+In linear regression, we find the best fit line, by which we can easily predict the output.	
+	+In Logistic Regression, we find the S-curve by which we can classify the samples.
+
+	+Least square estimation method is used for estimation of accuracy.	
+	+Maximum likelihood estimation method is used for estimation of accuracy.
+
+	+The output for Linear Regression must be a continuous value, such as price, age, etc.	
+	+The output of Logistic Regression must be a Categorical value such as 0 or 1, Yes or No, etc.
+
+	+In Linear regression, it is required that relationship between dependent variable and independent variable must be linear.	
+	+In Logistic regression, it is not required to have the linear relationship between the dependent and independent variable.
+
+	+In linear regression, there may be collinearity between the independent variables.	
+	+In logistic regression, there should not be collinearity between the independent variable.
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------ //
+																MODULE - 3
+// ------------------------------------------------------------------------------------------------------------------------------------ //
+
+
+1. Time series analysis:
+is a statistical technique used to analyze and interpret sequential data points collected over time. A time series is a sequence of data 
+points collected, recorded, or measured at successive, evenly-spaced time intervals. Each data point represents observations or 
+measurements taken over time, such as stock prices, temperature readings, or sales figures. Time series data is commonly represented 
+graphically with time on the horizontal axis and the variable of interest on the vertical axis. This graphical representation facilitates 
+the visualization of trends, patterns, and changes over time, aiding in the analysis and interpretation of the data. 
+	+ Components of Time Series Data:
+		Trend: Represents the long-term movement or directionality of the data over time. It captures the overall tendency of the series 
+			to increase, decrease, or remain stable.
+		Seasonality: Refers to recurring patterns or fluctuations that occur at regular intervals (e.g., daily, monthly, or yearly).
+		Cyclic Patterns: Longer-term oscillations that are not strictly periodic but repeat over extended periods.
+		Random Noise: Irregular variations that cannot be attributed to any specific pattern or trend.
+
+
+2. What is box Jenkins: 
+is a type of forecasting and analyzing methodology for time series data. The Box-Jenkins methodology is a systmatic & data-driven framework
+that uses past data and patterns to make predictions. The Box-Jenkins methodology is an iterative process and comprises of five steps:
+	- Identification: 
+		In this step, the time series data is analyzed to identify the appropriate model for the data. 
+		This involves identifying the order of differencing, autoregressive (p), and moving average (q) components / parameters.
+	- Estimation: 
+		The parameters of the model are estimated using statistical methods such as maximum likelihood estimation.
+		this inolves fiting the chosen model on the observed data and estimating the model parameters that better explain the data
+	- Diagnostic checking: 
+		The model is checked for goodness of fit and residual analysis is performed to ensure that the model is valid.
+	- Model refinement:
+		If the model does not adequtly capture the underlying the patterns in the data, the box jenkins methodology allows to interatively
+		refine the model.
+	- Forecasting: 
+		The model is used to make forecasts for future time periods.
+It is efficient with different software and is compatible with multiple programming languages, such as R and Python. The methodology is 
+best suitable for short-term forecasting.
+
+
+3. ARIMA Model:
+stands for autoregressive integrated moving average model, it is a widely used technique for time serial forcasting, and can be used in
+various feilds like finnace, real estate, etc. It is specified by three components or parameters (p,q d):
+	- Auto-regressive component (p):
+		a regression model that utilizes the dependent relationship between a current observation and observations over a previous 
+		period in the regression equation for modelling the time series.
+	- Integrated (d):
+		uses differencing of observations in order to make the time series stationary. Differencing involves the subtraction of the current 
+		observation of a series from previous observations "d" number of times, to achieve stationarity.
+	- Moving average (q):
+		captures short term fluctuations in the time series that are not explained by autoregressive component
+Types of ARIMA Model
+	-ARIMA: Non-seasonal Autoregressive Integrated Moving Averages
+	-SARIMA:Seasonal ARIMA
+	-SARIMAX:Seasonal ARIMA with exogenous variables
+
+
+4. Autocovariance:
+measures the covariance between a variable and its lagged version (i.e., the same variable at a previous time point).
+It quantifies how the variable’s values at different time points relate to each other.
+
+
+5. Autocorrelation: 
+is a fundamental concept in time series analysis. (measures the corelation between a variable and its lagged version)
+refers to the correlation between two observations at different points in a time series.
+These observations are separated by a specific time interval, which we call a lag. It measures the degree of similarity 
+between a given time series and the lagged version of that time series over successive time periods. 
+(It measures the linear relationship between a variable and its lagged version.)
+
+	+ ACF plot: 
+		The ACF can be visualized using a plot called the autocorrelation plot. In this plot, the x-axis represents the lag, and the 
+		y-axis represents the ACF values. Peaks or significant spikes in the ACF plot indicate strong correlations at specific lags.
+		# plot of corelation values with their respective lags. Each bar in the plot represents the size and direction of the correlation.
+	
+	+ Interpretation:
+		A positive ACF indicates positive correlation between the current observation and the observation at that lag.
+		A negative ACF indicates negative correlation.
+		ACF values close to zero suggest weak or no correlation.
+	
+	+ Application:
+		is often used in time series analysis to detect patterns such as seasonality or trends.
+		ACF is commonly used in time series analysis, forecasting, and model selection
+		It is used to determine the autoregressive(p) and moving average(q) components.
+
+
+6. Autocorrelation vs Autocovariance when examining stationary time series?
+When examining stationary time series, autocorrelation is preferred over autocovariance because autocorrelation gives you a standardized 
+measure of how much a series is correlated with itself at different lags. This makes it a more interpretable and convenient tool for 
+analyzing stationary time series, especially when comparing results across datasets. Both autocovariance and autocorrelation can reveal 
+patterns in the data, such as trends, seasonality, or dependence on past values. However, for ease of interpretation and comparison, 
+autocorrelation is often the preferred choice for stationary time series analysis.
+
+
+7. PACF: 
+measures the partial correlation between a stationary time series and its own lagged values, while controlling for the influence of other 
+shorter lags. Unlike the ACF, which considers all lags without controlling for other terms, the PACF focuses on the specific lag being 
+analyzed.
+
+
+8. ARMA vs ARIMA: - Detail ans NDY
+In ARMA there is no differencing step that is used to make the data stationary, it rather assumes the data to be stationary, while in 
+ARIMA there is a differencing step to make the data stationary. ARIMA is an extension of ARMA model.
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------ //
+																MODULE - 4
+// ------------------------------------------------------------------------------------------------------------------------------------ //
+
+
+1. Text mining:
+also known as text analysis, is the process of transforming unstructured text into structured data for easy analysis. Text analysis 
+involves analyzing unstructured and semi-structured text data to extract valuable insights, trends, and patterns. It’s particularly 
+useful when dealing with large volumes of text-based data that would be resource-intensive for manual analysis by humans.
+	+ Unstructured Text Data: 
+		refers to textual content that lacks a predefined structure. Examples include customer reviews, social media posts, news articles, 
+		emails, and blog entries.
+	+ Structured Format: 
+		Text mining converts this unstructured data into a structured format that can be analyzed more effectively. By organizing the 
+		text into meaningful units (such as words, phrases, or sentences), we create a structured representation.
+
+	Applications:
+		+ Risk Management:
+			Text mining can help identify and analyze risks by extracting relevant information from textual sources such as news 
+			articles, financial reports, and social media. It assists in monitoring and assessing potential risks related to market 
+			fluctuations, regulatory changes, and geopolitical events.
+		+ Customer Care Service:
+			Text mining techniques, particularly Natural Language Processing (NLP), play a crucial role in customer care. Companies use 
+			sentiment analysis to gauge customer feedback, identify pain points, and improve their products or services.
+		+ Chatbots and virtual assistants:
+			rely on text mining to understand and respond to customer inquiries effectively.
+		+ Fraud Detection:
+			Text mining helps detect fraudulent activities by analyzing patterns and anomalies in textual data. For example, credit card 
+			companies use it to identify suspicious transactions based on transaction descriptions and customer communication.
+		+ Business Intelligence:
+			Organizations use text mining to extract insights from large volumes of unstructured data. By analyzing customer reviews, 
+			social media posts, and survey responses, businesses can make informed decisions about product development, marketing 
+			strategies, and customer engagement.
+		+ Social Media Analysis:
+			Text mining is widely used to analyze social media content. It helps track brand sentiment, identify emerging trends, and 
+			understand customer preferences. Companies can adjust their marketing campaigns based on real-time social media insights.
+
+	Seven practice areas of text analytics:
+		+ Document Classification
+		+ Concept Extraction
+		+ Document Clustering
+		+ Web Mining
+		+ Information Extraction
+		+ Natural Language Processing (NLP)
+		+ Search and Information Retrieval
+		+ Sentiment Analysis
+		+ Entity Relation Modeling
+		+ Document Summarization
+		
+
+2. Text summarization: 
+is the process of creating a concise and coherent version of a longer document. Challenges:
+	Content Selection: Choosing the most relevant sentences or phrases.
+	Coherence: Ensuring that the summary flows logically.
+	Handling Ambiguity: Dealing with polysemous words and context.
+	Preserving Context: Capturing the context of the original text.
+
+
+3. Text analysis Steps:
+	+ Language Identification:
+		- Determine the language in which the text is written.
+		Algorithms analyze patterns within the text to identify the language. This step is crucial because different 
+		Languages may have distinct rules and structures. if you’re dealing with multilingual data, identifying the language helps 
+		tailor subsequent processing steps accordingly
+	+ Tokenization:
+		- Divide the text into individual units, often words or sub-word units (tokens).
+		Tokenization breaks down the text into meaningful units, making it easier to analyze and process. It involves 
+		identifying word boundaries and handling punctuation.
+	+ Sentence Breaking
+		- Identify and separate individual sentences in the text.
+		Algorithms analyze the text to determine where one sentence ends and another begins. This is crucial for tasks that 
+		require understanding the context of sentences.
+	+ Part of Speech Tagging:
+		- Assign a grammatical category (part of speech) to each token in a sentence.
+		Machine learning models or rule-based systems analyze the context and relationships between words to assign 
+		appropriate part-of-speech tags (e.g., noun, verb, adjective) to each token.
+	+ Chunking
+		- Identify and group related words (tokens) together, often based on the part-of-speech tags.
+		Chunking helps in identifying phrases or meaningful chunks within a sentence. This step is useful for extracting 
+		information about specific entities or relationships between words.
+	+ Syntax Parsing
+		- Analyze the grammatical structure of sentences to understand relationships between words.
+		Syntax parsing involves creating a syntactic tree that represents the grammatical structure of a sentence. This 
+		tree helps in understanding the syntactic relationships and dependencies between words.
+	+ Sentence Chaining
+		- Connect and understand the relationships between multiple sentences.
+		Algorithms analyze the content and context of different sentences to establish connections or dependencies between 
+		them. This step is crucial for tasks that require a broader understanding of the text, such as summarization or document-level 
+		sentiment analysis.
+
+
+4. Text analysis terms: 
+	<Give example of each by considering random values and text>
+	+ Term Frequency (TF): 
+		This represents the number of times a specific word appears in a document. Mathematically, it is calculated as:
+			tf(t,d) = count of t in d​ / number of words in d
+			Here:
+				(t) is the term (word).
+				(d) is the document.
+		The TF value increases when a word appears more frequently in the document.
+
+	+ Document frequency (DF):
+		number of documents in which the word is present. Measures how often a term occurs across the entire corpus (collection of documents)
+			df(t) = occurrence of t in documents
+	+ Inverse Document Frequency (IDF): 
+		evaluates the relevance of a word. It considers how common or rare a term is across the entire corpus. The formula for IDF is:
+		idf(t) = log(N / df(t))
+		Here:
+			(N) is the no. of documents in the corpus
+			df(t) is the document frequency of term (t)
+	+ TF-IDF: 
+		This combines both TF and IDF to determine the importance of a term within a document relative to the entire corpus. Formula is:
+			tf-idf(t,d) = tf(t,d) × idf(t)
+			Here:
+				tf(t,d) is the term frequency of term (t) in document (d)
+		Words with higher TF-IDF scores are considered more significant in a document.
+	
+	
+5. Sentiment Analysis:
+There are two main approaches to sentiment analysis:
+	+ Lexicon-Based Approach:
+		This method relies on a predefined list of words with sentiment scores. These words are categorized as positive, negative, or 
+		neutral. The sentiment of a text is determined by counting the occurrences of these words and assigning a score based on their 
+		sentiment and frequency. This is a relatively simple and easy to implement method, but it can be inaccurate for nuanced text or 
+		sarcasm.
+	+ Machine Learning Approach:
+		This method uses machine learning algorithms to automatically learn the sentiment of text data. It involves training the 
+		algorithms on a large dataset of labeled text where each piece of text is categorized as positive, negative, or neutral.
+		The algorithms learn patterns in the data and can then be used to predict the sentiment of new, unseen text. Machine learning 
+		approaches can be more accurate than lexicon-based methods, but they require a lot of training data and can be computationally expensive.
+	+ Hybrid Approach: 
+		This approach combines lexicon-based and machine learning methods to leverage the strengths of both.
+	+ Aspect-Based Sentiment Analysis: 
+		This advanced technique goes beyond just positive, negative, and neutral sentiment. It identifies the specific aspects of a 
+		product, service, or topic that are being discussed and determines the sentiment towards each aspect.
+
+The best method for sentiment analysis depends on the specific task and the available resources.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4) Differences between Multiple Linear Regression (MLR), Linear Regression (LR), and Logistic Regression:
+
+	- Linear Regression (LR):
+		- Type: Linear Regression is a supervised regression model.
+		- Purpose: It models the relationship between a continuous dependent variable (target) and one or more independent variables (features).
+		- Output: Predicts a continuous value.
+		- Activation Function: No activation function is used.
+  		- Threshold: No threshold value is needed.
+		- Evaluation Metric: Root Mean Square Error (RMSE) is commonly used.
+		- Assumptions: Data follows normal distribution
+
+	- Logistic Regression:
+		- Type: Logistic Regression is a supervised classification model.
+		- Purpose: It predicts the probability of an event (binary outcome) based on a set of features.
+		- Output: Predicts a binary value (0 or 1).
+		- Activation Function: Utilizes an activation function to convert the linear regression equation to the logistic regression equation.
+		- Threshold: A threshold value is added to classify the output.
+		- Evaluation Metric: Precision is often used.
+		- Assumptions: Assumes a binomial distribution of the dependent variable.
+
+	- MLR: extends LR to handle multiple predictors.
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------ //
+// ------------------------------------------------------------------------------------------------------------------------------------------------------ //
+// ------------------------------------------------------------------------------------------------------------------------------------------------------ //
+
+
+
+
+2. AR ✅: Autoregresive model: It predicts future values based on the past observations. these models are suitable for time series having strong data corelations, where future values are dependent on the past values. It is suitable for long term predictions unlike MA model. Thses models capture serial coreltaion betw^ data.
+
+3. MA ✅: Moving avg model: It predicts future values based on the weighted avg of past forecast errors. Suitable for time series data with short term dependency. These model capture short term dependency or the noise in the data. Suitable for short term forcasting.
+
+4. ARIMA model
+
+7. Diff betn 'iloc' and 'loc' ✅:  
+
+iloc (Integer Location):
+	- iloc is used for integer-based indexing.
+	- It selects rows and columns based on their numerical position in the DataFrame.
+	- The index starts from 0 for the first row/column, and increments by 1 for each subsequent row/column.
+	- Example: df.iloc[2:5] selects rows with indices 2, 3, and 4 (inclusive).
+	- It does not include the last element of the range.
+	- Ideal for numerical indexing when you don’t know the labels.
+loc (Label Location):
+
+	- loc is used for label-based indexing.
+	- It selects rows and columns based on their labels (e.g., row names or column names).
+	- Example: df.loc['tea'] selects the row labeled ‘tea’.
+	- It includes the last element of the range.
+	- Accepts boolean data for filtering.
+	- Useful when you want to select data based on specific labels.
+
+8. reg plot ✅: Regression plots are a valuable tool in data visualization, they emphasize patterns in a dataset by creating a visual guide for linear relationships between two parameters. They often include a regression line (a straight line that best fits the data) to help us understand the trend.
+ex: using seaborn:
+	import seaborn as sns
+	sns.set_style('whitegrid')
+	sns.lmplot(x='total_bill', y='tip', data=dataset)
+
+9. write about multiple plots ✅: Multiple plots refer to the practice of displaying several visualizations within a single figure or canvas. These plots allow you to compare and analyze multiple aspects of your data simultaneously.
+
+10. write about seaborn library ✅: 
+
+11. diff betn matplotlib and seaborn ✅
+
+12. various visualisation techniques used in python ✅ and R ✅: ggplot2, ggplotly, plotly
+
+13. what is dirty data ✅
+
+14. diff betn data exploration and data presentation ✅
+
+15. write about descriptive statistics ⚒️
+
+5. Auto correlation ⚒️
+
+6. PACF ⚒️
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
