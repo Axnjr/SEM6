@@ -1,0 +1,701 @@
+NUMERICALS 
+	- RSA ❌
+	- Elgamal ❌
+	- DSS ❌
+	- Schnorr ❌
+	- Play cipher ⚒️
+	- Hill cipher ✅
+	- Vignere cipher ✅
+	- Additive Cipher
+
+0. Symmetric Encryption: is the most basic and old method of encryption. It uses only one key for the process of both the encryption and 
+decryption of data. Thus, it is also known as Single-Key Encryption. EXplain each term:
+	- Plain text
+	- Cipher text
+	- Secret key
+	- Encryption algorithm
+	- Decryption algorithm
+ 
+1. Difference between Monoalphabetic Cipher and Polyalphabetic Cipher: 
+	Monoalphabetic cipher:
+		+ is any cipher in which the letters of the plain text are mapped to cipher text letters based on a single alphabetic key
+		+ The relationship between a character in the plain text and the characters in the cipher text is one-to-one.
+		+ Each alphabetic character of plain text is mapped onto a unique alphabetic character of a cipher text.
+		+ It includes additive, multiplicative, affine and monoalphabetic substitution cipher.
+		+ It is a simple substitution cipher.
+		+ Monoalphabetic ciphers are not that strong as compared to polyalphabetic cipher.
+
+	Polyaplhabaetic cipher:
+		+ is any cipher in which the letters of the plain text are substitued with sevral substitution alphabets.
+		+ Rather than being a one-to-one correspondence, there is a one-to-many relationship between each letter and its substitutes.
+		+ Each alphabetic character of plain text can be mapped onto ‘m’ alphabetic characters of a cipher text.
+		+ It includes autokey, Playfair, Vigenere, Hill, one-time pad, rotor, and Enigma cipher. 
+		+ It is multiple substitutions cipher.
+		+ Polyalphabetic ciphers are much stronger.
+
+2. The three fundamental security goals are as follows:
+
+	- Confidentiality: Confidentiality is akin to privacy. It involves preventing unauthorized disclosure of information. In other words, 
+	it ensures that only authorized individuals can access specific data. Measures like data encryption play a crucial role in 
+	maintaining confidentiality. Encryption transforms information into an unreadable format using secret keys, making it accessible 
+	only to those with the corresponding decryption key. Tools for Confidentiality:
+
+		-Encryption: This method obscures data for unauthorized users by using algorithms and secret keys. For instance, credit card numbers 
+		are protected by encoding them into unreadable ciphertext, which can only be deciphered using the appropriate decryption key.
+
+		- Access Control: Access control defines rules and policies for limiting access to systems or resources. Users must present
+		credentials (such as a name or a serial number) to gain access. Non-transferable credentials enhance security.
+
+		- Authentication: Authentication confirms a user’s identity or role. It relies on factors like something the person has 
+		(e.g., a smart card) or something they know (e.g., a password).
+
+	- Integrity: Integrity ensures that data remains accurate, consistent, and trustworthy over time. Unauthorized alterations or 
+	tampering are prevented. Maintaining data integrity is essential for reliable decision-making and preventing malicious modifications.
+
+	- Availability: Availability focuses on ensuring that authorized users can freely access systems, networks, and data needed for 
+	their tasks. It prevents disruptions and downtime.
+
+
+3. Transposition ciphers: These ciphers are a type of encryption technique that rearranges the order of characters in the plaintext to 
+create the ciphertext. There are two main categories: 
+
+	● Keyless transposition ciphers: The arrangement of characters is determined solely by a fixed rule or pattern. There is no secret 
+	key involved. One common example is the rail fence cipher. In this cipher, the plaintext is written diagonally in a zigzag pattern 
+	across a set number of “rails” (rows), and then the ciphertext is read off row by row.
+
+	● Keyed transposition ciphers:  involve a secret key that determines the specific arrangement of characters. One well-known example 
+	is the columnar transposition cipher.
+
+
+4. Steganography: is the practice of concealing information within another message or physical object to avoid detection. It allows you 
+to hide virtually any type of digital content, including text, image, video, or audio content, within a carrier medium. It often involves 
+hiding data within files like images or videos. For example, a sender might subtly alter the color of specific pixels in an image to 
+encode a hidden message. steganography provides a covert way to transmit information without drawing attention to the fact that a hidden 
+message exists. Advantages:
+	+ Unlike cryptography, which focuses on protecting the contents of a message, steganography conceals both the fact that a secret 
+	message is being sent and its contents.
+	+ Steganography doesn’t attract attention to the secret message itself, unlike visible encrypted messages that might arouse suspicion.
+
+
+5. Differences between passive and active security attacks:
+
+	- Passive attacks: 
+	. Definition: In these kinds of attacks confidentiality of the data is lost, as the data is read or copied by the unauthorized person 
+	. Danger: These attacks pose a threat to confidentiality.
+	. Impact on System: There is no direct harm to the system itself.
+	. Victim Awareness: The victim does not get informed about the attack.
+	. Example: An attacker intercepts network traffic to capture sensitive information, such as login credentials or credit card numbers.
+
+	- Active attacks:
+	. Definition: Active attacks involve the attacker changing or modifying the content of messages.
+	. Danger: These attacks endanger both integrity and availability.
+ 	. Impact on System: The system resources can be altered or damaged.
+	. Victim Awareness: The victim gets informed about the attack.
+	. Example: Injecting malicious code (such as viruses, worms, or Trojans) into a system to compromise its integrity.
+
+
+6. Hill Cipher: <https://www.youtube.com/watch?v=ytJAdBLNjn0>
+Key and plain text will be given. If key is 2x2 then make plain text pairs of 2x1 if key is 3x3 then make plain text 
+pairs of 3x1. ex:
+	 
+	- k = [ 2 3 ] ; plain text = "hello"
+	      [ 4 5 ]   
+	
+	- we will make 2x1 pairs like 
+					[h] ; [l] ; [o]
+					[e] ; [l] ; [x] - added a temp letter x so as to form a 2x1 column.
+
+	- then represent the alhpabets with their position index like a = 0 ..... z = 25
+	- then apply formula: C = K * P 
+	mod 26 can be calcualted as: ex 128 mod 26 => (128-128/26*26) do in calcualtor "Base-N" option
+	# mod 26 - (mod 26: divide by 26 get the result, subtract the left side of the point "." with the result, and multiply the remaning 
+	# result with 26)
+
+
+7. Play Cipher: 
+
+	- Make a 5x5 box. 
+	- Fill the plain text from right side
+	- Then fill remning alphabets excluding the one already added in the plain text.
+	- One of the element will have two aplhabets because the box is of size 25 and we have 26 aplahbets. Let "i/j" be in the same box.
+
+	- Make pairs of plain text. ex: off -> (of) , (fx) - "x" is temp alphabet 
+	
+ 	- Check the matrix that we have made.
+
+	- RULE-1: If elements of our pairs lie in the same col -> then reaplce those elements with element present below them (wrap around if end reached)
+	- RULE-2: If elements of our pairs lie in the same row -> then reaplce those elements with element present on the right (wrap around if end reached)
+	- RULE-3: Check video in bookmark - part 2
+
+8. Additive Cipher: 
+	- Ecryption: C = P + K mod 26
+	- Descryption: P = C - K mod 26
+
+
+9. Vigenere Cipher: <https://www.youtube.com/watch?v=GQrKEwLZcPY>
+	+ The plain text and the key should be of same length so if:
+		<Key is shorter than repeat it untill it becomes equal>
+			ex: plain_text = "apple" ; key = "snow" thus => new_key = "snows"
+	+ C = ( P + K ) mod 26
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE - 2
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+
+1. Public key cryptography: also known as asymmetric cryptography, in this type a pair of keys i.e public key and private key are used 
+for encryption and decryption. The public key is shared openly, while the private key remains secret. It works as follows:
+
+	+ Encryption: The sender uses the recipient’s public key to encrypt a message.
+	+ Decryption: The recipient uses their private key to decrypt the cipher text back into the original plaintext.
+
+Example: 
+	Public keys of every user are present in the Public key Register. If B wants to send a confidential message to C, then B encrypt 
+	the message using C Public key. When C receives the message from B then C can decrypt it using its own Private key. No other 
+	recipient other than C can decrypt the message because only C know C’s private key. 
+
+Weakness of the Public Key Encryption: 
+	+ Public key Encryption is vulnerable to Brute-force attack.
+	+ This algorithm also fails when the user lost his private key, then the Public key Encryption becomes the most vulnerable algorithm.
+	+ Public Key Encryption also is weak towards man in the middle attack. In this attack a third party can disrupt the public key 
+		communication and then modify the public keys.
+	
+Applications of the Public Key Encryption: 
+	+ Encryption/Decryption:  
+		Confidentiality can be achieved using Public Key Encryption. In this the Plain text is encrypted using receiver public key. 
+		This will ensure that no one other than receiver private key can decrypt the cipher text.
+	+ Key exchange: 
+		This algorithm can use in both Key-management and securely transmission of data.
+	+ Digital signature
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE - 3
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+
+
+1. Authentication: is the process of verifying the identity of a user, system, or application. It ensures that the entity requesting 
+access to a resource is indeed who it claims to be. Authentication is necessary for several important reasons:
+	+ Security and Access Control
+	+ Data Protection and Privacy:
+		Proper authentication helps protect sensitive information. Imagine a scenario where an unauthorized person gains access to your 
+		bank account without authentication.
+	+ Preventing Impersonation and Fraud:
+		Without authentication, malicious actors could impersonate legitimate users. For instance, an attacker might pretend to be an 
+		employee to gain access to internal systems.
+	+ User Experience and Personalization:
+		Authentication enables personalized experiences. For example, a user’s preferences, settings, and history can be associated 
+		with their authenticated account. Without authentication, users would need to re-enter their details every time they visit 
+		a website or use an application.
+
+2. Types of authentication:
+	+ Single-Factor Authentication (SFA):
+		This is the most basic form of authentication and typically involves using a username and password. However, it’s considered 
+		less secure because it relies solely on one piece of information.
+
+	+ Two-Factor Authentication (2FA):
+		2FA adds an extra layer of security by requiring two different factors for verification. Common methods include:
+			-Something you know (e.g., password).
+			-Something you have (e.g., a code sent to your phone).
+			-Something you are (e.g., biometric data like fingerprints or facial recognition).
+
+	+ Multi-Factor Authentication (MFA):
+		MFA goes beyond 2FA and combines multiple factors for verification. It can include any combination of the following:
+			-Knowledge-based factors (passwords, PINs).
+			-Possession-based factors (smart cards, tokens, mobile devices).
+			-Inherence-based factors (biometrics).
+		MFA significantly enhances security by reducing the risk of unauthorized access.
+
+	+ Single Sign-On (SSO):
+		SSO allows users to log in once and access multiple applications or services without re-entering credentials.
+		It simplifies user experience but requires careful implementation to ensure security.
+
+	+ Certificate-Based Authentication:
+		In this method, digital certificates are used to verify a user’s identity.
+		Certificates are issued by a trusted authority and provide strong authentication.
+
+	+ Token Authentication:
+		Token-based authentication involves using a unique token (e.g., a session token or OAuth token) to verify a user’s identity.
+		Commonly used in web applications and APIs.
+
+	+ Biometric based authentication: ....
+
+
+3. Message Authentication Code (MAC): 
+Is a cryptographic function used for ensuring the integrity and authenticity of a message. It involves a secret key shared between the 
+sender and receiver, which is used to generate a unique code that can be attached to the original message. A MAC is not tottaly similar
+to a hash function as it takes the message and the secret key as input to generate a MAC.
+Here’s a explanation of how MAC works:
+	<-> The sender and receiver agree on a secret key ( K ).
+	<-> The sender creates a MAC by applying a MAC algorithm to the message ( M ) using the secret key ( K ). This generates a MAC value
+	<-> The sender sends both the message ( M ) and the MAC value.
+	<-> Upon receiving the message and the MAC, the receiver uses the same secret key ( K ) and MAC algorithm to generate a MAC value 
+		for the received message.
+	<-> The receiver compares the newly generated MAC with the received MAC. If they match, the message is considered authentic 
+		and unchanged; if not, it indicates that the message may have been tampered with or the sender is not authentic.
+Applications:
+	<-> Data integrity
+	<-> Message alteration detection
+Limitations:
+	<-> Shared secret key establishment
+	<-> Non repudiation
+
+4. Hash functions:
+A hash function in cryptography is a versatile one-way algorithm that maps an input of any size to a unique output of a fixed length 
+of bits. A hash function takes various inputs, such as messages or data, and transforms them into fixed-length strings of characters.
+This means that the input to the hash function can be of any length, but the output is always of a fixed length. Hash functions play a 
+crucial role in various security applications, including:
+	+ Password Storage: 
+		Instead of storing actual passwords, systems store hash values derived from passwords. When a user logs in, their input is 
+		hashed and compared to the stored hash.
+	+ Digital Signatures: 
+		Hash functions are used to create digital signatures, ensuring data integrity and authenticity.
+	+ Data Integrity Checks: 
+		Hash values act as checksums to verify data integrity during data transmission or storage.
+
+A good hash function should satisfy below criterias:
+	- Simplicity: The hash function should be easy to compute.
+	- Collision Resistance: It should minimize the likelihood of collisions, ensuring that different keys map to different hash values.
+	- One-Wayness: It should be easy to compute but difficult to reverse (i.e., given the hash value, it should be hard to find the original key).
+	- Avalanche Effect: The avalanche effect refers to the desirable property of a hash function where a small change in the input 
+		results in a significantly different output. 
+	- Fast Computation: Hash functions should be computationally efficient, capable of quickly producing hash values for inputs of 
+		varying sizes. 
+
+
+5. MD5 (Message Digest Algorithm 5):
+Is a widely used cryptographic hash function: It generates a fixed-size 128-bit hash value (32 hexadecimal characters) from an input 
+message. Despite its popularity, MD5 is no longer considered secure due to vulnerabilities discovered over time. 
+
+Working:
+	- First we add padding bits to the input message, these should be 64-bits less than the multiple of 512.
+	- Then we add the the length of the message as 64-bits in the modified input to make it exact multiple of 512.
+	- Then we divide the input into 512-bits blocks which are further divided into 16 blocks of 32-bits
+	- We perform OR, AND, XOR, and NOT logical operations on each of these 16 blocks 4 times
+	- Then we perform 32 bits modulo and a left shift operation to get the message digest.
+
+Properties:
+	- Speed: MD5 is relatively fast, making it suitable for certain applications where performance is critical.
+	- Collision Vulnerability: Unfortunately, MD5 suffers from collisions, meaning different inputs can produce the same hash value.
+	- One-Wayness: It is easy to compute the hash from the input, but reversing it to find the original input is also relatively easy.
+
+
+6. SHA-1 (Secure Hash Algorithm 1): 
+SHA-1 produces a 160-bit hash value (40 hexadecimal characters). It was designed by the National Security Agency (NSA) and was part 
+of the Digital Signature Algorithm (DSA). However, cryptographic weaknesses led to its deprecation.
+
+Properties:
+	- Collision Vulnerability: Like MD5, SHA-1 is vulnerable to collisions.
+	- Security Concerns: After 2010, SHA-1 was no longer approved for most cryptographic uses due to its weaknesses.
+
+7. SHA-512 (Secure Hash Algorithm 512): 
+SHA-512 is part of the SHA-2 family. It produces a 512-bit hash value (128 hexadecimal characters). Unlike MD5 and SHA-1, SHA-512 is 
+considered secure and is widely used. It was a joint effort between the NSA and NIST to introduce a successor to the SHA 1 family.
+
+Properties:
+	- Security: SHA-512 provides strong collision resistance and is computationally more secure.
+	- Word Size: It operates with 64-bit words, which contributes to its robustness.
+
+8. X.509 digital certificate: 
+	<"A digital certificate is a cryptographic document that serves as a form of digital identification Digital certificates are 
+	primarily used for authentication. Certificates are also used for encrypting data during communication. For example, when you 
+	visit a secure website (using HTTPS), your browser verifies the server’s certificate and encrypts data exchanged between your device 
+	and the server.">
+An X.509 certificate is a standard format for digital certificates. It serves as a digital document used to authenticate the identity of
+a person, organization, or device on the internet. These certificates are commonly employed to establish secure connections between a web 
+server and a client device (such as a web browser) by ensuring the authenticity of the server and encrypting data during transmission.
+	Working:
+		- X.509 standard work by using a public key infrastructure (PKI) to establish trust between parties. A certificate authority (CA) 
+			issues the certificate to the certificate holder which is stored in a directory accessible to all users. It contains their 
+			public key and other identifying information. When a user connects to a server with an X.509 certificate, the server sends 
+			the certificate to the user, who can then verify its authenticity and establish a secure, encrypted connection.
+		- The X.509 certificate format uses an associated public and private key pair for encrypting and decrypting messages.
+		- Once an X.509 certificate is provided to a user by the CA, it acts like an identity card for that user.
+		- When authentication is required, the certificate is presented as an identity at the resource that needs verification
+
+	Elements of a X.509 Certificate:
+		- Version number: Defines the X.509 version relevant to the certificate.
+		- Serial number: A unique number issued by the CA.
+		- Signature Algorithm Identifier: The algorithm used for signing the certificate.
+		- Period of Validity: Specifies the duration for which the certificate is valid.
+		- Subject’s public key information: Includes the subject’s public key and the algorithm identifier for its use.
+		- Signature: The hash code of all other fields encrypted by the CA’s private key
+	
+	Applications of X.509 Certificates:
+		- Document signing and digital signatures
+		- Web server security using Transport Layer Security (TLS) or Secure Sockets Layer (SSL) certificates
+		- Email certificates
+		- Code signing
+		- Secure Shell Protocol (SSH) keys
+
+9. PKI : 
+PKI is a system that facilitates public key cryptography, it ensures secure communication between clients over a network. It serves 
+as the governing body responsible for issuing digital certificates. It's a system that works behind the scenes to ensure secure 
+communication online. It is the foundation for technologies like digital signatures and encryption.
+	- PKI involves the creation, storage, and distribution of digital certificates. These certificates are used to verify that a 
+		specific public key belongs to a particular entity
+	- A digital certificate contains information like the public key, the owner’s identity, and the certificate’s expiration date.
+	- PKI relies on asymmetric encryption algorithms (such as RSA or ECC). In asymmetric encryption, there are two keys: a public key 
+		(used for encryption) and a private key (used for decryption). When someone wants to send an encrypted message to another party, 
+		they use the recipient’s public key to encrypt it. Only the recipient, who possesses the corresponding private key, can decrypt 
+		and read the message.
+		
+Duties of a PKI: 
+	- Creating and Managing Digital Certificates
+	- Certificate Revocation
+	- Ensuring Data Protection
+	- Verifying Digital Identities
+	- Enabling Encryption and Digital Signatures
+	- Authentication of Unknown Entities
+	- Data Integrity Protection
+	- Key management 
+	- Certificate Renewal
+	- Certificate Repository: 
+		Providing a centralized or distributed repository where certificates, Certificate Revocation Lists (CRLs), and other related 
+		information are stored and can be accessed by entities in the PKI.
+	- Key Recovery: 
+		Offering mechanisms for recovering cryptographic keys in case of loss or compromise, while ensuring that the process is secure 
+		and does not compromise the overall security of the PKI.
+	- Interoperability: 
+		Ensuring compatibility and interoperability with other PKIs and systems
+		
+Example:
+	- When you visit a secure website (using HTTPS), your browser checks the website’s digital 
+		certificate. If it’s valid and issued by a trusted Certificate Authority (CA), your browser trusts the website. CAs are entities 
+		that issue digital certificates after verifying the identity of the certificate holder.
+	- VPN and Wi-Fi Security: PKI is used to secure virtual private networks (VPNs) and Wi-Fi connections.
+	- Email Encryption: PKI can encrypt email messages to protect their contents.
+	- PKI helps establish trust in the digital world. 
+
+10. The Needham-Schroeder Authentication Protocol: 
+is a cryptographic protocol designed to ensure secure communication between two parties. It is commonly used to prevent replay attacks 
+and verify the identity of communicating agents. A Key Distribution Center (KDC) plays a crucial role. The KDC acts as a trusted third 
+party that facilitates secure communication between two parties (e.g., Alice and Bob). Its primary responsibilities include distributing 
+secret keys and verifying the identities of communicating agents. The authentication process involves several steps: 
+	1. Authentication of Alice by the KDC: 
+		- Alice sends a message to the KDC requesting a session key to communicate with Bob. 
+		- Alice authenticates herself to the KDC by including her identity in the message. 
+		- The KDC verifies Alice's identity and generates a session key for Alice to use in communicating with Bob. 
+	2. Authentication of Bob by the KDC: 
+		- The KDC verifies Bob's identity based on his identity included in Alice's message. 
+		- If Bob's identity is valid, the KDC generates a session key for Alice to communicate securely with Bob. 
+	3. Authentication of the KDC to Alice: 
+		- After verifying Alice's identity and generating a session key for her, the KDC sends the session key encrypted with Alice's 
+		public key to Alice. 
+		- Alice can decrypt this message using her private key, confirming that the message originated from the KDC. 
+	4. Authentication of the KDC to Bob: 
+		- Similarly, after verifying Bob's identity, the KDC sends the session key encrypted with Bob's public key to Bob. 
+		- Bob can decrypt this message using his private key, confirming that the message originated from the KDC. 
+	5. Authentication of Alice to Bob: 
+		- Alice constructs a message containing her identity and the session key encrypted with Bob's public key. 
+		- Alice sends this message to Bob. 
+		- When Bob receives the message, he decrypts it using his private key, confirming that it originated from Alice. 
+	6. Authentication of Bob to Alice: 
+		- Bob constructs a message containing his identity and the session key encrypted with Alice's public key. 
+		- Bob sends this message to Alice. 
+		- When Alice receives the message, she decrypts it using her private key, confirming that it originated from Bob.
+
+
+11.  Why is there a need for two nonces in the Needham-Schroeder protocol?  
+In the Needham-Schroeder protocol, two nonces are used for added security and to prevent replay attacks. Nonces are arbitrary numbers or 
+bits used only once in cryptographic communication. Here's why two nonces are necessary: 
+	+ Client-Server Authentication: 
+		In the protocol, both the client and the server generate a nonce. The client sends its nonce to the server along with its identity, 
+		and the server responds with its own nonce along with the session key encrypted using the client's public key. This exchange helps 
+		authenticate both the client and the server. 
+	+ Preventing Replay Attacks: 
+		The use of two nonces helps prevent replay attacks, where an attacker intercepts a valid message and replays it at a later time to 
+		impersonate one of the parties. With two nonces, each party includes a fresh random number (nonce) in its messages, making it 
+		impossible for an attacker to replay previous messages and successfully impersonate either the client or the server. 
+	
+12. Digital Signatures: A digital signature is a cryptographic technique used to verify the authenticity and integrity of a message sent 
+electronically. It ensures that the message was indeed sent by the intended user and hasn’t been tampered with by any third party 
+(attacker). It provides a way to ensure that a message or document has not been altered since it was signed and that it indeed came 
+from the claimed sender. Digital signatures provide several key services:
+	+ Authentication
+	+ Integrity
+	+ Non-repudiation: 
+		Digital signatures provide non-repudiation, meaning the signer cannot deny having signed the document. Once a document is signed 
+		with a digital signature, the signer cannot later claim that they did not sign it, as the digital signature serves as proof 
+		of their intent and agreement. 
+	+ Timestamping: 
+		Digital signatures can be accompanied by timestamps, indicating the exact time at which the signature was applied. This feature 
+		helps establish the chronological order of events, aiding in legal disputes and providing additional evidence of the authenticity 
+		of the document. 
+	+ Efficiency and Convenience: 
+		Digital signatures streamline the signing process, eliminating the need for physical documents and handwritten signatures. This 
+		not only saves time but also reduces costs associated with printing, scanning, and storing paper documents. 
+Use Cases:
+	+ Emails: 
+		Digital signatures can be used to sign and verify emails.
+	+ Software Distribution: 
+		Ensures that software updates are genuine.
+	+ Contracts and Legal Documents: 
+		Provides a secure way to sign contracts electronically.
+	+ Secure Web Communication: 
+		Used in HTTPS/TLS to verify the authenticity of websites.
+
+13. Explain different types of attacks on Digital Signature.  
+Attacks on digital signatures can exploit weaknesses in the algorithms, implementations, or processes surrounding their creation and 
+verification. Here are some common types of attacks on digital signatures: 
+	+ Brute Force Attack: 
+		In this type of attack, an adversary attempts to break the digital signature by systematically trying all possible combinations of 
+		keys until the correct one is found. This attack is only feasible against weak key sizes and is mitigated by using sufficiently 
+		long keys. 
+	+ Forgery: 
+		Forgery attacks involve creating a fake digital signature that appears valid to a verifier. This could involve capturing a 
+		legitimate signature and reusing it on a different document, or exploiting vulnerabilities in the signature generation process to 
+		produce fraudulent signatures. 
+	+ Key Compromise: 
+		If an attacker gains access to the private key used for generating digital signatures, they can impersonate the legitimate signer 
+		and create valid signatures for any document. Protecting the private key from unauthorized access is crucial to prevent this type 
+		of attack. 
+	+ Collision Attack: 
+		A collision attack aims to find two different messages that produce the same hash value when hashed using the signature algorithm. 
+		If successful, an attacker could produce a forged signature for one message and claim it is valid for another message with the 
+		same hash value. 
+	+ Algorithmic Vulnerabilities: 
+		Attacks may exploit weaknesses or vulnerabilities in the cryptographic algorithms used for digital signatures. For example, if a 
+		signature algorithm is found to have a mathematical weakness that allows signatures to be forged or manipulated, it can 
+		compromise the security of the digital signature system. 
+	+ Man-in-the-Middle (MitM) Attack:
+		In a MitM attack, an attacker intercepts communication between the signer and verifier, altering the signed data or substituting 
+		their own signature. This attack can be mitigated by using secure communication channels and additional mechanisms such as 
+		digital certificates. 
+	+ Replay Attack: 
+		In a replay attack, an attacker intercepts a valid digital signature and reuses it on another message or at a later time to 
+		impersonate the legitimate signer. Countermeasures against replay attacks include including timestamping or nonce values 
+		in the signature process.
+
+14. RSA (Rivest–Shamir–Adleman): 
+RSA is the most popular asymmetric cryptographic algorithm. While it is primarily used for encrypting messages, it can also be employed 
+for creating digital signatures.  
+	+ Message Digest Calculation:
+		The sender (let’s call them A) uses a hash function (e.g., SHA-1) to calculate the message digest (MD1) over the original message 
+		(M). This message digest serves as a compact representation of the message.
+	+ Digital Signature Creation:
+		A encrypts the message digest using their private key, resulting in the digital signature (DS) of A. The DS is sent along with 
+		the original message to the receiver (B).
+	+ Receiver’s Verification:
+		Upon receiving the original message (M) and the DS from A, B calculates its own message digest (MD2) for M using the same hash 
+		function. B then decrypts the DS using A’s public key (due to RSA’s asymmetric nature).
+		If MD1 == MD2:
+			- B accepts the original message M as correct and unaltered.
+			- It confirms that the message came from A and not an impostor.
+			- A cannot deny sending the message.
+			- Data integrity is ensured because any alteration would require signing with A’s private key.
+
+In summary, RSA allows us to create digital signatures by encrypting message digests with private keys and verifying them using 
+corresponding public keys
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE - 5
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+
+1. Memory protection: 
+Refers to the mechanisms put in place by an operating system or hardware to control access to memory segments. These mechanisms help 
+prevent processes or users from accessing memory areas that they are not authorized to access. Memory protection is essential 
+for maintaining the stability and security of a system. Here's how it works: 
+	- Segmentation: 
+		Memory is divided into segments, and each segment is associated with 
+		specific permissions such as read, write, and execute. These permissions determine what 
+		actions a process can perform on that memory segment. 
+	- Page-Based Protection: 
+		Memory can also be divided into smaller units called pages. 
+		Page-based protection allows finer-grained control over memory access permissions. 
+		Each page can have its own set of permissions, and the operating system manages these 
+		permissions through page tables. 
+	- Hardware support: 
+		Memory protection mechanisms are often implemented with hardware support, such as: 
+			- memory management units (MMUs) in modern processors
+			- Each RAM page has a set of bits called encryption keys. Access to the page can be controlled using these bits.
+	- Access Violations: 
+		If a process attempts to access memory that it is not authorized to 
+		access, the hardware or operating system raises an exception or generates a segmentation 
+		fault, halting the offending process and preventing potential security breaches.
+Memory protection mechanisms help prevent various security threats, including buffer overflow 
+attacks, unauthorized access to sensitive data, and denial-of-service attacks that exploit 
+vulnerabilities in memory management.
+
+2. Address protection: 
+also known as address space layout randomization (ASLR), is a security technique used to prevent attackers from predicting the memory 
+addresses of system components and exploiting vulnerabilities such as buffer overflows and code injection attacks. Here's how 
+address protection works: 
+	Address protection randomizes the memory addresses of system 
+	components, including executable code, libraries, heap, and stack. Each time a process is 
+	launched or a system component is loaded, the memory addresses are randomized, 
+	making it difficult for attackers to predict the location of critical data or code. 
+ASLR is an essential defense mechanism that adds unpredictability to memory layout, making it more challenging for attackers to exploit 
+vulnerabilities.
+
+3. File Protection mechanism:
+File protection in an operating system refers to the various mechanisms and techniques used to secure files from unauthorized access, 
+alteration, or deletion. 
+	Access control is a fundamental aspect of file protection. It determines who can access a file and what actions they can perform on 
+	it. Different types of access include:
+		Read: Reading from a file.
+		Write: Writing or rewriting the file.
+		Execute: Loading the file and starting its execution process.
+		Append: Adding new information to an existing file (editing must occur at the end of the file).
+		Delete: Removing a file that is no longer needed.
+		List: Listing the name and attributes of the file.
+	Access control mechanisms limit access based on user identity and the type of access required.
+	Common classifications of users include:
+		Owner: The user who created the file.
+		Group: A set of members with similar needs who share the same file.
+		Universe: All other users in the system.
+Access-control lists (ACLs) associate identity-dependent access with files and directories, specifying which users have access and the 
+type of access they are allowed.
+
+4. User authentication:
+is the process of verifying the identity of an individual or entity attempting to access a system, network, or application. It ensures 
+that only authorized users are granted access to resources while protecting against unauthorized access and potential security 
+threats. Authentication typically involves presenting credentials, such as usernames and passwords, to prove identity. Here's how user 
+authentication works: 
+	- Identification: 
+		The first step in user authentication is identification, where the user 
+		provides a unique identifier, such as a username or email address, to indicate who they 
+		claim to be. This identification serves as the initial piece of information used to authenticate the user. 
+	- Credentials: 
+		After identification, the user must provide authentication credentials to 
+		validate their identity. The most common authentication credentials are passwords, but 
+		other factors, such as biometric data (e.g., fingerprints, facial recognition), security 
+		tokens, smart cards, or one-time codes from authenticator apps, may also be used. These 
+		credentials should be kept secret and only known to the authorized user. 
+	- Verification: 
+		The system verifies the provided credentials against stored records to 
+		determine if they match. This verification process may involve comparing passwords 
+		against hashed versions stored in a database or validating biometric data against enrolled 
+		samples. If the credentials match, the user is authenticated. 
+	- Access Granted: 
+		Upon successful authentication, the system grants the user access to the 
+		requested resources, such as files, applications, or network services. Access permissions 
+		may be based on the user's role, group membership, or specific policies configured by the 
+		system administrator. 
+	- Access Denied: 
+		If the provided credentials do not match the stored records, 
+		authentication fails, and access is denied. The user may be prompted to retry 
+		authentication or take other actions, such as resetting their password or contacting 
+		support for assistance. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+1. Distinguish between message integrity and message authentication: ✅
+
+Message Integrity:
+	- Definition: Message integrity ensures that the content of a message remains unchanged during transmission.
+	- Objective: The goal is to detect any unauthorized modifications, accidental corruption, or tampering of the message.
+	- Techniques:
+		- Checksums: 
+		- Hash Functions: Cryptographic hash functions (like SHA-256) produce fixed-length hash values. If the hash of the received message matches 			the expected hash, integrity is preserved.
+		- Digital Signatures: A sender signs the message using their private key. The recipient verifies the signature using the sender’s public 			key. Any modification to the message would invalidate the signature.
+
+Message Authentication:
+	- Definition: Message authentication ensures that the sender of the message is genuine and authorized.
+	- Objective: The goal is to verify the identity of the sender and prevent impersonation or unauthorized communication.
+	- Techniques:
+		- MAC (Message Authentication Code): 
+		- Digital Signatures: Besides ensuring integrity, digital signatures also provide authentication. The sender signs the message, and the 		  	recipient verifies the signature.
+		- Public Key Infrastructure (PKI): In PKI, digital certificates issued by trusted Certificate Authorities (CAs) authenticate the sender’s 			identity.
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------ //
+
+8.	Using the RSA scheme, let p = 809, q = 751, and d = 23. Calculate the public key e. Then a. Sign and verify a message with M1 = 100. Call the 	signature S1. b. Sign and verify a message with M2 = 50. Call the signature S2. c. Show that if M = M1 × M2 = 5000, then S = S1 × S2.
+
+9.	Using the ElGamal scheme, let p = 881 and d = 700. Find values for e1 and e2. Choose r = 17. Find the value of S1 and S2 if M = 400. 
+
+10.	Using the Schnorr scheme, let q = 83, p = 997, and d = 23. Find values for e1 and e2. Choose r = 11. If M = 400 and h(. . .) = 100, find the value 	of S1, S2, and V. Is S1 ≡ V(mod p)? 
+
+11.	Using the DSS scheme, let q = 59, p = 709, and d = 14. Find values for e1 and e2. Choose r = 13. Find the value of S1 and S2 if h(M) = 100. Verify 	the signature.
+
+12.	Write two algorithms for the RSA scheme: one for the signing process and one for the verifying process. 
+13.	Write two algorithms for the ElGamal scheme: one for the signing process and one for the verifying process. 
+14.	Write two algorithms for the Schnorr scheme: one for the signing process and one for the verifying process. 
+15.	Write two algorithms for the DSS scheme: one for the signing process and one for the verifying process.  
+
+18.	Explain Memory Protection and Address Protection
+19.	Explain user Authentication
+20.	Explain in detail about Database Security.
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------ //
+
+21.	Discuss about various  attacks
+a.	Phishing
+b.	Cross site Request Forgery
+c.	Cross site reference
+d.	DNS Attack
+e.	Email Attacks
+f.	Web bugs
+g.	Click Jacking
+
+22.	What is secure electronic transaction.
+23.	Discuss about cookies, SSL, HTTPs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
