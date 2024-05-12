@@ -1,0 +1,281 @@
+1) SVD: It stands for singular value decomposition, it is a matrix factorization technique. SVD is a method for decomposing a matrix. For a given matrix "A"
+it can be decomposed into three matrices "U", "∑" & "V^T" such that: 
+	
+	- A = U ∑ V^T
+
+Given a matrix "A" of "m" * "n" dimesnsion: 
+	- "U" is the m x m orthogonal matrix called left singular matrix.
+	- "∑" Is m x n diagonal matrix 
+	- "V^T" is n x n orthogonal matrix called right singular matrix.
+
+Applications:
+	- Pseudo-inverse Calculation
+	- Homogeneous Linear Equations
+	- To find Rank, Range, and Null Space of a matrix
+	- Matrix apporximation
+
+Practical Use Cases:
+	- Data Compression: SVD helps find the best low-rank approximation to a matrix, reducing its dimensionality.
+	- Signal Processing: SVD aids in noise reduction, feature extraction, and denoising.
+	- Process Control: SVD assists in modeling and analyzing complex systems.
+
+2) Steps involved in ML:
+	- Data collection
+	- Data pre-processing & visulalization
+	- Feature selection
+	- Model training
+	- Model evaluation
+	- Prediction
+	- Deployment
+
+3) ML Definitions:
+
+	- Training error: (also known as residual error) measures how well a model fits the training data. A low training error indicates that the model 	  closely approximates the training data, but it doesn’t necessarily guarantee good performance on unseen data.
+
+	- Generalization error: (also called test error) measures how well a model performs on new, unseen data. It reflects the model’s ability to 		  generalize patterns learned from the training data to previously unseen examples. A model with low generalization error is robust and performs 	  well on both training and test data.
+
+	- Overfitting: is the scenario in which the model becomes complex and learns too much on the training data and fails genralize patterns in the new 	  unseen data. To overcome overfitting, techniques like regularization, cross-validation, and reducing model complexity are used.
+
+	- Underfitting: happens when a model is too simple to capture the underlying patterns in the data. It results in poor performance on both training 	  and test data. 
+
+	- The bias-variance trade-off: is a delicate balance between two types of errors:
+
+		- Bias: The difference between the model’s predictions and the true values (high bias leads to underfitting).
+		- Variance: The variability of model predictions for different training datasets (high variance leads to overfitting).
+
+	  An ideal model strikes a balance between bias and variance. Increasing model complexity reduces bias but increases variance, and vice versa. The 	  goal is to find the sweet spot where both bias and variance are minimized, leading to optimal generalization.
+
+
+4) Issues in ML:
+	- Lack of data
+	- Incorrect data / data quality
+	- overfitting & underfitting
+	- Slow Implementation: Training large models can be time-consuming. Optimizing code, using efficient libraries, and parallelizing computations are 	  essential.
+	- Imperfections in Algorithms as Data Grows: As data scales, algorithms may exhibit unexpected behavior. Regular updates and monitoring are 	    	  necessary to maintain model accuracy.
+
+
+5) A confusion matrix: is a tabular summary that showcases the number of correct and incorrect predictions made by a classifier. It’s commonly used to measure the performance of a classification model. By comparing predicted values against actual values, the confusion matrix provides insights into how well the model is doing. When assessing a classification model’s performance, the confusion matrix is essential. A few key metrics:
+
+	- Accuracy: Ratio of total correct instances to the total instances. TP + TN / TN + TP + FP + FN
+
+	- Precision: Accuracy of positive predictions. It is defined as the ratio of true positive predictions to the total number of positive predictions 	  made by the model. TP / TP + FP
+
+	- Recall: Ability to identify positive instances. It is the ratio of the number of true positive (TP) instances to the sum of true positive and 	  false negative (FN) instances. TP / TP + FN
+
+	- F1-score: is used to evaluate the overall performance of a classification model. It is the harmonic mean of precision and recall
+
+	- Specificity: It  measures  the  ability  of  a  model  to  correctly  identify  negative  instances, ratio of true negative to all actual negative 	  examples (the sum of true negative and false positive)
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------ //
+// ------------------------------------------------------------------------------------------------------------------------------------------------------ //
+// ------------------------------------------------------------------------------------------------------------------------------------------------------ //
+
+
+1. Hebbian Learning rule:✅  Hebbian Learning Rule, also known as Hebb Learning Rule, was proposed by Donald O Hebb. It is one of the 
+first and also easiest learning rules in the neural network. It is used for pattern classification. It is a single layer neural network, 
+i.e. it has one input layer and one output layer. The input layer can have many units, say n. The output layer only has one unit. 
+Hebbian rule works by updating the weights between neurons in the neural network for each training sample. Hebbian Learning Rule: 
+	 It is unsupervised learning rule 
+	 It works on both binary and continuous activation function. 
+	 It is of single neuron layer type learning rule. 
+In Hebbian learning weight change will be calculated as follows: Hebbian Learning Rule Algorithm:  
+	- Initialization:
+		- Set all weights to zero: (wi = 0) for (i = 1) to (n), where (n) is the number of input neurons.
+		- Initialize the bias to zero: (b = 0).
+	- Training Process:
+		- For each input vector (S) (input vector) and its corresponding target output (t), repeat the following steps:
+			- Set activations for input units with the input vector Xi = Si for i = 1 to n. 
+			- Set the corresponding output value to the output neuron, i.e. y = t. 
+			- Update weight and bias by applying Hebb rule for all i = 1 to n:
+
+				- w(new) = w(old) + xi*y ; b(new) = b(old) + y
+
+
+2. Expectation - Maximization algorithm for clustering
+
+3. Introduction,  Fundamental concept,  Evolution of Neural Networks ✅:  Neural Networks are computational models that mimic the 
+complex functions of the human brain. The neural networks consist of interconnected nodes or neurons that process and learn from data, 
+enabling tasks such as pattern recognition and decision making in machine learning. 
+	- 1940s 1st neuron but did'nt worked due to lack of computaional capabilities
+	- 1960s perceptron
+	- then came backproposition and connectionism
+	- then early 2000s deep learning was Introduced
+	- Convolutional neural networks (CNNs) and recurrent neural networks (RNNs), two deep learning architectures, dominated machine learning.
+
+4. Biological Neuron,  Artificial Neural Networks,  NN architecture ✅: 
+
+	- BNNs are the neural networks found in living organisms, including our brains. They consist of interconnected nerve cells (neurons) 
+	that communicate through synapses. 
+
+		- Neurons: These are the basic building blocks of BNNs. Neurons have multiple dendrites that receive input signals from other 
+		neurons. The soma (cell body) processes these incoming signals, and the axon transmits the processed signals to other cells.
+
+		- Synapses: These are the points of connection between neurons, where information is transmitted. In BNNs, synapses are 
+		flexible and can be modified by learning and experience.
+
+	Advantages of BNN:   
+		 The synapses are the input processing element. 
+		 It is able to process highly complex parallel inputs. 
+	Disadvantages of BNN: 	
+		 There is no controlling mechanism. 
+		 Speed of processing is slow being it is complex. 
+
+	- ANNs are mathematical models inspired by the organization of biological neural networks. They consist of interconnected 
+	artificial neurons, which are arranged in a series of layers that together constitute the whole Artificial Neural Network in a 
+	system. A layer can have only a dozen units or millions of units as this depends on how the complex neural networks will be 
+	required to learn the hidden patterns in the dataset. Commonly, Artificial Neural Network has an input layer, an output layer 
+	as well as hidden layers. The input layer receives data from the outside world which the neural network needs to analyze or learn 
+	about. Then this data passes through one or multiple hidden layers that transform the input into data that is valuable for the 
+	output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to input 
+	data provided.
+
+	- Neural Network Architecture: There are different types of neural network architectures:
+		- Feedforward Neural Networks (FNNs): These are the simplest type of ANNs. Information flows from input nodes to output 
+		nodes without cycles.
+
+		- Convolutional Neural Networks (CNNs): Designed for image and video recognition. They use convolutional layers to 
+		extract features.
+
+		- Recurrent Neural Networks (RNNs): Suitable for sequential data (e.g., time series). They have loops to allow information 
+		to persist.
+
+5. McCulloch-Pitts Model. Designing a simple network ✅: The McCulloch-Pitts neural model, which was the earliest ANN model, has only two 
+types of inputs — Excitatory and Inhibitory. The excitatory inputs have weights of positive 
+magnitude and the inhibitory weights have weights of negative magnitude. The inputs of the 
+McCulloch-Pitts neuron could be either 0 or 1. It has a threshold function as an activation 
+function.
+
+6. Perceptron model with Bias ✅ : The perceptron model is one of the simplest types of artificial neural networks, originally 
+proposed by Frank Rosenblatt in 1957. It consists of a single layer of neurons, each connected to the inputs via weighted connections. 
+The perceptron model can be extended to include a bias term, which improves its ability to learn and represent complex patterns in 
+data. Here's an explanation of the perceptron model with bias: 
+
+	1. Inputs: The perceptron model takes a set of input values x1,x2,...,xn, each representing a feature or attribute of the input data. 
+
+	2. Weights: Each input is associated with a weight w1,w2,...,wn, which determines the importance of that input in the computation. 
+	These weights are adjusted during the training process to optimize the performance of the perceptron. 
+
+	3. Bias: The bias term, denoted as b, is an additional parameter in the perceptron model. It helps shift the decision boundary 
+	It allows the Perceptron to learn an offset from the origin. 
+
+	4. Activation Function: In the basic perceptron model, the activation function is a step function (typically the Heaviside step 
+	function), which outputs 1 if the weighted sum  of inputs plus bias exceeds a certain threshold, and 0 otherwise. Mathematically, 
+	the output of the perceptron can be represented as: 
+		summation of wi * xi + bias > 0
+
+
+7. Activation functions,  Binary,  Bipolar,  continuous,  Ramp. 
+
+8. Multi-layer perceptron network: A basic perceptron works very successfully for data sets which possess linearly 
+separable patterns. However, in practical situations, that is not an ideal situation to have.  A multi-layer perceptron (MLP) 
+is a type of artificial neural network (ANN) consisting of multiple layers of interconnected neurons. The major highlights 
+of this model are as follows: 
+	 The neural network contains one or more intermediate layers between the input and output nodes, which are hidden from both input and 
+	output nodes 
+	 Each neuron in the network includes a non-linear activation function that is differentiable. 
+	 The neurons in each layer are connected with some or all the neurons in the previous layer. 
+	 They can learn nonlinear relationships in data, making them suitable for real-world problems.
+	 MLPs are powerful models for tasks such as classification, regression, and pattern recognition.
+
+
+9. Error back propagation algorithm.
+
+10. Logistic regression ,Logit function
+
+11. Curse of Dimensionality ✅:  refers to the various challenges and limitations that arise when dealing with high-dimensional data 
+spaces. As the number of dimensions (features or variables) increases, several issues emerge that can significantly impact the 
+effectiveness of various algorithms and techniques used in machine learning and data analysis. Here are some key 
+aspects of the Curse of Dimensionality: 
+
+	1. Increased Sparsity: As the dimensionality increases, the available data becomes 
+	sparser. In high-dimensional spaces, the data points tend to spread out, leading to 
+	fewer data points per unit volume. This sparsity can make it difficult to generalize 
+	from the data or to estimate reliable statistics. 
+
+	2. Increased Computational Complexity: Algorithms often become computationally 
+	more demanding as the dimensionality increases. Many algorithms have a time 
+	complexity that grows exponentially with the number of dimensions. This makes 
+	tasks such as distance calculations, clustering, and optimization more computationally 
+	expensive and time-consuming. 
+
+	3. Degraded Performance of Distance-based Methods: Distance-based methods, such as 
+	k-nearest neighbours (k-NN) and clustering algorithms, rely on measuring distances 
+	between data points. Due to the data being spread out sparsly such methods are no longer suitable.
+
+	4. Overfitting: With an increasing number of dimensions, the risk of overfitting also 
+	increases. In high-dimensional spaces, there is a higher likelihood that models will 
+	capture noise or spurious correlations in the data, leading to poor generalization 
+	performance on unseen data. 
+
+
+12. Dimensionality Reduction Techniques ✅:  Dimensionality reduction is the process of reducing the number of features in a 
+dataset while retaining as much information as possible. This can be done for a variety of reasons, such as to reduce the 
+complexity of a model, to improve the performance of a learning algorithm, or to make it easier to visualize the data. 
+Some common dimensionality reduction techniques include:
+
+	- PCA: statistical technique which transforma the original features into a set of orthogonal axes that capture maximum variance 
+	in the data.
+
+	- Linear Discriminant Analysis (LDA): is a supervised dimensionality reduction technique that finds the linear combinations 
+	of features that best separate different classes in the data. It aims to maximize the between-class variance while 
+	minimizing the within-class variance.
+
+	- t-Distributed Stochastic Neighbour Embedding (t-SNE): t-SNE is a technique commonly used for visualizing high-dimensional 
+	data by reducing it to two or three  dimensions.
+
+	- Isomap: Isomap is a nonlinear dimensionality reduction technique that constructs a low-dimensional embedding of the data 
+	based on the geodesic distances in a high-dimensional space. 
+
+
+13. Principal Component Analysis ✅:  Principal  Component  Analysis  (PCA)  is  a  widely  used  technique  in statistics and data  
+science for dimensionality  reduction.  Its primary  goal  is  to  simplify  complex  data  sets by  transforming  them  into  a  
+new  coordinate  system where set of orthogonal axes capture the maximum varience in the data. These are called principal components 
+and are a linear combinations of the original variables in the dataset. Here's  a  breakdown  of  how  PCA  works: 
+
+	1. Data Centering: The first step in PCA involves centering the data by subtracting the 
+	mean of each feature from the respective feature values. This ensures that the new 
+	coordinate system is not biased towards any particular feature. 
+
+	2. Covariance Matrix Computation: After centering the data, PCA calculates the 
+	covariance matrix, which summarizes the relationships between different features. 
+	The covariance between two features measures how they vary together. A positive 
+	covariance indicates that they tend to increase or decrease together, while a negative 
+	covariance indicates an inverse relationship. 
+
+	3. Eigenvalue Decomposition: The covariance matrix is then decomposed into its 
+	eigenvectors and eigenvalues. 
+
+	4. Selection of Principal Components: The eigenvectors are ranked based on their 
+	corresponding eigenvalues. The eigenvector with the highest eigenvalue represents 
+	the direction of maximum variance in the data and is termed the first principal 
+	component (PC). Subsequent eigenvectors represent directions of decreasing variance 
+	and are termed the second, third, and so on, principal components. 
+
+	5. Projection: Finally, PCA projects the original data onto the new coordinate system 
+	defined by the principal components. 
+
+
+14. Flowcharts and alogorithm for  Hebb,  MP neuron,  Perceptron,  Backpropogation
+
+15. Problem on Hebb,MP neuron,Perceptron,Backpropogation,Logistic regression, and  Principal Component Analysis. ❌
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
