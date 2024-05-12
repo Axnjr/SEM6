@@ -1,0 +1,201 @@
+1) Agile Principles:
+
+	Customer Satisfaction: Prioritize customer satisfaction through early and continuous delivery of valuable software.
+	
+	Changing Requirements: Welcome changing requirements, even late in the project, to benefit the customer.
+
+	Frequent Deliveries: Deliver working software frequently, with a preference for shorter timescales.
+
+	Collaboration: Business people and developers must work together daily.
+
+	Motivated Individuals: Build projects around motivated individuals, trusting them to get the job done.
+
+	Effective Communication: Face-to-face conversation is the most effective way to convey information within the team.
+
+	Working Software: Measure progress by working software.
+
+	Sustainable Development: Promote sustainable development for sponsors, developers, and users.
+
+	Technical Excellence: Focus on technical excellence and good design.
+
+	Simplicity: Maximize work not done.
+
+	Self-Organizing Teams: Allow self-organizing teams to emerge.
+
+	Reflection and Adaptation: Regularly reflect on effectiveness and adjust behavior.
+
+
+2) Functional Requirements:
+	- These are the specific features and behaviors that the system must provide to meet the user’s needs.
+	- Functional requirements answer the question: “What should the software system do?”, Examples of functional requirements include:
+		- User authentication (e.g., login functionality).
+		- Order processing (e.g., adding items to a shopping cart).
+		- Search functionality (e.g., searching for products).
+	- These requirements are directly visible in the final product and are typically captured in use cases.
+
+3) Non-Functional Requirements:
+	- These define the quality attributes that the system must satisfy. They focus on how the system performs rather than what it does.
+	- These requirements address aspects beyond functionality and deal with issues like:
+		- Performance: How quickly the system responds to user requests.
+		- Security: Ensuring data protection and access control.
+		- Usability: How user-friendly the system is.
+		- Reliability: System availability and error handling.
+		- Scalability: Handling increased load or users.
+		- Maintainability: Ease of maintaining and updating the system.
+	- Non-functional requirements are often specified by technical experts (e.g., architects, developers).
+	- They are essential for ensuring a robust and high-quality system.
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------------- //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------- //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------- //
+
+
+Module 4:
+
+1) Difference between Cohesion and Coupling ✅
+
+2) Explain SCM Process ❌
+
+3) What is Risk Management? Discuss Common sources of risk in IT projects ✅: Risk management is a systematic process of identifying, assessing, prioritizing, and mitigating risks that could potentially affect the objectives of an organization, project, or activity. It involves understanding the uncertainties and potential events that could impact the achievement of goals, and taking proactive measures to minimize their negative consequences while maximizing opportunities for success. Common sources of risk in IT projects: 
+
+1. Scope Creep: This occurs when the project's scope expands beyond the initial definition without corresponding increases in time, budget, or resources. It often leads to delays, increased costs, and stakeholder dissatisfaction. 
+
+2. Unclear Requirements: Inadequate or ambiguous requirements can lead to misunderstandings between stakeholders and developers, resulting in rework, delays, and dissatisfaction with the final product. 
+
+3. Technological Complexity: Projects involving emerging or complex technologies may encounter difficulties in implementation, integration, or maintenance. Lack of expertise, compatibility issues, and unexpected technical challenges can pose significant risks. 
+
+4. Resource Constraints: Insufficient budget, time, or skilled personnel can hamper project progress and compromise its success. Resource constraints may lead to compromises in quality, scope, or timelines. 
+
+5. Integration Issues: IT projects often involve integrating various systems, applications, or platforms. Integration challenges such as data inconsistency, interoperability issues, and compatibility problems can hinder project progress and functionality. 
+
+6. Security Vulnerabilities: With the increasing frequency and sophistication of cyber threats, security risks pose a significant concern for IT projects. Data breaches, unauthorized access, malware infections, and other security incidents can result in financial losses, reputational damage, and legal liabilities. 
+
+7. Vendor or Third-Party Dependencies: Projects relying on external vendors, contractors, or third-party services are susceptible to risks associated with vendor performance, delivery delays, contractual disputes, and quality assurance. 
+
+
+4) Describe the details of FTR and Walkthrough ❌
+
+5) Explain SQA activities ✅: Software Quality Assurance (SQA) is simply a way to assure quality in the software. It is the set of activities which ensure processes, procedures as well as standards are suitable for the  project and implemented correctly. Major Software Quality Assurance Activities:  
+
+1. SQA Management Plan: Make a plan for how you will carry out the SQA throughout  the project. Think about which set of software engineering activities are the best for project. check level of SQA team skills.  
+
+2. Set The Check Points: SQA team should set checkpoints. Evaluate the performance of  the project on the basis of collected data on different check points.  
+
+3. Measure Change Impact: The changes for making the correction of an error sometimes re introduces more errors keep the measure of impact of change on project. Reset the new change to check the compatibility of this fix with whole project.  
+
+4. Multi testing Strategy: Do not depend on a single testing approach. When you have a lot of testing approaches available use them.  
+
+5. Manage Good Relations: In the working environment managing good relations with other teams involved in the project development is mandatory. Bad relation of SQA team with programmers’ team will impact directly and badly on project. Don’t play politics.  
+
+6. Managing Reports and Records: Document and share QA activities (test cases, defects, client changes) for future reference and stakeholder alignment. 
+
+Module 5: 
+
+1)	Difference between white box and black box testing ✅
+
+2)	Write a short note on Software Supportability. ❌
+
+3)	Explain Software re-engineering in deail ❌
+
+4) Explain Testing strategies for Conventional software ✅:  Software testing is the process of evaluating a software application to identify if it meets 
+specified requirements and to identify any defects. The following are common testing strategies: 
+
+1. Black box testing – Tests the functionality of the software without looking at the internal code structure. 
+
+2. White box testing – Tests the internal code structure and logic of the software. 
+
+3. Unit testing – Tests individual units or components of the software to ensure they are  functioning as intended. 
+
+4. Integration testing – Tests the integration of different components of the software to  ensure they work together as a system. 
+
+5. Functional testing – Tests the functional requirements of the software to ensure they are  met. 
+
+6. System testing – Tests the complete software system to ensure it meets the specified requirements. 
+
+7. Acceptance testing – Tests the software to ensure it meets the customer’s or end-user’s  expectations. 
+
+8. Regression testing – Tests the software after changes or modifications have been made to ensure the changes have not introduced new defects. 
+
+9. Performance testing – Tests the software to determine its performance characteristics  such as speed, scalability, and stability. 
+
+10. Security testing – Tests the software to identify vulnerabilities and ensure it meets  security requirements.
+
+Module 6:
+
+1) Explain the Project Charter ✅: A project charter is a formal short document that states a project exists and provides project managers with written authority to begin work and provides essential information to guide its execution. The project charter serves several critical purposes:
+	- Authorization: It officially approves the project, granting authority to the project manager and team.
+	- Clarity: It defines the project’s scope, objectives, and boundaries.
+	- Alignment: It ensures alignment with organizational goals and strategic objectives.
+	- Communication: It communicates project details to stakeholders.
+
+2) Explain the 4’PS of Project Management ✅: 
+	- People
+	- Product
+	- Process
+	- Project
+
+3) What are the different phases in project life cycle with suitable example ✅: 
+
+- Project Initiation Phase: In this phase, the project’s initial groundwork is laid. The goal is to clarify the project’s scope, objectives, and success criteria. Example: Imagine a software development project where a company wants to create a new mobile app. During initiation, the project team meets with stakeholders, defines the app’s purpose, outlines its features, and sets initial expectations.
+
+- Project Planning Phase: Planning involves creating a detailed roadmap for the project. It includes defining tasks, estimating resources, setting timelines, and creating a project plan. Example: Continuing with our mobile app project, the planning phase would involve creating a Gantt chart, allocating development resources, estimating costs, and determining milestones.
+
+- Project Execution Phase: Execution is where the actual work happens. The project team carries out the planned tasks, develops deliverables, and follows the project schedule. Example: In our mobile app project, developers write code, designers create UI/UX elements, and testers verify functionality. Regular status meetings ensure everyone stays on track.
+
+- Project Monitoring & Controlling Phase: During this phase, project progress is monitored, and adjustments are made as needed. The focus is on tracking performance, managing risks, and ensuring quality. Example: In our app project, the team monitors development progress, checks if milestones are met, and addresses any issues promptly. If a feature is delayed, adjustments are made to the schedule.
+
+- Project Closure Phase: Closure marks the end of the project. It involves finalizing deliverables, conducting user acceptance testing, obtaining client sign-off, and transitioning to maintenance or support. Example: For our mobile app, closure means launching it in app stores, celebrating the successful release, and handing over documentation and support responsibilities to the operations team.   
+
+4) Explain Project Scheduling and describe CPM and PERT ✅: 
+
+	- Project scheduling involves planning and organizing the tasks required to complete a project. It helps project managers allocate resources, 	  	  estimate timeframes, and create a timeline for project execution. Effective project scheduling leads to success of  project, reduced cost, and 	  increased customer satisfaction. Scheduling in project management  means to list out activities, deliverables, and milestones within a project 	  that are delivered. The most common and important  form of project schedule is Gantt chart. 
+
+	- PERT: Programme Evaluation and Review Technique (PERT) is an effective visual network method specifically designed for planning, monitoring, and 	  controlling complex and unique projects. PERT offers a systematic approach that ensures project success by breaking down the entire project into 	  smaller, manageable activities and establishing their interdependencies within a network diagram. The process of developing a PERT involves 		  several key steps: 
+		1. Activity Breakdown: The project is carefully dissected into smaller activities, enabling a  more granular analysis and logical sequencing 			of tasks. 
+		2. Interdependency Identification: The relationships and dependencies between the  activities are thoroughly examined and accurately 				represented in the network diagram, providing a comprehensive view of the project’s structure. 
+		3. Time Estimation: Each activity is assigned three-time estimates: the optimistic or  shortest time, the pessimistic or longest time, and 			the normal or most likely time. These  estimates facilitate a more realistic assessment of activity durations. 
+		4. Critical Path Determination: the critical path is the longest sequence of tasks that must be completed to execute a project. It signifies 			the sequence of activities crucial for  timely project completion. Any delays along the critical path directly impact the overall 			project timeline. 
+		5. Plan Refinement: Based on the critical path analysis, the initial project plan is carefully  reviewed, modified, and improved to 				effectively control and minimize the time required  for project completion. This ensures that the project stays on track and any 			potential delays are mitigated. 
+
+	- CPM: In project management, the critical path is the longest sequence of tasks that must be completed to execute a project. The tasks on the 	  	  critical path are called critical activities because if they’re delayed, the whole project completion will be delayed. To find the critical path, 	  project managers use the critical path method (CPM). Critical Path Method (CPM) is a project management technique that shares similarities with 	  Programme Evaluation and Review Technique (PERT), but it also has some distinguishing  characteristics: 
+		1. Simplified Activity Duration: Unlike PERT, CPM assumes a constant duration for each  activity. Therefore, only a single time estimate is 			assigned to each activity, eliminating  the consideration of uncertainty in duration. 
+		2. Emphasis on Cost: While PERT primarily focuses on time management, CPM places a  greater emphasis on cost control. It enables project 			managers to optimize resource  allocation and cost efficiency throughout the project’s execution. 
+		3. Well-Known Activity Durations: CPM is more suitable for projects where activity  durations are well-known and can be accurately 				estimated. It is particularly effective in  scenarios where historical data or past project experiences provide reliable information 
+			for time estimation.
+
+
+5)	Explain W5HH principles ✅:
+		- Why
+		- What
+		- When
+		- Where
+		- Who
+		- How
+		- How much
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
