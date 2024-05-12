@@ -1,0 +1,522 @@
+NDY - NUMERICALS
+	---------------------------------------------------------------------------------------------------------------------------------
+	- Histogram equllization ❌
+	- Histogram specification ❌
+	- Power law transformation ❌
+	- Contrast streching ❌
+	---------------------------------------------------------------------------------------------------------------------------------
+	- Discrete cosine transform ✅ https://www.youtube.com/watch?v=lQnUex31f5Q
+	- Fast fourier transform ❌
+	- Discrte fouurier transform ✅ 
+		F[k] = ∑ f(x) e ^ -j*2⊓*k*x/N 
+			Where: 
+				- N = number of elements
+				- k = 0, 1 .... N - 1
+				- x is the index of the array elemet given
+		and its inverse := F[k] ^ -1 =  1 / N * (∑ f(x) e ^ j*2⊓*k*x/N ) <Inverse discrete fourier tranform>
+		<https://www.youtube.com/watch?v=2oEt5lbsyhM>
+	---------------------------------------------------------------------------------------------------------------------------------
+	- Walsh hadamard ✅
+	---------------------------------------------------------------------------------------------------------------------------------
+	- Run length encoding ✅
+	- Huffman encoding ✅ https://www.youtube.com/watch?v=U8HAq4NMaBE <2 MIN VIDEO>
+	- Arithamatic coding ⚒️ https://www.youtube.com/watch?v=yNO8rHHjG4A
+	---------------------------------------------------------------------------------------------------------------------------------
+	--	https://www.youtube.com/watch?v=iabZXtU9J4w																				   --
+	--	- Low pass filter ✅ =  1 / 9 * [ 1 1 1 ; 1 1 1 ; 1 1 1 ] 																  --
+	--	- High pass filter ✅ =  [ -1 -1 -1 ; -1 8 -1 ; -1 -1 -1 ] 																  --
+	--  # jsut multiply the filter with the image sum all values and replave central value with the ans.						    -- 
+	--	- Median filter ✅ 																										  --
+	--  # just arrange all elements of the matrix in an ascending order and replace the central value of the matrix with the median --
+	---------------------------------------------------------------------------------------------------------------------------------
+	- Vector quantization ❌
+	- Improved Gray Scale Quantization ❌
+	- Region growing problems ❌
+	----------------------------------------------------------------------------------------------------------------------------------
+	--	https://www.youtube.com/watch?v=eEXfxnZD3Ks        
+	--	- Sobel operator ✅                               
+	--	- Prewitt operator ✅
+	--	- Robert operaor ✅
+	--	- Laplacian fileter ✅
+	----------------------------------------------------------------------------------------------------------------------------------
+
+	
+(1) Image processing: It refers to manipulations and analysis of digital images using various algorithms and techniques to enhance, 
+extract or modify the contents of the img.
+
+
+(2) Sampling & Quantization: In digital image processing, sampling and quantization are fundamental processes that transform continuous 
+analog signals (such as an image) into a digital format suitable for computation and analysis. 
+
+- Sampling: Sampling involves digitizing the coordinate values of an continues (analog) signal. When we sample an image, we take 
+discrete samples at specific points in both the x-axis (spatially) and the y-axis (amplitude). The sampling rate determines the 
+spatial resolution of the digitized image. More samples lead to better image quality and reduced noise, but it also increases the 
+number of pixels in the image.
+$ Sampling rate: It determines how frequently the subset samples are taken from the signal. It is typically measured in pixels per inch
+- Quantization: is the process of digitizing the amplitude values of the sampled image. It involves dividing the continuous range 
+of gray levels (amplitudes) into a finite number of distinct values. For instance, we might quantize the gray levels into 5 
+different partitions, ranging from black (level 0) to white (level 4). Quantization reduces the continuous amplitude values to 
+a finite set of discrete levels. The number of quantization levels determines the number of gray levels in the digitized image. 
+By quantizing the amplitude, we create a digital representation of the image suitable for further processing.
+
+Sampling determines the spatial resolution (how many pixels represent the image), while quantization determines the gray levels 
+(how finely the intensity is represented). Together, they impact the overall quality and clarity of digital images.
+
+
+(3) Image: is defined as a two-dimensional function, F(x,y), where x and y are spatial coordinates, and the amplitude of F at any pair of 
+coordinates (x,y) is called the intensity of that image at that point. In other words, an image can be defined by a two-dimensional array 
+specifically arranged in rows and columns. As we know, images are represented in rows and columns we have the following syntax in which 
+images are represented: 
+
+	f(x,y) = [ f(0,0)  f(0,1)  f(0,2)  ]
+             [ f(1,0)  f(1,1)  f(1,2)  ]		
+
+
+(4) Image File Formats: describes how data related to the image will be stored. Data can be stored in compressed, Uncompressed, or vector 
+format. Each format of the image has a different advantage and disadvantage. 
+	
+	+ BMP (Bitmap):
+		BMP is an uncompressed raster image format.
+		Image file is developed by Microsoft for windows
+		It stores pixel data directly, without any compression or loss of quality.
+		Each pixel is represented by a specific color value.
+		BMP files tend to be large in size due to lack of compression.
+		Commonly used for simple graphics and icons.
+		Due to BMP being a proprietary format, it is generally recommended to use TIFF files.
+		+ Use Cases:
+			BMP is suitable when you need high-quality images without any loss of detail.
+			Not recommended for web use due to large file sizes.
+
+	+ TIFF (Tagged Image File Format):
+		TIFF is a flexible image format that supports both lossless and lossy compression.
+		It can store multiple layers, channels, and metadata.
+		TIFF files are commonly used in professional photography and printing.
+		They offer high-quality images but can be large in size.
+		+ Use Cases:
+			Ideal for professional photographers, graphic designers, and print media.
+			Used when preserving image quality is critical (e.g., medical imaging, satellite imagery).
+
+	+ JPEG (Joint Photographic Experts Group)
+		JPEG is a widely used compressed image format.
+		It uses lossy compression, which reduces file size by sacrificing some image quality.
+		Ideal for photographs and web images due to its smaller file size.
+		However, repeated editing and saving of JPEG files can lead to quality degradation.
+		+ Use Cases:
+			Best for web use, where smaller file sizes are essential for faster loading times.
+			Not recommended for images that require high fidelity (e.g., detailed graphics or text).
+			It is a very common format and is good for digital cameras, non-professional prints, E-Mail, Powerpoint, etc.
+	
+ 
+// ------------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE - 3
+// ------------------------------------------------------------------------------------------------------------------------------------- //																
+
+
+(4) Types of edges:
+
+	- Horizontal Edges: These edges occur when there is a sudden change in intensity along the horizontal direction in an image.
+	- Vertical edges occur when there is a sudden change in intensity along the vertical direction in an image.
+	- Diagonal edges result from intensity variations along diagonal directions in an image.
+
+(5) Image segementation: is a fundamental concept in digital image processing. It involves partitioning a digital image into distinct 
+subgroups called image objects or segments. Purpose of Image Segmentation:
+
+	- Complexity Reduction: Image segmentation simplifies the image by breaking it down into smaller, meaningful components.
+	- Analysis Facilitation: By grouping pixels together, we can analyze specific regions of interest more effectively.
+
+Example: Consider an image with chairs and tables. Image segmentation can identify and group all the chairs together. We can then use 
+these labels to specify boundaries, draw lines, or separate important objects from less relevant ones. Types of Image Segmentation 
+Techniques:
+
+	- Threshold Segmentation
+	- Edge based Segmentation
+	- Clustering based Segmentation
+	- Reigon based Segmentation
+	- Graph based Segmentation
+
+Applications:
+
+	- Medical Imaging: Identifying tumors, organs, or anomalies.
+	- Object Detection: Recognizing objects in surveillance or robotics.
+	- Manufacturing: Quality control and defect detection.
+	- Security: Identifying faces or license plates.
+
+Major Characteristics (criteria on which we do segementation):
+
+ 	- Intensity or Color: 
+	This method groups pixels based on their intensity levels or color values. For grayscale images, intensity 
+	levels are used. Pixels with similar intensity values are grouped together. For color images, each pixel has a color vector 
+	(usually in RGB format). Segmentation can be done by comparing these color vectors.
+
+	- Spatial Proximity: 
+	Spatial proximity refers to the geometric arrangement of pixels in an image. Pixels that are close to each other
+	in terms of position are likely to belong to the same object or region. Techniques like region growing, watershed, and graph-based 
+	segmentation use spatial proximity to group pixels.
+
+(6) Point processing: fundamental technique where individual pixel values are directly transformed to create a new image. These operations 
+are applied to each pixel independently, without considering its neighbors. Point processing involves adjusting the intensity 
+(brightness or contrast) of an image. The concept is simple: map each pixel’s intensity value from the original image to a new value in 
+the processed image. Common point operations include:
+
+	- Brightness adjustment: Shifting pixel values up or down.
+	- Contrast enhancement: Stretching or compressing the intensity range.
+	- Thresholding: Converting grayscale images to binary (black and white) based on a threshold value.
+
+Varoius non linear point processing methods are:
+
+	- Log transformation: 
+	We apply the logarithm function to each pixel intensity value in the image. This compresses the larger values and stretches the 
+	smaller ones. Maps a narrow range of low-intensity input values to a wider range of output values.
+	Applications:
+		+ HDR imaging: 
+			Logarithmic encoding is often used as an intermediate step in High Dynamic Range (HDR) image processing. It allows capturing 
+			a wider range of light variations in a scene and then manipulating them for final display.
+		+ Compression: 
+			Logarithmic transformation can be a part of some image compression algorithms, as it helps to reduce the overall file size 
+			by focusing on the more significant details.
+		- in this "L" is a the max value of the range in which the max value of the matrix lies from 0
+		- and "n" is number raise to "2" that gives "L"
+		- ex: max val in matrix is 120 therfore: L = 2^7 = 128 ; n = 7
+		- S = C(1+R)
+
+	- Power law transformation: 
+	also known as gamma transformation, is a technique used in image processing to manipulate the image's intensity values.	It involves 
+	raising each pixel intensity value to a specified power (gamma). S = C . R ^ Gamma
+	Applications:
+		+ Image Enhancement: 
+			By adjusting gamma, you can improve the visibility of details in either dark or bright regions.
+		+ Gamma Correction: 
+			Many devices, like monitors, have a non-linear response to incoming signals. Gamma correction applies a power-law 
+			transformation to compensate for this and ensure images are displayed accurately.
+
+(7) Point detection: In image processing, point detection refers to identifying isolated spots or pixels in an image that significantly 
+differ from their neighbors. These isolated points often have distinct gray levels compared to the surrounding areas.
+
+
+(1) Segmentation is the separation of one or more regions or objects in an image based on a discontinuity or a similarity criterion. 
+There are prominently three methods of performing segmentation:
+
+	- Pixel Based Segmentation: the goal is to classify individual pixels in an image into different groups or regions.
+	Each pixel is assigned to a specific segment based on its properties
+
+	- Region Based Segmentation: In this segmentation, we grow regions by recursively including the neighboring pixels that are similar 
+	and connected to the seed pixel.  It has various methods:
+
+		- Splitting: involves dividing a region into smaller segments based on certain criteria, such as abrupt changes in 
+		intensity or colour within the region.
+			- Allows for more precise delineation of boundaries within a region
+			- However can lead to over segmenattion
+
+		- Merging: involves merging adjacent regions that share similarity, typically based on some predefined similarity measure. 
+			- Helps in reducing over-segmentation
+			- More complex and sensitive to merging criteria
+
+		- Split Merge: Split & Merge combines the splitting and merging strategies iteratively. It starts by splitting regions that 
+		don't meet certain criteria and then merges adjacent regions that satisfy merging conditions.
+			- Offers a balance between the precision of splitting and the coherence of merging.
+			- Higher computational cost
+	
+	- Edges based segmentation: it is an important concept in digital image processing. It involves dividing images into regions and 
+	objects based abrupt changes in the intensity levels of the pixels. This type has 2 steps:
+		(NOTE: edge is an set of connected pixels that form a boundary between 2 disjoint regions in an image)
+			1. Edge Detection: Locating edges between different regions in the image.
+			2. Edge linking: We try to refine the edge detection by linking the adjacent edges and combine to form the whole object.  
+			we group these individual pixels into meaningful edges or contours. Edge linking aims to connect adjacent edge pixels to form 
+			continuous curves or boundaries.
+		Pros :
+			- This approach is similar to how the humans brain approaches the segmentation task.
+			- Works well in images with good contrast between object and background.
+		Limitations:
+			- Does not work well on images with smooth transitions and low contrast.
+			- Sensitive to noise.
+			- Robust edge linking is not trivial and easy to perform.
+		Applications:
+			- Medical science
+			- Statellite images
+			- Robotic vision
+
+(3) Methods of Edge detection: <https://www.youtube.com/watch?v=tNJUiHVQxaA>
+
+	<NOTE: Multiply the mask with the image and add all values replace the ans with the central value>
+
+	[1] Prewit operator: The Prewitt operator was developed by Judith M. S. Prewitt. Prewitt operator is used for edge detection in an
+	image. Prewitt operator computes the gradient magnitude in both horizontal and vertical directions.
+	Wherever there is a sudden change in pixel intensities, an edge is detected by the mask. Since the edge is defined as the change in 
+	pixel intensities, it can be calculated by using differentiation. Prewitt mask is a first-order derivative mask. In graph 
+	representation of Prewitt-mask’s result, the edge is represented by the local maxima or local minima. Both the first and second 
+	derivative masks follow these three properties:
+		- More weight means more edge detection.
+		- The opposite sign should be present in the mask. (+ and -)
+		- The Sum of the mask values must be equal to zero.
+	Prewitt operator provides us two masks one for detecting edges in horizontal direction and another for vertical direction:
+		- Prewitt Operator [X-axis] = [ -1 0 1; -1 0 1; -1 0 1]
+		- Prewitt Operator [Y-axis] = [-1 -1 -1; 0 0 0; 1 1 1]
+	Steps:
+		Read the image.
+		Convert into grayscale if it is colored.
+		Convert into the double format.
+		Define the mask or filter.
+		Detect the edges along X-axis.
+		Detect the edges along Y-axis.
+		Combine the edges detected along the X and Y axes.
+		Display all the images.
+
+	[2] Sobel Operator: is slower to compute than the Robert Cross operator but provides better results. It uses larger convolution 
+	kernels, which smooth the input image more effectively and make it less sensitive to noise. It is named after Irwin Sobel and Gary 
+	Feldman. Like the Prewitt operator Sobel operator is also used to detect two kinds of edges in an image:
+		- Vertical direction
+		- Horizontal direction
+	The difference between Sobel and Prewitt Operator is that in Sobel operator the coefficients of masks are adjustable according to our 
+	requirement provided they follow all properties of derivative masks.
+		- [X-axis] = [ -1 -2 -1 ; 0  0  0 ;  1  2  1 ]
+		- [Y-axix] = [ -1  0  1 ; -2 0  2 ; -1  0  1 ]
+	Advantages:
+		+ Smoothing and Noise Reduction
+		+ Efficiency: The Sobel operator is relatively simple and computationally efficient.
+
+	[3] Robert Operator: This gradient-based operator computes the sum of squares of the differences between diagonally adjacent pixels 
+	in an image through discrete differentiation. Then the gradient approximation is made. 
+	It uses the following 2 x 2 kernels or masks –  
+		- Mx = [1 0; 0 -1] ; My = [0 1; -1 0]
+	Advantages:
+		- Detection of edges and orientation are very easy
+		- Diagonal direction points are preserved
+	Limitations:
+		- Very sensitive to noise
+		- Not very accurate in edge detection
+
+	[4] Laplacian filter: is a second-order derivative filter used in edge detection, in digital image processing. In 1st order 
+	derivative filters like Sobel & Prewit, we detect the edge along with horizontal and vertical directions separately and then combine 
+	both. But using the Laplacian filter we detect the edges in the whole image at once. In this filter also The sum of all values of 
+	the filter is always 0 same as Prewit filter. 
+	The Laplacian Filter is = [0 1 0; 1 -4 1; 0 1 0] - here the central value of filter is negative.
+  		Or
+	Filter is = [0 -1 0; -1 4 -1; 0 -1 0] - here the central value of filter is positive.  	  	
+	Disadvantages:
+		- No directional information about the edge is given.
+		- We should note that first derivative operators exaggerate the effects of noise. Second derivatives will exaggerate noise 
+		twice as much.
+	
+
+// ------------------------------------------------------------------------------------------------------------------------------------- //
+												       			MODULE - 4
+// ------------------------------------------------------------------------------------------------------------------------------------- //
+
+(1) Unitary transformation: is a mathematical operation that preserves the inner product of vectors. A unitary transform, also known as a 
+unitary matrix or unitary operator, is a linear transformation that preserves the length of vectors and maintains orthogonality. 
+In simpler terms, it's a transformation that doesn't distort distances or angles between vectors. Unitary transforms are needed in 
+image processing to 
+	- maintain signal energy, 
+	- compact information, 
+	- decorrelate data, 
+	- preserve information, (crucial for maintaining the integrity of the image data and ensuring that important details are not lost during processing)
+	- ensure efficiency, and 
+	- enable reversible transformations, 
+all of which are fundamental for tasks like image analysis, compression, and enhancement. Mathematically, a matrix U is unitary if its 
+conjugate transpose, denoted by U†, is equal to its inverse 
+	OR
+U multiplies by U† is equal to identity matrix; ` UU† = I `
+
+
+(2) Discrete fourier transform: The Fourier Transform is a mathematical tool used to decompose a signal into its frequency components. 
+In the case of image processing, the Fourier Transform can be used to analyze the frequency content of an image, which can be useful for 
+tasks such as image filtering and feature extraction. Its properties are:
+	- Linearity:
+		The DFT is linear. This means that the DFT of a weighted sum of two or more signals is equal to the same weighted sum of the 
+		individual DFTs. This property allows you to analyze signals that are composed of multiple components.
+	- Periodicity:
+		If a discrete signal has a periodic nature, then its DFT also has the same periodicity. The relationship between the signal's 
+		fundamental frequency and its frequency components remains the same.
+	- Circular Frequency Shift: 
+		Multiplying a signal by a complex exponential with a specific frequency results in a circular shift of its DFT. This allows you 
+		to introduce specific frequency components into a signal.
+	- Convolution:
+		The convolution theorem is one of the most powerful properties of the DFT. It states that the DFT of the convolution of two 
+		signals is equal to the product of their individual DFTs. This allows you to efficiently compute the convolution in the frequency 
+		domain, which can be computationally expensive in the time domain.
+	- Parseval's Relation: 
+		states that the sum of the squares of the magnitudes of the DFT coefficients is proportional to the signal's energy. This 
+		property allows you to measure the signal's power spectrum.
+
+		
+(3) FFT: is an efficient algorithm that computes the Discrete Fourier Transform (DFT) of a sequence or its inverse (IDFT). Directly 
+computing the DFT using its definition can be slow and impractical, especially for large data sets. The FFT rapidly computes these 
+transformations by factorizing the DFT matrix into a product of sparse (mostly zero) factors. As a result, it significantly reduces the 
+computational complexity from O(n^2) (where n is the data size) to O(n log n). 
+	Applications:
+		+ Image compression, denoising, and feature extraction
+ 
+
+(4) Discrete hadamrad tranform: (DHT), also known as the Walsh transform or Walsh-Hadamard transform, is a mathematical operation used 
+to analyze discrete signals. It is a mathematical operation that transforms a vector of real or complex numbers into another vector.
+
+H† (transpose) = H ; https://www.youtube.com/watch?v=eWFC8rU1z10
+H = [ 1  1 ]			H = [ 1  1   1  1 ]
+	[ 1 -1 ]2X2				[ 1 -1   1 -1 ]
+							[ 1  1 |-1 -1 ] --|-> this part stays negative
+							[ 1 -1 |-1  1 ] --|
+
+(5) Fast hadamard transform: The FWHT is an efficient algorithm for computing the WHT. A naive implementation of the WHT would have a 
+computational complexity of O(n2). However, the FWHT reduces this complexity to O(nlogn). The FWHT requires O(n log n) additions and 
+subtraction operations. It is a divide and conquer algorithm which breaks down the WHT recursively:
+	f(x,u)  =  - 1 / N  ∑^n-1 bi(x) * bi(u)
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE - 5
+// ------------------------------------------------------------------------------------------------------------------------------------- //
+
+
+(1) Image compression: is a technique used to reduce the size of digital images while preserving their essential visual information. 
+It’s particularly important for efficient storage and transmission of images. There are two main types of image compression: 
+lossy and lossless.
+
+(2) Redundancy: refers to the unnecessary information present in an image that can be removed without affecting its essential content.
+Image compression techniques exploit redundancy to reduce file size while maintaining visual quality. Types of redundancy in images 
+include:
+
+	- Coding redundancy: 
+		Refers to inefficinecy in represenating the image data using the fixed-length codes where variable-length 
+      	codes can be used for more compact representations. ex: For instance, encoding the letter 'e' with the same number of bits as 
+	  	the letter 'q' would be inefficient if 'e' appears much more frequently.
+
+	- Interpixel redundancy: 
+		arises from the correlation or similarity between neighbouring pixels in images or spatial data. ex: In 
+	  	an image, adjacent pixels often have similar colours or intensity levels, especially in smooth regions. Storing each pixel's value 
+	   	independently leads to  redundancy because the values of neighbouring pixels can be predicted from each other. 
+	   	Predictive coding methods exploit interpixel redundancy by predicting the value of a pixel based on its neighbouring pixels.
+	   	Techniques like delta encoding, differential pulse-code modulation (DPCM), and motion compensation are ex: of it.
+
+	- Psychovisual redundancy: 
+		refers to redundancies in visual perception that can be leveraged in image and video compression. The 
+	  	human visual system is less sensitive to certain types of image details, such as high-frequency components or subtle colour 
+	  	variations. Removing or reducing such details can lead to significant compression gains without perceptible loss in quality. 
+	  	Psychovisual coding techniques take advantage of perceptual limitations and characteristics of the human visual system. 
+	  	For example, transform-based  methods like Discrete Cosine Transform (DCT) in JPEG compression.
+
+	- Spatial Redundancy: Repetition of similar patterns or textures within an image.
+
+	- Spectral Redundancy: Correlation / similarity between color channels in a color image.
+
+	- Temporal Redundancy: In video compression, this refers to similarities between consecutive frames.
+
+(3) Fidelity criteria: evaluate the quality of a compressed image compared to the original. They help determine how well the compression 
+algorithm preserves important features of the image while reducing the image size.
+
+(4) Difference between Lossy Compression and Lossless Compression:
+1. Lossy compression is the method which eliminate the data which is not noticeable.	
+	While Lossless Compression does not eliminate the data which is not noticeable.
+2. In Lossy compression, A file does not restore or rebuilt in its original form.	
+	While in Lossless Compression, A file can be restored in its original form.
+3. In Lossy compression, Data’s quality is compromised.	
+	But Lossless Compression does not compromise the data’s quality.
+4. Lossy compression reduces the size of data.	
+	But Lossless Compression does not reduce the size of data.
+5. Lossy compression is used in Images, audio, video.	
+	Lossless Compression is used in Text, images, sound.
+6.	Lossy compression has more data-holding capacity.	
+	Lossless Compression has less data-holding capacity than Lossy compression technique.
+7.	Lossy compression is also termed as irreversible compression.	
+	Lossless Compression is also termed as reversible compression.
+
+(4) Lossless compression techniques:
+
+	- Run-Length Encoding (RLE): 
+	is a simple and widely used compression algorithm. It is particularly effective for data with long 
+	sequences of repeated characters. This algorithm replaces the original sub-sequence of string with a pair of the character repeated
+	and the number of times it was repeated. RLE works well for data with repetitive patterns but may not be suitable for images where
+	pixel values are inconsecutive.
+	ex: A string in the image data: "aaabbbbbbbbbbaaaaaaaa" can be coded as (3,a)(10,b)(8,a)
+
+	- Arithmetic coding: 
+	is an entropy-based technique that achieves better compression results than RLE & huffman. It assigns variable-length codes based on 
+	the probability of symbols appearing in the data. This means frequently occurring characters are represented with fewer bits, and 
+	less frequent ones with more, resulting in a compressed overall size. In this a sequence of symbols is encoded into a single 
+	fractional value within the interval [0, 1]. The entire sequence is represented by a single fraction, and the decoder can 
+	reconstruct the original sequence from this fraction. 
+		+ Arithmetic coding encodes the entire message as a single number, 
+		+ while Huffman coding assigns unique bit sequences to each symbol.
+
+		+ Arithmetic codes are dynamically based on the encountered symbols, 
+		+ whereas Huffman coding uses pre-defined codes.
+	While powerful, arithmetic coding can be computationally more complex than Huffman coding.
+
+	- Huffman encoding: 
+	It was introduced by David A. Huffman. It aims to compress data efficiently by assigning variable-length codes to input characters 
+	based on their frequencies. The lengths of the assigned codes are determined by how often each character appears in the data.
+	The process involves creating a tree based on the frequencies of characters and assigning a code to each character. This resulting 
+	tree is then used for both encoding and decoding the data. Huffman coding ensures unambiguous decoding by using prefix codes, where 
+	no code is a prefix of another code. Huffman coding is widely used in file compression formats (e.g., ZIP, JPEG, MP3) and 
+	communication protocols. It efficiently represents data while minimizing redundancy
+
+(5) Vector quantization & imporved gray scale quantization - NDY
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE - 6
+// ------------------------------------------------------------------------------------------------------------------------------------- //
+
+
+(1) Digital video processing: involves manipulating video signals to enhance, compress, or analyze video content. In this field, we work 
+with video data, which consists of a sequence of frames. Each frame represents an image captured at a specific time. Video processing is 
+closely related to image processing. However, instead of working with individual images, we process entire video sequences. The primary 
+goals of video processing include:
+	Enhancement: Improving the visual quality of video frames by adjusting brightness, contrast, and color balance.
+	Compression: Reducing the amount of data needed to represent video while maintaining acceptable quality.
+	Analysis: Extracting useful information from video, such as detecting objects, tracking motion, or recognizing patterns.
+Video codecs (such as MPEG, AVC, and VP9) encode and decode video data for efficient storage and transmission.
+
+(2) Sampled video: refers to video content that has been captured or generated at specific intervals (time points) rather than 
+continuously. A video is a series of images called frames captured across a interval of time, Sampling refers to the process of selecting 
+specific frames from this continuous stream of video data.
+	- Uses: It is usefull reducing the video data while still representing the essential content.
+
+(3) Compare composite and component video. 
+
+- Composite Video:
+	Composite video combines all video information into a single signal.
+	It uses a single cable (usually marked yellow) to carry both video and audio signals.
+	However, it doesn’t support high-definition (HD) content or progressive scan images.
+	The video signal is heavily compressed, resulting in lower resolution and picture clarity.
+	Composite video cables suffer from radio frequency interference, which degrades picture quality.
+	Use case: Composite video is mostly used with older equipment, such as VCRs or older video game systems, 
+	that do not support component video
+
+- Component Video:
+	Component video separates the video signal into three distinct components: Y, Pb, and Pr.
+	Each component is transmitted through a separate cable:
+		Y (green): Transmits brightness information.
+		Pb (blue) and Pr (red): Transmit the blue and red color components.
+	Because component video is spread across three separate cables, it doesn’t need heavy compression.
+	Supports HD resolutions up to 1080 and progressive scan images for smoother visuals.
+	Use case: Component video provides superior picture quality and is suitable for modern high-definition devices
+
+
+(4) Explain any three video file formats. 
+
+- MPEG (Moving Picture Experts Group):  
+	• MPEG is a widely used standard for digital video compression and encoding.  
+	• It has higher video quality but higher file size as well
+	• Compatible with some devices (as long as they have an MPEG-2 encoder), but not widely supported on mobile devices.
+	• Various MPEG formats include MPEG-1, MPEG-2, MPEG-4, and MPEG-7, each optimized 
+	for different applications.  
+	• Applications: MPEG formats are used for broadcasting, streaming media over the internet, 
+	DVD and Blu-ray discs, digital television (DTV), and video conferencing.  
+
+- AVI (Audio Video Interleave):  
+	• AVI is a container format developed by Microsoft that can contain both audio and video data.
+	• It supports multiple audio and video codecs, making it versatile for different applications.  
+	• Applications: AVI files are commonly used for storing video clips, movie trailers, and other 
+	multimedia content. They are also compatible with various media players and editing 
+	software 
+
+- MP4 (MPEG-4 Part 14):  
+	• MP4 is a widely used digital multimedia container format that can store video, audio, subtitles, and still images.  
+	• It supports high-quality video compression with efficient encoding techniques.  
+	• developed by  International Organization for Standardization (ISO)
+	• Compatible with most devices, including mobile phones.
+	• High video quality, but also smaller file size compared to MPEG.
+	• Applications: MP4 is used for streaming video over the internet, mobile devices, social 
+	media platforms, video sharing websites (e.g., YouTube), and digital video players.  
+
+
