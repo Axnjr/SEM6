@@ -41,29 +41,33 @@ NDY - NUMERICALS
 	----------------------------------------------------------------------------------------------------------------------------------
 
 	
-(1) Image processing: It refers to manipulations and analysis of digital images using various algorithms and techniques to enhance, 
-extract or modify the contents of the img.
+1. Image processing: 
+It refers to manipulations and analysis of digital images using various algorithms and techniques to enhance, extract or modify the 
+contents of the img.
 
 
-(2) Sampling & Quantization: In digital image processing, sampling and quantization are fundamental processes that transform continuous 
+2. Sampling & Quantization: 
+In digital image processing, sampling and quantization are fundamental processes that transform continuous 
 analog signals (such as an image) into a digital format suitable for computation and analysis. 
 
-- Sampling: Sampling involves digitizing the coordinate values of an continues (analog) signal. When we sample an image, we take 
-discrete samples at specific points in both the x-axis (spatially) and the y-axis (amplitude). The sampling rate determines the 
-spatial resolution of the digitized image. More samples lead to better image quality and reduced noise, but it also increases the 
-number of pixels in the image.
-$ Sampling rate: It determines how frequently the subset samples are taken from the signal. It is typically measured in pixels per inch
-- Quantization: is the process of digitizing the amplitude values of the sampled image. It involves dividing the continuous range 
-of gray levels (amplitudes) into a finite number of distinct values. For instance, we might quantize the gray levels into 5 
-different partitions, ranging from black (level 0) to white (level 4). Quantization reduces the continuous amplitude values to 
-a finite set of discrete levels. The number of quantization levels determines the number of gray levels in the digitized image. 
-By quantizing the amplitude, we create a digital representation of the image suitable for further processing.
+	- Sampling: Sampling involves digitizing the coordinate values of an continues (analog) signal. When we sample an image, we take 
+	discrete samples at specific points in both the x-axis (spatially) and the y-axis (amplitude). The sampling rate determines the 
+	spatial resolution of the digitized image. More samples lead to better image quality and reduced noise, but it also increases the 
+	number of pixels in the image. Sampling rate: It determines how frequently the subset samples are taken from the signal. It is 
+	typically measured in pixels per inch
+
+	- Quantization: is the process of digitizing the amplitude values of the sampled image. It involves dividing the continuous range 
+	of gray levels (amplitudes) into a finite number of distinct values. For instance, we might quantize the gray levels into 5 
+	different partitions, ranging from black (level 0) to white (level 4). Quantization reduces the continuous amplitude values to 
+	a finite set of discrete levels. The number of quantization levels determines the number of gray levels in the digitized image. 
+	By quantizing the amplitude, we create a digital representation of the image suitable for further processing.
 
 Sampling determines the spatial resolution (how many pixels represent the image), while quantization determines the gray levels 
 (how finely the intensity is represented). Together, they impact the overall quality and clarity of digital images.
 
 
-(3) Image: is defined as a two-dimensional function, F(x,y), where x and y are spatial coordinates, and the amplitude of F at any pair of 
+3. Image: 
+is defined as a two-dimensional function, F(x,y), where x and y are spatial coordinates, and the amplitude of F at any pair of 
 coordinates (x,y) is called the intensity of that image at that point. In other words, an image can be defined by a two-dimensional array 
 specifically arranged in rows and columns. As we know, images are represented in rows and columns we have the following syntax in which 
 images are represented: 
@@ -72,7 +76,8 @@ images are represented:
              [ f(1,0)  f(1,1)  f(1,2)  ]		
 
 
-(4) Image File Formats: describes how data related to the image will be stored. Data can be stored in compressed, Uncompressed, or vector 
+4. Image File Formats: 
+describes how data related to the image will be stored. Data can be stored in compressed, Uncompressed, or vector 
 format. Each format of the image has a different advantage and disadvantage. 
 	
 	+ BMP (Bitmap):
@@ -112,7 +117,7 @@ format. Each format of the image has a different advantage and disadvantage.
 // ------------------------------------------------------------------------------------------------------------------------------------- //																
 
 
-(4) Types of edges:
+4. Types of edges:
 
 	- Horizontal Edges: These edges occur when there is a sudden change in intensity along the horizontal direction in an image.
 	- Vertical edges occur when there is a sudden change in intensity along the vertical direction in an image.
