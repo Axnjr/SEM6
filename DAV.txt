@@ -267,7 +267,7 @@ best suitable for short-term forecasting.
 
 
 3. ARIMA Model:
-stands for autoregressive integrated moving average model, it is a widely used technique for time serial forcasting, and can be used in
+stands for autoregressive integrated moving average model, it is a widely used technique for time series forcasting, and can be used in
 various feilds like finnace, real estate, etc. It is specified by three components or parameters (p,q d):
 	- Auto-regressive component (p):
 		a regression model that utilizes the dependent relationship between a current observation and observations over a previous 
