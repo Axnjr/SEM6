@@ -368,7 +368,8 @@ H = [ 1  1 ]			H = [ 1  1   1  1 ]
 							[ 1  1 |-1 -1 ] --|-> this part stays negative
 							[ 1 -1 |-1  1 ] --|
 
-5. Fast hadamard transform: The FWHT is an efficient algorithm for computing the WHT. A naive implementation of the WHT would have a 
+5. Fast hadamard transform: 
+The FWHT is an efficient algorithm for computing the WHT. A naive implementation of the WHT would have a 
 computational complexity of O(n2). However, the FWHT reduces this complexity to O(nlogn). The FWHT requires O(n log n) additions and 
 subtraction operations. It is a divide and conquer algorithm which breaks down the WHT recursively:
 	f(x,u)  =  - 1 / N  ∑^n-1 bi(x) * bi(u)
@@ -379,11 +380,13 @@ subtraction operations. It is a divide and conquer algorithm which breaks down t
 // ------------------------------------------------------------------------------------------------------------------------------------- //
 
 
-(1) Image compression: is a technique used to reduce the size of digital images while preserving their essential visual information. 
+1. Image compression: 
+is a technique used to reduce the size of digital images while preserving their essential visual information. 
 It’s particularly important for efficient storage and transmission of images. There are two main types of image compression: 
 lossy and lossless.
 
-(2) Redundancy: refers to the unnecessary information present in an image that can be removed without affecting its essential content.
+2. Redundancy: 
+refers to the unnecessary information present in an image that can be removed without affecting its essential content.
 Image compression techniques exploit redundancy to reduce file size while maintaining visual quality. Types of redundancy in images 
 include:
 
