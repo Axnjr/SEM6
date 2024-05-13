@@ -381,11 +381,12 @@ useful when dealing with large volumes of text-based data that would be resource
 		
 
 2. Text summarization: 
-is the process of creating a concise and coherent version of a longer document. Challenges:
-	Content Selection: Choosing the most relevant sentences or phrases.
-	Coherence: Ensuring that the summary flows logically.
-	Handling Ambiguity: Dealing with polysemous words and context.
-	Preserving Context: Capturing the context of the original text.
+is the process of creating a concise and coherent version of a longer document. 
+	+ Challenges:
+		Content Selection: Choosing the most relevant sentences or phrases.
+		Coherence: Ensuring that the summary flows logically.
+		Handling Ambiguity: Dealing with polysemous words and context.
+		Preserving Context: Capturing the context of the original text.
 
 
 3. Text analysis Steps:
@@ -400,8 +401,7 @@ is the process of creating a concise and coherent version of a longer document. 
 		identifying word boundaries and handling punctuation.
 	+ Sentence Breaking
 		- Identify and separate individual sentences in the text.
-		Algorithms analyze the text to determine where one sentence ends and another begins. This is crucial for tasks that 
-		require understanding the context of sentences.
+		Algorithms analyze the text to determine where one sentence ends and another begins. 
 	+ Part of Speech Tagging:
 		- Assign a grammatical category (part of speech) to each token in a sentence.
 		Machine learning models or rule-based systems analyze the context and relationships between words to assign 
@@ -409,7 +409,7 @@ is the process of creating a concise and coherent version of a longer document. 
 	+ Chunking
 		- Identify and group related words (tokens) together, often based on the part-of-speech tags.
 		Chunking helps in identifying phrases or meaningful chunks within a sentence. This step is useful for extracting 
-		information about specific entities or relationships between words.
+		information about the relationships between words.
 	+ Syntax Parsing
 		- Analyze the grammatical structure of sentences to understand relationships between words.
 		Syntax parsing involves creating a syntactic tree that represents the grammatical structure of a sentence. This 
