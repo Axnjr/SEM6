@@ -243,7 +243,8 @@ There are prominently three methods of performing segmentation:
 			- Statellite images
 			- Robotic vision
 
-(3) Methods of Edge detection: <https://www.youtube.com/watch?v=tNJUiHVQxaA>
+9. Methods of Edge detection: 
+	<https://www.youtube.com/watch?v=tNJUiHVQxaA>
 
 	<NOTE: Multiply the mask with the image and add all values replace the ans with the central value>
 
@@ -310,7 +311,8 @@ There are prominently three methods of performing segmentation:
 												       			MODULE - 4
 // ------------------------------------------------------------------------------------------------------------------------------------- //
 
-(1) Unitary transformation: is a mathematical operation that preserves the inner product of vectors. A unitary transform, also known as a 
+1. Unitary transformation: 
+is a mathematical operation that preserves the inner product of vectors. A unitary transform, also known as a 
 unitary matrix or unitary operator, is a linear transformation that preserves the length of vectors and maintains orthogonality. 
 In simpler terms, it's a transformation that doesn't distort distances or angles between vectors. Unitary transforms are needed in 
 image processing to 
@@ -326,7 +328,8 @@ conjugate transpose, denoted by U†, is equal to its inverse (conjugate = add -
 U multiplies by U† is equal to identity matrix; ` UU† = I `
 
 
-(2) Discrete fourier transform: The Fourier Transform is a mathematical tool used to decompose a signal into its frequency components. 
+2. Discrete fourier transform: 
+The Fourier Transform is a mathematical tool used to decompose a signal into its frequency components. 
 In the case of image processing, the Fourier Transform can be used to analyze the frequency content of an image, which can be useful for 
 tasks such as image filtering and feature extraction. Its properties are:
 	- Linearity:
@@ -343,11 +346,12 @@ tasks such as image filtering and feature extraction. Its properties are:
 		signals is equal to the product of their individual DFTs. This allows you to efficiently compute the convolution in the frequency 
 		domain, which can be computationally expensive in the time domain.
 	- Parseval's Relation: 
-		states that the sum of the squares of the magnitudes of the DFT coefficients is proportional to the signal's energy. This 
+		states that the sum of the squares of the DFT coefficients is proportional to the signal's energy. This 
 		property allows you to measure the signal's power spectrum.
 
 		
-(3) FFT: is an efficient algorithm that computes the Discrete Fourier Transform (DFT) of a sequence or its inverse (IDFT). Directly 
+3. FFT: 
+is an efficient algorithm that computes the Discrete Fourier Transform (DFT) of a sequence or its inverse (IDFT). Directly 
 computing the DFT using its definition can be slow and impractical, especially for large data sets. The FFT rapidly computes these 
 transformations by factorizing the DFT matrix into a product of sparse (mostly zero) factors. As a result, it significantly reduces the 
 computational complexity from O(n^2) (where n is the data size) to O(n log n). 
@@ -355,7 +359,7 @@ computational complexity from O(n^2) (where n is the data size) to O(n log n).
 		+ Image compression, denoising, and feature extraction
  
 
-(4) Discrete hadamrad tranform: (DHT), also known as the Walsh transform or Walsh-Hadamard transform, is a mathematical operation used 
+4. Discrete hadamrad tranform: (DHT), also known as the Walsh transform or Walsh-Hadamard transform, is a mathematical operation used 
 to analyze discrete signals. It is a mathematical operation that transforms a vector of real or complex numbers into another vector.
 
 H† (transpose) = H ; https://www.youtube.com/watch?v=eWFC8rU1z10
@@ -364,7 +368,7 @@ H = [ 1  1 ]			H = [ 1  1   1  1 ]
 							[ 1  1 |-1 -1 ] --|-> this part stays negative
 							[ 1 -1 |-1  1 ] --|
 
-(5) Fast hadamard transform: The FWHT is an efficient algorithm for computing the WHT. A naive implementation of the WHT would have a 
+5. Fast hadamard transform: The FWHT is an efficient algorithm for computing the WHT. A naive implementation of the WHT would have a 
 computational complexity of O(n2). However, the FWHT reduces this complexity to O(nlogn). The FWHT requires O(n log n) additions and 
 subtraction operations. It is a divide and conquer algorithm which breaks down the WHT recursively:
 	f(x,u)  =  - 1 / N  ∑^n-1 bi(x) * bi(u)
