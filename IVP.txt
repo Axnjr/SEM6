@@ -321,7 +321,7 @@ image processing to
 	- ensure efficiency, and 
 	- enable reversible transformations, 
 all of which are fundamental for tasks like image analysis, compression, and enhancement. Mathematically, a matrix U is unitary if its 
-conjugate transpose, denoted by U†, is equal to its inverse 
+conjugate transpose, denoted by U†, is equal to its inverse (conjugate = add -ve "2-i" becomes "2+i") 
 	OR
 U multiplies by U† is equal to identity matrix; ` UU† = I `
 
