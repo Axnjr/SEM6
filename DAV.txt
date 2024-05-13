@@ -163,7 +163,7 @@ function into the range [0, 1], making it suitable for modelling probabilities.
 - Properties:
 	Its dependent variables follow bernoullis theoram
 	Estimation is based on maximum likelihood
-	Does not evaluate coefficient of detrmination
+	Does not evaluate coefficient of determination
 	Models fitness is accessed through Concordence
 
 - Advantages:
