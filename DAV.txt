@@ -181,9 +181,14 @@ Equation of logistic regression y(x) = e^(a0 + a1 * x1 + a2 * x2 + … + ai * xi
 is a powerful statistical modeling technique that extends ordinary linear regression. GLMs provide a flexible framework for modeling 
 relationships between response variables and predictors. Unlike simple linear regression, GLMs allow the relationship between the 
 response variable and predictors to be more complex. GLM models allow us to build a linear relationship between the response and 
-predictors, even though their underlying relationship is not linear. This is made possible by using a link function, which links the 
-response variable to a linear model. This link function connects the linear predictor (a combination of predictors) to the expected value 
-of the response variable. Examples of link functions include the identity link, log link, and inverse link.
+predictors, even though their underlying relationship is not linear. GLMs consist of three main components: 
+	+ a random component: 
+		representing the response variable's probability distribution, 
+	+ a systematic component: 
+		describing the linear relationship between predictors and the response, 
+	+ a link function: 
+		connects the linear predictor (a combination of predictors) to the expected value of the response variable. 
+		Examples of link functions include the identity link, log link, and inverse link.
 	Features:
 		+ Flexibility: 
 			GLMs can model a wide range of relationships between the response and predictor variables, including linear, logistic, 
@@ -449,6 +454,7 @@ is the process of creating a concise and coherent version of a longer document.
 	
 	
 5. Sentiment Analysis:
+also known as opinion mining, aims to determine the emotional tone or sentiment expressed in text.
 There are two main approaches to sentiment analysis:
 	+ Lexicon-Based Approach:
 		This method relies on a predefined list of words with sentiment scores. These words are categorized as positive, negative, or 
@@ -459,7 +465,9 @@ There are two main approaches to sentiment analysis:
 		This method uses machine learning algorithms to automatically learn the sentiment of text data. It involves training the 
 		algorithms on a large dataset of labeled text where each piece of text is categorized as positive, negative, or neutral.
 		The algorithms learn patterns in the data and can then be used to predict the sentiment of new, unseen text. Machine learning 
-		approaches can be more accurate than lexicon-based methods, but they require a lot of training data and can be computationally expensive.
+		approaches can be more accurate than lexicon-based methods, but they require a lot of training data and can be computationally 
+		expensive. Common machine learning algorithms include Naive Bayes, Support Vector Machines (SVM), and deep learning models 
+		(e.g. recurrent neural networks or transformers).
 	+ Hybrid Approach: 
 		This approach combines lexicon-based and machine learning methods to leverage the strengths of both.
 	+ Aspect-Based Sentiment Analysis: 
@@ -469,14 +477,99 @@ There are two main approaches to sentiment analysis:
 The best method for sentiment analysis depends on the specific task and the available resources.
 
 
+6. Gaining insights - NDY
 
 
+// ------------------------------------------------------------------------------------------------------------------------------------ //
+																MODULE - 5
+// ------------------------------------------------------------------------------------------------------------------------------------ //
 
 
+1. Data import and export in R: 
+	Importing Data into R
+		- Text Files (.csv, .txt): 
+			The most common approach for small to medium datasets. R provides functions like read.csv, read.table 
+			to import data from comma-separated values (CSV) and tab-delimited files respectively. You can specify arguments within these 
+			functions to handle details like headers, delimiters, and missing values.
+			ex: 
+				# Load the data from the CSV file
+				iris_data <- read.csv("iris.csv")
+				# Check the first few rows of the data
+				head(iris_data)
+
+		- Excel Files (.xls, .xlsx): 
+			While R can read Excel files, it's generally recommended to export the data as CSV first to avoid 
+			potential formatting issues. Alternatively, packages like "readxl" offer more control over importing Excel files.
+			ex:
+				library(readxl)
+				### Import an Excel sheet ###
+				# Read the first sheet of latitude.xlsx: latitude_1
+				latitude_1 <- read_excel("latitude.xlsx", sheet = 1)
+
+		- Other File Formats: 
+			R offers functionalities to import data from various formats like SPSS (.sav) or SAS (.xpt) through specific packages.
+			ex: 
+				#################### Import SAS data with haven ####################
+				# Load the haven package
+				library(haven)
+				# Import sales.sas7bdat: sales
+				sales <- read_sas("sales.sas7bdat")
+				# Display the structure of sales
+				str(sales)
+
+	Exporting Data from R
+		- Text Files: 
+			Similar to importing, R allows you to export data frames or matrices to CSV or text files using functions like write.csv or 
+			write.table. Again, you can specify arguments to control formatting.
+			ex:
+				# Export the data frame as a tab-delimited text file
+				write.table(modified_data, file = "modified_data.txt", sep = "\t")
+
+		- R Data Objects (.RData, .RDS): 
+			R provides functions like save or saveRDS to save objects like data frames or models in a format native to R. This is useful 
+			for saving your work for later use within R.
+			ex:
+				# Save the model object in R's native format
+				save(my_model, file = "my_model.RData")
+
+		- Other File Formats: 
+			Packages like haven enable exporting data to formats like SPSS or SAS.
+			ex:
+				library(haven)
+				# Export the data frame to SPSS (*.sav) format
+				write_spss(my_data, file = "my_data.sav")
+				# Export the data frame to SAS (*.sav) format
+				write_sas(my_data, file = "my_data.xpt")
 
 
+2. Data Types in R are:
+	numeric – (3,6.7,121)
+	Integer – (2L, 42L; where ‘L’ declares this as an integer)
+	logical – (‘True’)
+	complex – (7 + 5i; where ‘i’ is imaginary number)
+	character – (“a”, “B”, “c is third”, “69”)
+	raw – ( as.raw(55); raw creates a raw vector of the specified length)
 
 
+3. attribute() function: 
+in R Programming Language is used to get all the attributes of data. This function is also used to set new attributes to data.
+
+
+4. Descriptive statistics: 
+Descriptive statistics is a type of statistical analysis that uses quantitative methods to summarize the features of a population sample.
+it is a branch of statistics focused on summarizing, organizing, and presenting data in a clear and understandable way. Its primary aim is 
+to define and analyze the fundamental characteristics of a dataset without making assumptions about the entire data set.
+Here are the main types of descriptive statistics:
+	+ Frequency Distribution: 
+		This describes how often each value appears in the data set. It can be shown in a table or a chart (like a histogram).
+		it is concerned with frequency of each value.
+
+	+ Measures of Central Tendency:  
+		These describes where the "center" of the data is located. Common ones include the mean (average), median (middle value), and 
+		mode (most frequent value).
+
+	+ Measures of Variability (or Dispersion): 
+		These describe how spread out the data is. Examples include range, variance, and standard deviation.
 
 
 
