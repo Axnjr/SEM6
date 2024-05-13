@@ -123,7 +123,8 @@ format. Each format of the image has a different advantage and disadvantage.
 	- Vertical edges occur when there is a sudden change in intensity along the vertical direction in an image.
 	- Diagonal edges result from intensity variations along diagonal directions in an image.
 
-(5) Image segementation: is a fundamental concept in digital image processing. It involves partitioning a digital image into distinct 
+5. Image segementation: 
+is a fundamental concept in digital image processing. It involves partitioning a digital image into distinct 
 subgroups called image objects or segments. Purpose of Image Segmentation:
 
 	- Complexity Reduction: Image segmentation simplifies the image by breaking it down into smaller, meaningful components.
@@ -158,7 +159,8 @@ Major Characteristics (criteria on which we do segementation):
 	in terms of position are likely to belong to the same object or region. Techniques like region growing, watershed, and graph-based 
 	segmentation use spatial proximity to group pixels.
 
-(6) Point processing: fundamental technique where individual pixel values are directly transformed to create a new image. These operations 
+6. Point processing: 
+fundamental technique where individual pixel values are directly transformed to create a new image. These operations 
 are applied to each pixel independently, without considering its neighbors. Point processing involves adjusting the intensity 
 (brightness or contrast) of an image. The concept is simple: map each pixel’s intensity value from the original image to a new value in 
 the processed image. Common point operations include:
@@ -194,11 +196,12 @@ Varoius non linear point processing methods are:
 			Many devices, like monitors, have a non-linear response to incoming signals. Gamma correction applies a power-law 
 			transformation to compensate for this and ensure images are displayed accurately.
 
-(7) Point detection: In image processing, point detection refers to identifying isolated spots or pixels in an image that significantly 
+7. Point detection: In image processing, point detection refers to identifying isolated spots or pixels in an image that significantly 
 differ from their neighbors. These isolated points often have distinct gray levels compared to the surrounding areas.
 
 
-(1) Segmentation is the separation of one or more regions or objects in an image based on a discontinuity or a similarity criterion. 
+8. Segmentation: 
+is the separation of one or more regions or objects in an image based on a discontinuity or a similarity criterion. 
 There are prominently three methods of performing segmentation:
 
 	- Pixel Based Segmentation: the goal is to classify individual pixels in an image into different groups or regions.
@@ -207,16 +210,16 @@ There are prominently three methods of performing segmentation:
 	- Region Based Segmentation: In this segmentation, we grow regions by recursively including the neighboring pixels that are similar 
 	and connected to the seed pixel.  It has various methods:
 
-		- Splitting: involves dividing a region into smaller segments based on certain criteria, such as abrupt changes in 
+		Splitting: involves dividing a region into smaller segments based on certain criteria, such as abrupt changes in 
 		intensity or colour within the region.
 			- Allows for more precise delineation of boundaries within a region
 			- However can lead to over segmenattion
 
-		- Merging: involves merging adjacent regions that share similarity, typically based on some predefined similarity measure. 
+		Merging: involves merging adjacent regions that share similarity, typically based on some predefined similarity measure. 
 			- Helps in reducing over-segmentation
 			- More complex and sensitive to merging criteria
 
-		- Split Merge: Split & Merge combines the splitting and merging strategies iteratively. It starts by splitting regions that 
+		Split Merge: Split & Merge combines the splitting and merging strategies iteratively. It starts by splitting regions that 
 		don't meet certain criteria and then merges adjacent regions that satisfy merging conditions.
 			- Offers a balance between the precision of splitting and the coherence of merging.
 			- Higher computational cost
