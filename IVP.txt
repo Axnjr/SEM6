@@ -415,26 +415,33 @@ include:
 
 	- Temporal Redundancy: In video compression, this refers to similarities between consecutive frames.
 
-(3) Fidelity criteria: evaluate the quality of a compressed image compared to the original. They help determine how well the compression 
+3. Fidelity criteria: 
+evaluate the quality of a compressed image compared to the original. They help determine how well the compression 
 algorithm preserves important features of the image while reducing the image size.
 
-(4) Difference between Lossy Compression and Lossless Compression:
-1. Lossy compression is the method which eliminate the data which is not noticeable.	
+4. Difference between Lossy Compression and Lossless Compression:
+	-Lossy compression is the method which eliminate the data which is not noticeable.	
 	While Lossless Compression does not eliminate the data which is not noticeable.
-2. In Lossy compression, A file does not restore or rebuilt in its original form.	
+
+	-In Lossy compression, A file does not restore or rebuilt in its original form.	
 	While in Lossless Compression, A file can be restored in its original form.
-3. In Lossy compression, Data’s quality is compromised.	
+
+	-In Lossy compression, Data’s quality is compromised.	
 	But Lossless Compression does not compromise the data’s quality.
-4. Lossy compression reduces the size of data.	
+
+	-Lossy compression reduces the size of data.	
 	But Lossless Compression does not reduce the size of data.
-5. Lossy compression is used in Images, audio, video.	
+
+	-Lossy compression is used in Images, audio, video.	
 	Lossless Compression is used in Text, images, sound.
-6.	Lossy compression has more data-holding capacity.	
+
+	-Lossy compression has more data-holding capacity.	
 	Lossless Compression has less data-holding capacity than Lossy compression technique.
-7.	Lossy compression is also termed as irreversible compression.	
+
+	-Lossy compression is also termed as irreversible compression.	
 	Lossless Compression is also termed as reversible compression.
 
-(4) Lossless compression techniques:
+5. Lossless compression techniques:
 
 	- Run-Length Encoding (RLE): 
 	is a simple and widely used compression algorithm. It is particularly effective for data with long 
@@ -464,7 +471,7 @@ algorithm preserves important features of the image while reducing the image siz
 	no code is a prefix of another code. Huffman coding is widely used in file compression formats (e.g., ZIP, JPEG, MP3) and 
 	communication protocols. It efficiently represents data while minimizing redundancy
 
-(5) Vector quantization & imporved gray scale quantization - NDY
+6. Vector quantization & imporved gray scale quantization - NDY
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------- //
