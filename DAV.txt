@@ -288,7 +288,7 @@ measures the covariance between a variable and its lagged version (i.e., the sam
 It quantifies how the variable’s values at different time points relate to each other.
 
 
-5. Autocorrelation: 
+5. Autocorrelation Function: 
 is a fundamental concept in time series analysis. (measures the corelation between a variable and its lagged version)
 refers to the correlation between two observations at different points in a time series.
 These observations are separated by a specific time interval, which we call a lag. It measures the degree of similarity 
