@@ -743,7 +743,7 @@ Key Features of Matplotlib:
 While Matplotlib is a powerful and versatile plotting library, it also has some disadvantages that users might encounter:
 		+ Steep Learning Curve
 		+ Verbose syntax
-		+ Less modern
+		+ Less modern features
 		+ External library dependency like numpy, scipy
 		+ Limited interactivity
 		+ Performance Issues with Large Datasets
@@ -876,6 +876,7 @@ It generates a scatter plot with a linear fit (regression line) on top of it.
 	import seaborn as sns
 	dataset = sns.load_dataset('tips')  # Load the 'tips' dataset
 	sns.lmplot(x='total_bill', y='tip', data=dataset)
+
 Here, x and y specify the variables for the x and y axes, respectively. The data parameter provides the source of information for drawing 
 the plot. 
 
@@ -888,24 +889,9 @@ We can customize regression plots by adding additional parameters:
 	sns.lmplot(x='total_bill', y='tip', data=dataset, hue='sex', scatter_kws={'s': 100}, palette='plasma')
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+7. Multiple plots: 
+Multiple plots refer to the practice of displaying several visualizations within a single figure or canvas. These plots allow you to 
+compare and analyze multiple aspects of your data simultaneously.
 
 
 
@@ -939,9 +925,14 @@ We can customize regression plots by adding additional parameters:
 
 
 
-2. AR ✅: Autoregresive model: It predicts future values based on the past observations. these models are suitable for time series having strong data corelations, where future values are dependent on the past values. It is suitable for long term predictions unlike MA model. Thses models capture serial coreltaion betw^ data.
+2. AR ✅: Autoregresive model: 
+It predicts future values based on the past observations. these models are suitable for time series having strong data corelations, 
+where future values are dependent on the past values. It is suitable for long term predictions unlike MA model. Thses models capture 
+serial coreltaion betw^ data.
 
-3. MA ✅: Moving avg model: It predicts future values based on the weighted avg of past forecast errors. Suitable for time series data with short term dependency. These model capture short term dependency or the noise in the data. Suitable for short term forcasting.
+3. MA ✅: 
+Moving avg model: It predicts future values based on the weighted avg of past forecast errors. Suitable for time series data with short 
+term dependency. These model capture short term dependency or the noise in the data. Suitable for short term forcasting.
 
 4. ARIMA model
 
@@ -963,19 +954,6 @@ loc (Label Location):
 	- Accepts boolean data for filtering.
 	- Useful when you want to select data based on specific labels.
 
-8. reg plot ✅: Regression plots are a valuable tool in data visualization, they emphasize patterns in a dataset by creating a visual guide for linear relationships between two parameters. They often include a regression line (a straight line that best fits the data) to help us understand the trend.
-ex: using seaborn:
-	import seaborn as sns
-	sns.set_style('whitegrid')
-	sns.lmplot(x='total_bill', y='tip', data=dataset)
-
-9. write about multiple plots ✅: Multiple plots refer to the practice of displaying several visualizations within a single figure or canvas. These plots allow you to compare and analyze multiple aspects of your data simultaneously.
-
-10. write about seaborn library ✅: 
-
-11. diff betn matplotlib and seaborn ✅
-
-12. various visualisation techniques used in python ✅ and R ✅: ggplot2, ggplotly, plotly
 
 13. what is dirty data ✅
 
