@@ -635,7 +635,8 @@ is essential for reliable analysis and decision-making. Way to clean the dirty d
 
 7. Data Exploration versus presentation:
 	+ Data Exploration:
-		-Purpose: Data exploration aims to understand the dataset, identify patterns, and gain insights before any modeling or decision-making.
+		-Purpose: Data exploration aims to understand the dataset, identify patterns, and gain insights before any modeling or 
+		decision-making.
 		-Techniques:
 			Descriptive Statistics: Compute measures like mean, median, standard deviation, etc.
 			Data Visualization: Create plots (histograms, scatter plots, etc.) to visualize distributions, relationships, and anomalies.
@@ -655,8 +656,70 @@ is essential for reliable analysis and decision-making. Way to clean the dirty d
 		-Tools: Tableau, Power BI, Excel, PowerPoint.
 
 
+// ------------------------------------------------------------------------------------------------------------------------------------ //
+																MODULE - 5
+// ------------------------------------------------------------------------------------------------------------------------------------ //
 
 
+1. Essential Data Libraries for data analytics:Pandas, NumPy, SciPy
+	+ NumPy:
+		NumPy is a fundamental library for numerical operations, handling arrays, and mathematical functions.
+		It enables lightning-speed computation and supports multidimensional data and large matrices.
+		NumPy arrays are often preferred over lists due to their memory efficiency and convenience.
+		ex: 
+			import numpy as np
+			# Create a NumPy array
+			my_array = np.array([1, 2, 3, 4, 5])
+			# Perform operations on the array
+			squared_values = my_array ** 2
+			sum_of_elements = np.sum(my_array)
+
+	+ Pandas:
+		Pandas is an open-source library primarily used for data analysis, manipulation, and cleaning.
+		It allows for simple data modeling and analysis operations without writing extensive code.
+		Key features include DataFrames (for efficient data manipulation) and tools for reading/writing data in various formats.
+		ex:
+			import pandas as pd
+			# Read data from a CSV file
+			df = pd.read_csv("sample_data.csv")
+			# Display the first few rows
+			print(df.head())
+
+	+ SciPy:
+		SciPy complements NumPy by providing additional functionalities for scientific computing.
+		It includes optimization, signal processing, and other scientific tools.
+		SciPy is essential for advanced data analysis and research.
+		ex:
+			from scipy.optimize import curve_fit
+			import numpy as np
+			# Sample data
+			x_data = np.array([1, 2, 3, 4, 5])
+			y_data = np.array([2, 4, 6, 8, 10])
+			# Define a linear function
+			def linear_func(x, a, b):
+				return a * x + b
+			# Fit the data to the linear function
+			params, covariance = curve_fit(linear_func, x_data, y_data)
+
+
+2. Pandas vs NumPy:
+	+ Pandas:
+		Purpose: Pandas is designed for working with tabular data (like spreadsheets or SQL tables).
+		Data Structures: It provides powerful tools like DataFrames (2D tables) and Series (1D labeled arrays).
+		Ease of Use: Pandas is more user-friendly and provides high-level data manipulation functions.
+		Memory Consumption: It consumes more memory compared to NumPy.
+		Performance: Performs well when the number of rows is 500K or more.
+		Applications: Widely used in various industries.
+	+ NumPy:
+		Purpose: NumPy is fundamental for scientific computing and numerical operations.
+		Data Structures: It offers multidimensional arrays (ndarrays) and mathematical functions.
+		Ease of Use: NumPy uses C arrays internally, making it less user-friendly than Pandas.
+		Memory Efficiency: NumPy is more memory-efficient.
+		Performance: Better for smaller datasets (number of rows 50K or less).
+		Applications: Used in scientific research, machine learning, and more.
+
+
+3. 
 
 
 
