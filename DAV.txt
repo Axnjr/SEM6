@@ -810,13 +810,82 @@ Plotting Examples:
 		There are two types of bar plots- horizontal and vertical which represent data points as horizontal or vertical bars of certain 
 		lengths proportional to the value of the data item. They are generally used for continuous and categorical variable plotting.
 		ex:
-			load(iris)
-			barplot(iris$Sepal, main = 'Bulit in Iris dataset', 
+			data(airquality)
+			barplot(airquality$SomeColName, main = 'Bulit in Iris dataset', 
 			xlab = 'Values', col ='blue', horiz = FALSE) 
-	+ 
+	+ Histograms
+		is like a bar chart as it uses bars of varying height to represent data distribution. However, in a histogram values are grouped 
+		into consecutive intervals called bins.
+		ex: 
+			# Histogram for Maximum Daily Temperature 
+			data(airquality) 
+			hist(airquality$Temp, main ="La Guardia Airport's Maximum Temperature", 
+				xlab ="Temperature(Fahrenheit)", 
+				col ="yellow", 
+				freq = TRUE
+			) 
+	+ Box Plot:
+		Displays the distribution of a dataset using quartiles. Shows median, quartiles, and potential outliers
+		ex:
+			boxplot(airquality$Solar, main = 'Solar Radiation', ylab = 'Solar Intensity')
+	+ Scatter Plot
+		A scatter plot is composed of many points on a Cartesian plane. It Represents relationships between two continuous variables,
+		and is yseful for identifying patterns, correlations, and outliers.
+		ex: 
+			plot(airquality$Wind, airquality$Temp, main = 'Wind vs. Temperature', xlab = 'Wind Speed', ylab = 'Temperature')
+
+R offers flexibility and various packages for data visualization, including graphics, lattice, and ggplot2.
 
 
+5. Seaborn: 
+is an exceptionally powerful Python visualization library that stands out in the realm of data representation. It's built upon the robust 
+foundations of Matplotlib, another visualization library, but Seaborn distinguishes itself with its ability to integrate seamlessly with
+pandas data structures, and its aesthetically pleasing default themes. Here's a more detailed look at what makes Seaborn an essential 
+tool for data scientists and analysts:
 
+	+ Intuitive Default asthetics: 
+		Seaborn’s default settings are designed to create visually appealing charts with minimal code. Its style and color schemes are 
+		thoughtfully chosen to enhance the presentation of data without overwhelming it.
+	+ Dataset-Oriented API: 
+		Seaborn works seamlessly with pandas DataFrames and NumPy arrays, allowing you to focus on the data's meaning rather than 
+		intricate plotting details.
+	+ Effortless Statistical Plots: 
+		Create a wide range of statistical plots with minimal code, including:
+			Distribution plots (histograms, kernel density estimates)
+			Categorical plots (box plots, violin plots, swarmplots)
+			Relational plots (scatter plots, joint plots, pair plots)
+			Regression plots (linear regression lines, confidence intervals)
+	+ Seamless Integration with Matplotlib: 
+		While Seaborn uses Matplotlib under the hood, it provides a more user-friendly interface and handles common statistical plot 
+		customizations internally.
+	+ Ease of Use: 
+		Installing Seaborn is straightforward, and it supports Python versions 3.6 and above. Its API is intuitive, making it accessible 
+		for beginners while still offering the depth required by experienced practitioners.
+
+In essence, Seaborn empowers users to transform their data into informative and attractive visual narratives. With its intelligent design 
+and user-friendly interface, Seaborn acts as a sophisticated assistant for any data visualization task, simplifying the process while 
+delivering high-quality results. It's an indispensable library for anyone looking to elevate their data storytelling capabilities.
+
+
+6. Regression plots: 
+create a regression line between two parameters and help visualize their linear relationships.
+These plots are useful for understanding how one variable (the dependent variable) changes with respect to another variable 
+(the independent variable). To create regression plots in Seaborn, we can use the lmplot() function.
+It generates a scatter plot with a linear fit (regression line) on top of it.
++ ex:
+	import seaborn as sns
+	dataset = sns.load_dataset('tips')  # Load the 'tips' dataset
+	sns.lmplot(x='total_bill', y='tip', data=dataset)
+Here, x and y specify the variables for the x and y axes, respectively. The data parameter provides the source of information for drawing 
+the plot. 
+
+We can customize regression plots by adding additional parameters:
+	hue: Separates the plot by a categorical variable (e.g., gender).
+	scatter_kws: Adjusts the size of scatter points.
+	palette: Changes the color scheme.
+
++ ex:
+	sns.lmplot(x='total_bill', y='tip', data=dataset, hue='sex', scatter_kws={'s': 100}, palette='plasma')
 
 
 
