@@ -811,7 +811,7 @@ Plotting Examples:
 		lengths proportional to the value of the data item. They are generally used for continuous and categorical variable plotting.
 		ex:
 			data(airquality)
-			barplot(airquality$SomeColName, main = 'Bulit in Iris dataset', 
+			barplot(airquality$SomeColName, main = "Bulit in Iris dataset", 
 			xlab = 'Values', col ='blue', horiz = FALSE) 
 	+ Histograms
 		is like a bar chart as it uses bars of varying height to represent data distribution. However, in a histogram values are grouped 
@@ -830,7 +830,7 @@ Plotting Examples:
 			boxplot(airquality$Solar, main = 'Solar Radiation', ylab = 'Solar Intensity')
 	+ Scatter Plot
 		A scatter plot is composed of many points on a Cartesian plane. It Represents relationships between two continuous variables,
-		and is yseful for identifying patterns, correlations, and outliers.
+		and is useful for identifying patterns, correlations, and outliers.
 		ex: 
 			plot(airquality$Wind, airquality$Temp, main = 'Wind vs. Temperature', xlab = 'Wind Speed', ylab = 'Temperature')
 
