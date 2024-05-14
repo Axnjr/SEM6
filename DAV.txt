@@ -793,16 +793,27 @@ Plotting Examples:
 		plt.show()
 	+ Violin plots
 		# Sample data (multiple datasets)
-		import seaborn as sns  # Import seaborn for violin plots
+		import matplotlib.pyplot as plt
 		data1 = np.random.randn(50)
 		data2 = np.random.randn(70) + 3
 		# Create the violin plot
-		sns.violinplot(x=['Data 1', 'Data 2'], y=[data1, data2], showmeans=True)  # Customize options
+		plt.violinplot([data1, data2], showmeans=True)  # Customize options
 		plt.xlabel('Datasets')
 		plt.ylabel('Values')
 		plt.title('Violin Plot of Sample Data')
 		plt.grid(True)
 		plt.show()
+
+
+4. Types of Data Visualizations in R:
+	+ Bar Plot
+		There are two types of bar plots- horizontal and vertical which represent data points as horizontal or vertical bars of certain 
+		lengths proportional to the value of the data item. They are generally used for continuous and categorical variable plotting.
+		ex:
+			load(iris)
+			barplot(iris$Sepal, main = 'Bulit in Iris dataset', 
+			xlab = 'Values', col ='blue', horiz = FALSE) 
+	+ 
 
 
 
