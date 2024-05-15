@@ -289,7 +289,8 @@ various feilds like finnace, real estate, etc. It is specified by three componen
 		uses differencing of observations in order to make the time series stationary. Differencing involves the subtraction of the current 
 		observation of a series from previous observations "d" number of times, to achieve stationarity.
 	- Moving average (q):
-		captures short term fluctuations in the time series that are not explained by autoregressive component. It predicts future values based on the weighted avg of past forecast errors. Suitable for time series data with short 
+		captures short term fluctuations in the time series that are not explained by autoregressive component. It predicts future values 
+		based on the weighted avg of past forecast errors. Suitable for time series data with short 
 		term dependency. These model capture short term dependency or the noise in the data. Suitable for short term forcasting.
 Types of ARIMA Model
 	-ARIMA: Non-seasonal Autoregressive Integrated Moving Averages
