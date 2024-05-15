@@ -290,6 +290,7 @@ It is specified by three components or parameters (p,q d):
 	- Integrated (d):
 		uses differencing of observations in order to make the time series stationary. Differencing involves the subtraction of the 
 		current observation of a series from previous observations "d" number of times, to achieve stationarity.
+		Differencing removes trends and seasonality.
 	- Moving average (q):
 		captures short term fluctuations in the time series that are not explained by autoregressive component. It predicts future values 
 		based on the weighted avg of past forecast errors. Suitable for time series data with short 
@@ -342,65 +343,21 @@ shorter lags. Unlike the ACF, which considers all lags without controlling for o
 analyzed.
 
 
-8. ARMA vs ARIMA: - Detail ans NDY
-In ARMA there is no differencing step that is used to make the data stationary, it rather assumes the data to be stationary, while in 
-ARIMA there is a differencing step to make the data stationary. ARIMA is an extension of ARMA model.
+8. ARMA vs ARIMA:
 
-ARMA (Autoregressive Moving Average) and ARIMA (Autoregressive Integrated Moving Average) 
-models are both widely used in time series analysis, but they have some fundamental differences.
+The ARMA model combines two components: AutoRegressive (AR) and Moving Average (MA).
+It is suitable for stationary time series data.
+	WHILE
+The ARIMA model extends the ARMA model by including an additional factor: Integration (I).
+It is used for non-stationary time series data.
 
-ARMA Model: 
++ ARMA Model: 
+	Use it when your time series data is already stationary (i.e., it has a constant mean and variance over time). If your data 
+	exhibits a clear pattern without trends or seasonality, ARMA can be effective.
 
-Autoregressive (AR) Component: This part of the model is based on the idea that the current 
-value of the time series can be predicted by a linear combination of its past values, or in other 
-words, it depends linearly on its own previous values. The "order" of the AR component, denoted 
-by p, indicates how many past values are used in the predicƟon.
-
-Moving Average (MA) Component: This part captures the influence of the random shocks (or 
-errors) in the previous time periods on the current value. Like the AR component, the "order" of 
-the MA component, denoted by q, indicates how many past shocks are included in the predicƟon.
-
-ARIMA Model: 
-
-Autoregressive (AR) Component: Just like in the ARMA model, the AR component of ARIMA 
-captures the linear relaƟonship between the current value and its past values.
-
-Integrated (I) Component: This is the key difference between ARMA and ARIMA models. The 
-"integrated" part signifies that the data is differenced at least once to make it stationary. 
-Staionarity is an important assumption in time series analysis, and differencing helps to stabilize 
-the mean of the series over time.
-
-Moving Average (MA) Component: Similar to ARMA, ARIMA includes the moving average 
-component that captures the effects of past shocks. 
-
-The main difference lies in the "integrated" component of ARIMA, which allows for non-stationary data 
-to be made stationary through differencing. ARMA, on the other hand, is used for stationary time 
-series data. ARIMA is therefore more flexible and can handle a wider range of data, especially those 
-exhibiting trends or seasonality.
-
-Here are some specific situations where the ARMA model can be applied:
-1. Stationary Time Series: The ARMA model assumes that the time series data is stationary, 
-meaning that its staƟsƟcal properƟes such as mean and variance do not change over time. If 
-the data is stationary or can be transformed to become stationary (e.g., through differencing), 
-the ARMA model can be used to capture the autoregressive and moving average relaƟonships 
-in the data. 
-2. Absence of Trend: The ARMA model is appropriate when the time series data does not exhibit a 
-trend component. A trend refers to a systemaƟc, long-term increase or decrease in the series 
-over time. If a trend is present, the ARMA model may not be suitable, and alternaƟve models 
-like ARIMA or SARIMA that can incorporate trend components may be more appropriate. 
-3. Non-Seasonal Data: The ARMA model is designed for non-seasonal time series data, where 
-there is no repeaƟng seasonal paƩern. If the data exhibits seasonal paƩerns, such as monthly 
-or yearly cycles, the ARMA model alone may not capture those paƩerns adequately. In such 
-cases, seasonal models like SARIMA or seasonal decomposiƟon techniques may be more 
-suitable. 
-4. Linear RelaƟonships: The ARMA model assumes linear relaƟonships between the observaƟons 
-and their lagged values or error terms. If the underlying relaƟonships in the data are nonlinear, 
-the ARMA model may not capture them effecƟvely. In those cases, nonlinear time series 
-models like ARCH/GARCH or machine learning approaches could be considered. 
-5. Short- to Medium-Term ForecasƟng: The ARMA model is commonly used for short- to mediumterm forecasƟng of time series data. It uƟlizes past observaƟons and residual errors to make 
-predicƟons for future values. However, its forecasƟng accuracy may degrade as the forecasƟng 
-horizon increases, especially if the data exhibits complex paƩerns or structural changes.
-
++ ARIMA Model: 
+	Choose it when your data is non-stationary (e.g., it has trends or seasonality). ARIMA incorporates differencing to make the data 
+	stationary before applying the ARMA components. It’s more flexible and handles a wider range of time series patterns.
 
 // ------------------------------------------------------------------------------------------------------------------------------------ //
 																MODULE - 4
