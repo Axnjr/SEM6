@@ -274,7 +274,9 @@ best suitable for short-term forecasting.
 
 3. ARIMA Model:
 stands for autoregressive integrated moving average model, it is a widely used technique for time series forcasting, and can be used in
-various feilds like finnace, real estate, etc. It is specified by three components or parameters (p,q d):
+various feilds like finnace, real estate, etc. 
+	+ It is suitable for non-stationary time series data.
+It is specified by three components or parameters (p,q d):
 	# + Autoregresive model: 
 	# 	It predicts future values based on the past observations. these models are suitable for time series having strong data corelations, 
 	# 	where future values are dependent on the past values. It is suitable for long term predictions unlike MA model. Thses models capture 
