@@ -342,10 +342,10 @@ In ARMA there is no differencing step that is used to make the data stationary, 
 ARIMA there is a differencing step to make the data stationary. ARIMA is an extension of ARMA model.
 
 ARMA (Autoregressive Moving Average) and ARIMA (Autoregressive Integrated Moving Average) 
-models are both widely used in Ɵme series analysis, but they have some fundamental differences.
+models are both widely used in time series analysis, but they have some fundamental differences.
 ARMA Model: 
- Autoregressive (AR) Component: This part of the model is based on the idea that the current 
-value of the Ɵme series can be predicted by a linear combinaƟon of its past values, or in other 
+Autoregressive (AR) Component: This part of the model is based on the idea that the current 
+value of the time series can be predicted by a linear combination of its past values, or in other 
 words, it depends linearly on its own previous values. The "order" of the AR component, denoted 
 by p, indicates how many past values are used in the predicƟon.
  Moving Average (MA) Component: This part captures the influence of the random shocks (or 
