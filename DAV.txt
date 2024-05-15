@@ -280,9 +280,11 @@ various feilds like finnace, real estate, etc. It is specified by three componen
 	# 	where future values are dependent on the past values. It is suitable for long term predictions unlike MA model. Thses models capture 
 	# 	serial coreltaion betw^ data.
 	- Auto-regressive component (p):
-		a regression model that utilizes the dependent relationship between a current observation and observations over a previous 
-		period in the regression equation for modelling the time series. It predicts future values based on the past observations.
-		It is suitable for long term predictions unlike MA model. Thses models capture serial coreltaion betw^ data.
+		it utilizes the dependent relationship between a current observation and observations over a previous 
+		period to model a regression for predicting the future values from the observations of the time series. 
+		It predicts future values based on the past observations.
+		It is suitable for long term predictions unlike MA model. 
+		Thses models capture serial coreltaion betw^ data.
 	- Integrated (d):
 		uses differencing of observations in order to make the time series stationary. Differencing involves the subtraction of the current 
 		observation of a series from previous observations "d" number of times, to achieve stationarity.
@@ -369,7 +371,7 @@ Moving Average (MA) Component: Similar to ARMA, ARIMA includes the moving averag
 component that captures the effects of past shocks. 
 
 The main difference lies in the "integrated" component of ARIMA, which allows for non-stationary data 
-to be made stationary through differencing. ARMA, on the other hand, is used for non-stationary time 
+to be made stationary through differencing. ARMA, on the other hand, is used for stationary time 
 series data. ARIMA is therefore more flexible and can handle a wider range of data, especially those 
 exhibiting trends or seasonality.
 
