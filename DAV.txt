@@ -174,6 +174,7 @@ function into the range [0, 1], making it suitable for modelling probabilities.
 	Linear Boundaries and Multiclass Extension
 	Variance and Feature Extraction
 	
+	!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CHECK EQUATION AGAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!
 Equation of logistic regression y(x) = e^(a0 + a1 * x1 + a2 * x2 + … + ai * xi) / (1 + e^(a0 + a1 * x1 + a2 * x2 + … + ai * xi))
 
 
@@ -274,14 +275,20 @@ best suitable for short-term forecasting.
 3. ARIMA Model:
 stands for autoregressive integrated moving average model, it is a widely used technique for time series forcasting, and can be used in
 various feilds like finnace, real estate, etc. It is specified by three components or parameters (p,q d):
+	# + Autoregresive model: 
+	# 	It predicts future values based on the past observations. these models are suitable for time series having strong data corelations, 
+	# 	where future values are dependent on the past values. It is suitable for long term predictions unlike MA model. Thses models capture 
+	# 	serial coreltaion betw^ data.
 	- Auto-regressive component (p):
 		a regression model that utilizes the dependent relationship between a current observation and observations over a previous 
-		period in the regression equation for modelling the time series.
+		period in the regression equation for modelling the time series. It predicts future values based on the past observations.
+		It is suitable for long term predictions unlike MA model. Thses models capture serial coreltaion betw^ data.
 	- Integrated (d):
 		uses differencing of observations in order to make the time series stationary. Differencing involves the subtraction of the current 
 		observation of a series from previous observations "d" number of times, to achieve stationarity.
 	- Moving average (q):
-		captures short term fluctuations in the time series that are not explained by autoregressive component
+		captures short term fluctuations in the time series that are not explained by autoregressive component. It predicts future values based on the weighted avg of past forecast errors. Suitable for time series data with short 
+		term dependency. These model capture short term dependency or the noise in the data. Suitable for short term forcasting.
 Types of ARIMA Model
 	-ARIMA: Non-seasonal Autoregressive Integrated Moving Averages
 	-SARIMA:Seasonal ARIMA
@@ -333,6 +340,52 @@ analyzed.
 8. ARMA vs ARIMA: - Detail ans NDY
 In ARMA there is no differencing step that is used to make the data stationary, it rather assumes the data to be stationary, while in 
 ARIMA there is a differencing step to make the data stationary. ARIMA is an extension of ARMA model.
+
+ARMA (Autoregressive Moving Average) and ARIMA (Autoregressive Integrated Moving Average) 
+models are both widely used in Ɵme series analysis, but they have some fundamental differences.
+ARMA Model: 
+ Autoregressive (AR) Component: This part of the model is based on the idea that the current 
+value of the Ɵme series can be predicted by a linear combinaƟon of its past values, or in other 
+words, it depends linearly on its own previous values. The "order" of the AR component, denoted 
+by p, indicates how many past values are used in the predicƟon.
+ Moving Average (MA) Component: This part captures the influence of the random shocks (or 
+errors) in the previous Ɵme periods on the current value. Like the AR component, the "order" of 
+the MA component, denoted by q, indicates how many past shocks are included in the predicƟon.
+ARIMA Model: 
+ Autoregressive (AR) Component: Just like in the ARMA model, the AR component of ARIMA 
+captures the linear relaƟonship between the current value and its past values.
+ Integrated (I) Component: This is the key difference between ARMA and ARIMA models. The 
+"integrated" part signifies that the data is differenced at least once to make it staƟonary. 
+StaƟonarity is an important assumpƟon in Ɵme series analysis, and differencing helps to stabilize 
+the mean of the series over Ɵme.
+ Moving Average (MA) Component: Similar to ARMA, ARIMA includes the moving average 
+component that captures the effects of past shocks. 
+The main difference lies in the "integrated" component of ARIMA, which allows for non-staƟonary data 
+to be made staƟonary through differencing. ARMA, on the other hand, is used for staƟonary Ɵme 
+series data. ARIMA is therefore more flexible and can handle a wider range of data, especially those 
+exhibiƟng trends or seasonality.
+Here are some specific situaƟons where the ARMA model can be applied:
+1. StaƟonary Time Series: The ARMA model assumes that the Ɵme series data is staƟonary, 
+meaning that its staƟsƟcal properƟes such as mean and variance do not change over Ɵme. If 
+the data is staƟonary or can be transformed to become staƟonary (e.g., through differencing), 
+the ARMA model can be used to capture the autoregressive and moving average relaƟonships 
+in the data. 
+2. Absence of Trend: The ARMA model is appropriate when the Ɵme series data does not exhibit a 
+trend component. A trend refers to a systemaƟc, long-term increase or decrease in the series 
+over Ɵme. If a trend is present, the ARMA model may not be suitable, and alternaƟve models 
+like ARIMA or SARIMA that can incorporate trend components may be more appropriate. 
+3. Non-Seasonal Data: The ARMA model is designed for non-seasonal Ɵme series data, where 
+there is no repeaƟng seasonal paƩern. If the data exhibits seasonal paƩerns, such as monthly 
+or yearly cycles, the ARMA model alone may not capture those paƩerns adequately. In such 
+cases, seasonal models like SARIMA or seasonal decomposiƟon techniques may be more 
+suitable. 
+4. Linear RelaƟonships: The ARMA model assumes linear relaƟonships between the observaƟons 
+and their lagged values or error terms. If the underlying relaƟonships in the data are nonlinear, 
+the ARMA model may not capture them effecƟvely. In those cases, nonlinear Ɵme series 
+models like ARCH/GARCH or machine learning approaches could be considered. 
+5. Short- to Medium-Term ForecasƟng: The ARMA model is commonly used for short- to mediumterm forecasƟng of Ɵme series data. It uƟlizes past observaƟons and residual errors to make 
+predicƟons for future values. However, its forecasƟng accuracy may degrade as the forecasƟng 
+horizon increases, especially if the data exhibits complex paƩerns or structural changes.
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------ //
@@ -925,16 +978,6 @@ compare and analyze multiple aspects of your data simultaneously.
 
 
 
-2. AR ✅: Autoregresive model: 
-It predicts future values based on the past observations. these models are suitable for time series having strong data corelations, 
-where future values are dependent on the past values. It is suitable for long term predictions unlike MA model. Thses models capture 
-serial coreltaion betw^ data.
-
-3. MA ✅: 
-Moving avg model: It predicts future values based on the weighted avg of past forecast errors. Suitable for time series data with short 
-term dependency. These model capture short term dependency or the noise in the data. Suitable for short term forcasting.
-
-4. ARIMA model
 
 7. Diff betn 'iloc' and 'loc' ✅:  
 
@@ -953,15 +996,4 @@ loc (Label Location):
 	- It includes the last element of the range.
 	- Accepts boolean data for filtering.
 	- Useful when you want to select data based on specific labels.
-
-
-13. what is dirty data ✅
-
-14. diff betn data exploration and data presentation ✅
-
-15. write about descriptive statistics ⚒️
-
-5. Auto correlation ⚒️
-
-6. PACF ⚒️
 
