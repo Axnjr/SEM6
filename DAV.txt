@@ -367,14 +367,15 @@ the mean of the series over time.
 
 Moving Average (MA) Component: Similar to ARMA, ARIMA includes the moving average 
 component that captures the effects of past shocks. 
-The main difference lies in the "integrated" component of ARIMA, which allows for non-staƟonary data 
-to be made staƟonary through differencing. ARMA, on the other hand, is used for staƟonary Ɵme 
+
+The main difference lies in the "integrated" component of ARIMA, which allows for non-stationary data 
+to be made stationary through differencing. ARMA, on the other hand, is used for stationary Ɵme 
 series data. ARIMA is therefore more flexible and can handle a wider range of data, especially those 
 exhibiƟng trends or seasonality.
 Here are some specific situaƟons where the ARMA model can be applied:
-1. StaƟonary Time Series: The ARMA model assumes that the Ɵme series data is staƟonary, 
+1. Stationary Time Series: The ARMA model assumes that the Ɵme series data is stationary, 
 meaning that its staƟsƟcal properƟes such as mean and variance do not change over Ɵme. If 
-the data is staƟonary or can be transformed to become staƟonary (e.g., through differencing), 
+the data is stationary or can be transformed to become stationary (e.g., through differencing), 
 the ARMA model can be used to capture the autoregressive and moving average relaƟonships 
 in the data. 
 2. Absence of Trend: The ARMA model is appropriate when the Ɵme series data does not exhibit a 
