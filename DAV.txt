@@ -348,7 +348,7 @@ Autoregressive (AR) Component: This part of the model is based on the idea that 
 value of the time series can be predicted by a linear combination of its past values, or in other 
 words, it depends linearly on its own previous values. The "order" of the AR component, denoted 
 by p, indicates how many past values are used in the predicƟon.
- Moving Average (MA) Component: This part captures the influence of the random shocks (or 
+Moving Average (MA) Component: This part captures the influence of the random shocks (or 
 errors) in the previous Ɵme periods on the current value. Like the AR component, the "order" of 
 the MA component, denoted by q, indicates how many past shocks are included in the predicƟon.
 ARIMA Model: 
