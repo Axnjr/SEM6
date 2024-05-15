@@ -356,7 +356,7 @@ ARIMA Model:
 captures the linear relaƟonship between the current value and its past values.
  Integrated (I) Component: This is the key difference between ARMA and ARIMA models. The 
 "integrated" part signifies that the data is differenced at least once to make it stationary. 
-Staionarity is an important assumption in Ɵme series analysis, and differencing helps to stabilize 
+Staionarity is an important assumption in time series analysis, and differencing helps to stabilize 
 the mean of the series over Ɵme.
  Moving Average (MA) Component: Similar to ARMA, ARIMA includes the moving average 
 component that captures the effects of past shocks. 
