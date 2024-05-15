@@ -286,8 +286,8 @@ various feilds like finnace, real estate, etc. It is specified by three componen
 		It is suitable for long term predictions unlike MA model. 
 		Thses models capture serial coreltaion betw^ data.
 	- Integrated (d):
-		uses differencing of observations in order to make the time series stationary. Differencing involves the subtraction of the current 
-		observation of a series from previous observations "d" number of times, to achieve stationarity.
+		uses differencing of observations in order to make the time series stationary. Differencing involves the subtraction of the 
+		current observation of a series from previous observations "d" number of times, to achieve stationarity.
 	- Moving average (q):
 		captures short term fluctuations in the time series that are not explained by autoregressive component. It predicts future values 
 		based on the weighted avg of past forecast errors. Suitable for time series data with short 
