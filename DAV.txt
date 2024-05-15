@@ -352,7 +352,7 @@ words, it depends linearly on its own previous values. The "order" of the AR com
 by p, indicates how many past values are used in the predicƟon.
 
 Moving Average (MA) Component: This part captures the influence of the random shocks (or 
-errors) in the previous Ɵme periods on the current value. Like the AR component, the "order" of 
+errors) in the previous time periods on the current value. Like the AR component, the "order" of 
 the MA component, denoted by q, indicates how many past shocks are included in the predicƟon.
 
 ARIMA Model: 
@@ -369,29 +369,30 @@ Moving Average (MA) Component: Similar to ARMA, ARIMA includes the moving averag
 component that captures the effects of past shocks. 
 
 The main difference lies in the "integrated" component of ARIMA, which allows for non-stationary data 
-to be made stationary through differencing. ARMA, on the other hand, is used for stationary Ɵme 
+to be made stationary through differencing. ARMA, on the other hand, is used for non-stationary time 
 series data. ARIMA is therefore more flexible and can handle a wider range of data, especially those 
-exhibiƟng trends or seasonality.
-Here are some specific situaƟons where the ARMA model can be applied:
-1. Stationary Time Series: The ARMA model assumes that the Ɵme series data is stationary, 
-meaning that its staƟsƟcal properƟes such as mean and variance do not change over Ɵme. If 
+exhibiting trends or seasonality.
+
+Here are some specific situations where the ARMA model can be applied:
+1. Stationary Time Series: The ARMA model assumes that the time series data is stationary, 
+meaning that its staƟsƟcal properƟes such as mean and variance do not change over time. If 
 the data is stationary or can be transformed to become stationary (e.g., through differencing), 
 the ARMA model can be used to capture the autoregressive and moving average relaƟonships 
 in the data. 
-2. Absence of Trend: The ARMA model is appropriate when the Ɵme series data does not exhibit a 
+2. Absence of Trend: The ARMA model is appropriate when the time series data does not exhibit a 
 trend component. A trend refers to a systemaƟc, long-term increase or decrease in the series 
-over Ɵme. If a trend is present, the ARMA model may not be suitable, and alternaƟve models 
+over time. If a trend is present, the ARMA model may not be suitable, and alternaƟve models 
 like ARIMA or SARIMA that can incorporate trend components may be more appropriate. 
-3. Non-Seasonal Data: The ARMA model is designed for non-seasonal Ɵme series data, where 
+3. Non-Seasonal Data: The ARMA model is designed for non-seasonal time series data, where 
 there is no repeaƟng seasonal paƩern. If the data exhibits seasonal paƩerns, such as monthly 
 or yearly cycles, the ARMA model alone may not capture those paƩerns adequately. In such 
 cases, seasonal models like SARIMA or seasonal decomposiƟon techniques may be more 
 suitable. 
 4. Linear RelaƟonships: The ARMA model assumes linear relaƟonships between the observaƟons 
 and their lagged values or error terms. If the underlying relaƟonships in the data are nonlinear, 
-the ARMA model may not capture them effecƟvely. In those cases, nonlinear Ɵme series 
+the ARMA model may not capture them effecƟvely. In those cases, nonlinear time series 
 models like ARCH/GARCH or machine learning approaches could be considered. 
-5. Short- to Medium-Term ForecasƟng: The ARMA model is commonly used for short- to mediumterm forecasƟng of Ɵme series data. It uƟlizes past observaƟons and residual errors to make 
+5. Short- to Medium-Term ForecasƟng: The ARMA model is commonly used for short- to mediumterm forecasƟng of time series data. It uƟlizes past observaƟons and residual errors to make 
 predicƟons for future values. However, its forecasƟng accuracy may degrade as the forecasƟng 
 horizon increases, especially if the data exhibits complex paƩerns or structural changes.
 
