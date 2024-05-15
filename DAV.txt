@@ -354,7 +354,7 @@ the MA component, denoted by q, indicates how many past shocks are included in t
 ARIMA Model: 
 Autoregressive (AR) Component: Just like in the ARMA model, the AR component of ARIMA 
 captures the linear relaƟonship between the current value and its past values.
- Integrated (I) Component: This is the key difference between ARMA and ARIMA models. The 
+Integrated (I) Component: This is the key difference between ARMA and ARIMA models. The 
 "integrated" part signifies that the data is differenced at least once to make it stationary. 
 Staionarity is an important assumption in time series analysis, and differencing helps to stabilize 
 the mean of the series over Ɵme.
