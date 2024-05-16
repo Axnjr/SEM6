@@ -254,7 +254,7 @@ data block. It uses three different keys for encryption, providing enhanced secu
 			This is the first step of the Encryption process of Triple DES. In this step, three unique keys are generated using a key 
 			derivation algorithm.
 		+ Initial Permutation: 
-			Rearranges plaintext bits using a predefined table.
+			Rearranges plaintext bits using a predefined Permutation table.
 		+ Three Rounds of Encryption: 
 			Encrypts the plaintext three times with different keys.
 		+ Final Permutation: 
@@ -302,7 +302,6 @@ is a cryptographic method that allows two parties to securely exchange cryptogra
 		Both have the same secret key, which they can use for encrypted communication.
 
 
-
 // ----------------------------------------------------------------------------------------------------------------------------------- //
 																MODULE - 3
 // ----------------------------------------------------------------------------------------------------------------------------------- //
@@ -322,6 +321,7 @@ access to a resource is indeed who it claims to be. Authentication is necessary 
 		with their authenticated account. Without authentication, users would need to re-enter their details every time they visit 
 		a website or use an application.
 
+		
 2. Types of authentication:
 	+ Single-Factor Authentication (SFA):
 		This is the most basic form of authentication and typically involves using a username and password. However, it’s considered 
