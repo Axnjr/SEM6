@@ -196,10 +196,6 @@ design principles for creating secure and efficient block ciphers:
 	+ Number of Rounds:
 		The number of rounds determines the complexity of the algorithm. More rounds generally make the cipher more secure.
 
-	+ Confusion and Diffusion:
-		Confusion: The ciphertext should be a complex function of the key and plaintext, making it hard to guess the key.
-		Diffusion: A small change in plaintext should cause a significant change in ciphertext, preventing easy analysis of the encryption pattern.
-
 	+ Key Size:
 		Larger key sizes prevent brute-force attacks. A 128-bit key size is considered secure for most applications.
 
@@ -215,7 +211,23 @@ design principles for creating secure and efficient block ciphers:
 		brute-force attacks).
 
 
+4. The Data Encryption Standard (DES): 
+is a historic symmetric-key algorithm used for encrypting digital data. Although its short key length of 56 bits makes it too insecure 
+for modern applications, DES has been highly influential in the advancement of cryptography. DES uses a 56-bit key length.
+Initially, the key consists of 64 bits. However, before the DES process begins, every 8th bit of the key is discarded, resulting in a 
+56-bit key. 
 
+DES encrypts data in blocks of 64 bits each. This means that 64 bits of plaintext serve as input to DES, resulting in 64 bits 
+of ciphertext.
+The same algorithm and key are used for both encryption and decryption, with minor differences.
+DES is based on two fundamental attributes of cryptography: substitution (confusion) and transposition (diffusion).
+The encryption process involves 16 rounds, each performing substitution and transposition steps.
+
+Here are the broad-level steps in DES:
+	+ Initial Permutation (IP): 
+		The 64-bit plaintext block undergoes an initial permutation, producing two halves: Left Plain Text (LPT) and Right Plain Text (RPT).
+	Each LPT and RPT go through 16 rounds of the encryption process.
+	Finally, LPT and RPT are rejoined, and a Final Permutation (FP) is performed on the combined block to produce the 64-bit ciphertext.
 
 
 // ----------------------------------------------------------------------------------------------------------------------------------- //
