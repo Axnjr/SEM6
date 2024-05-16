@@ -177,6 +177,47 @@ Applications of the Public Key Encryption:
 	+ Digital signature
 
 
+2. Advanced Encryption Standard (AES): 
+is a specification for the encryption of electronic data established by the U.S National Institute of Standards and Technology (NIST). 
+AES is widely used today as it is a much stronger than DES and triple DES despite being harder to implement.
+	+ Features:
+		AES is a block cipher.
+		The key size can be 128/192/256 bits.
+		Encrypts data in blocks of 128 bits each.
+That means it takes 128 bits as input and outputs 128 bits of encrypted cipher text as output. AES relies on substitution-permutation 
+network principle which means it is performed using a series of linked operations which involves replacing and shuffling of the input 
+data.
+
+
+3. Block cipher: 
+is an encryption algorithm that processes fixed-size blocks of data (usually 64 or 128 bits) to produce ciphertext. Here are some key 
+design principles for creating secure and efficient block ciphers:
+
+	+ Number of Rounds:
+		The number of rounds determines the complexity of the algorithm. More rounds generally make the cipher more secure.
+
+	+ Confusion and Diffusion:
+		Confusion: The ciphertext should be a complex function of the key and plaintext, making it hard to guess the key.
+		Diffusion: A small change in plaintext should cause a significant change in ciphertext, preventing easy analysis of the encryption pattern.
+
+	+ Key Size:
+		Larger key sizes prevent brute-force attacks. A 128-bit key size is considered secure for most applications.
+
+	+ Block Size:
+		The block size should be large enough to prevent statistical attacks on the plaintext.
+		A 128-bit block size is generally secure for most applications.
+
+	+ Avalanche Effect:
+		The cipher should exhibit the avalanche effect, ensuring that any input change results in a complete output change.
+
+	+ Security Analysis:
+		The cipher must be analyzed for security against various attacks (e.g., differential cryptanalysis, linear cryptanalysis, and 
+		brute-force attacks).
+
+
+
+
+
 // ----------------------------------------------------------------------------------------------------------------------------------- //
 																MODULE - 3
 // ----------------------------------------------------------------------------------------------------------------------------------- //
