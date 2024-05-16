@@ -8,6 +8,14 @@ NUMERICALS
 	- Vignere cipher ✅
 	- Additive Cipher
 
+-1. OSI Layer-specific Attacks:
+	Application Layer: Exploits take advantage of software vulnerabilities here.
+	Presentation Layer: Phishing attacks often target this layer.
+	Session Layer: Hijacking attacks can occur.
+	Transport Layer: Reconnaissance and DoS attacks may happen.
+	Network Layer: Man-in-the-middle attacks are a concern.
+	Data Link Layer: Spoofing attacks can occur
+
 0. Symmetric Encryption: is the most basic and old method of encryption. It uses only one key for the process of both the encryption and 
 decryption of data. Thus, it is also known as Single-Key Encryption. EXplain each term:
 	- Plain text
