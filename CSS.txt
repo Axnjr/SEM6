@@ -797,8 +797,20 @@ to trick individuals into disclosing sensitive information, such as usernames, p
 	victims into taking actions that compromise their security and privacy.
 
 
+9. Cross-Site Request Forgery (CSRF): 
+is a web security vulnerability that occurs when an attacker tricks a user's web browser into executing unauthorized actions on a web 
+application in which the user is authenticated. 
+
+	-In a CSRF attack, the attacker crafts a malicious website or email containing a request 
+	that, when clicked by the victim, sends a forged HTTP request to a targeted web 
+	application where the victim is authenticated. 
+
+	-If successful, the attacker can perform actions on behalf of the victim without their 
+	consent, such as changing account settings, making transactions, or performing other 
+	sensitive operations. 
 
 
+10. 
 
 
 
