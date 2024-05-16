@@ -199,12 +199,13 @@ replacing and shuffling of the input data. The number of rounds depends on the k
 	128 bit key – 10 rounds
 	192 bit key – 12 rounds
 	256 bit key – 14 rounds
-A Key Schedule algorithm is used to calculate all the round keys from the key. So the initial key is used to create many different round 
-keys. Each round comprises of 4 steps: <Ellborate each if required>
+Each round comprises of 4 steps: <Ellborate each if required>
 	+ SubBytes
 	+ ShiftRows
 	+ MixColumns
 	+ Add Round Key
+A Key Schedule algorithm is used to calculate all the round keys from the key. So the initial key is used to create many different round 
+keys which are added to the manipulated data block to generate the cipher text.
 
 
 3. Block cipher: 
@@ -290,14 +291,14 @@ is a cryptographic method that allows two parties to securely exchange cryptogra
 	+ Private Keys:
 		Each party selects a private key: Alice chooses a, and Bob chooses b.
 	+ Public Values:
-		Alice computes her public value: (x = G^a \mod P).
-		Bob computes his public value: (y = G^b \mod P).
+		Alice computes her public value: (x = G^a mod P).
+		Bob computes his public value: (y = G^b mod P).
 	+ Exchange:
 		Alice shares her public value x with Bob.
 		Bob shares his public value y with Alice.
 	+ Secret Key:
-		Alice computes the secret key: (k_a = y^a \mod P).
-		Bob computes the secret key: (k_b = x^b \mod P).
+		Alice computes the secret key: (k_a = y^a mod P).
+		Bob computes the secret key: (k_b = x^b mod P).
 		Both have the same secret key, which they can use for encrypted communication.
 
 
