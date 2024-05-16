@@ -151,7 +151,8 @@ pairs of 3x1. ex:
 																MODULE - 2
 // ----------------------------------------------------------------------------------------------------------------------------------- //
 
-1. Public key cryptography: also known as asymmetric cryptography, in this type a pair of keys i.e public key and private key are used 
+1. Public key cryptography: 
+also known as asymmetric cryptography, in this type a pair of keys i.e public key and private key are used 
 for encryption and decryption. The public key is shared openly, while the private key remains secret. It works as follows:
 
 	+ Encryption: The sender uses the recipient’s public key to encrypt a message.
@@ -180,13 +181,24 @@ Applications of the Public Key Encryption:
 2. Advanced Encryption Standard (AES): 
 is a specification for the encryption of electronic data established by the U.S National Institute of Standards and Technology (NIST). 
 AES is widely used today as it is a much stronger than DES and triple DES despite being harder to implement.
-	+ Features:
-		AES is a block cipher.
-		The key size can be 128/192/256 bits.
-		Encrypts data in blocks of 128 bits each.
-That means it takes 128 bits as input and outputs 128 bits of encrypted cipher text as output. AES relies on substitution-permutation 
-network principle which means it is performed using a series of linked operations which involves replacing and shuffling of the input 
-data.
+	Features:
+		+ AES is a block cipher.
+		+ The key size can be varied between 128 / 192 / 256 bits.
+		+ Encrypts data in blocks of 128 bits each.
+AES relies on 
+	+ substitution
+	+ permutation / transposition
+principles which means it is performed using a series of linked operations which involves 
+replacing and shuffling of the input data. The number of rounds depends on the key length as follows:
+	128 bit key – 10 rounds
+	192 bit key – 12 rounds
+	256 bit key – 14 rounds
+A Key Schedule algorithm is used to calculate all the round keys from the key. So the initial key is used to create many different round 
+keys. Each round comprises of 4 steps: <Ellborate each if required>
+	+ SubBytes
+	+ ShiftRows
+	+ MixColumns
+	+ Add Round Key
 
 
 3. Block cipher: 
@@ -262,6 +274,8 @@ using only primitive computer operations like XOR and shift, and it also consume
 		The secret key is expanded into an array that initializes the sub-keys used in encryption and decryption.
 	+ Encryption Process: 
 		Involves modular additions, XORs, and data-dependent rotations.
+
+
 
 
 
