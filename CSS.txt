@@ -218,13 +218,37 @@ This means that 64 bits of plaintext serve as input to DES, resulting in 64 bits
 both encryption and decryption, with minor differences. DES is based on two fundamental attributes of cryptography: 
 	+ substitution (confusion) 
 	+ transposition (diffusion).
-The encryption process involves 16 rounds, each performing substitution and transposition steps.
-
-Here are the broad-level steps in DES:
+The encryption process involves 16 rounds, each performing substitution and transposition steps. Here are the steps in DES:
 	+ Initial Permutation (IP): 
-		The 64-bit plaintext block undergoes an initial permutation, producing two halves: Left Plain Text (LPT) and Right Plain Text (RPT).
+		The 64-bit plaintext block undergoes an initial permutation, producing two halves: 
+			Left Plain Text (LPT) and Right Plain Text (RPT).
 	Each LPT and RPT go through 16 rounds of the encryption process.
 	Finally, LPT and RPT are rejoined, and a Final Permutation (FP) is performed on the combined block to produce the 64-bit ciphertext.
+
+
+5. Triple DES (3DES): 
+is an encryption algorithm based on the original Data Encryption Standard (DES). Triple DES applies the DES cipher three times to each 
+data block. It uses three different keys for encryption, providing enhanced security. Each block contains 64 bits of data same as DES.
+	Working:
+		+ Key Generation:
+			This is the first step of the Encryption process of Triple DES. In this step, three unique keys are generated using a key 
+			derivation algorithm.
+		+ Initial Permutation: 
+			Rearranges plaintext bits using a predefined table.
+		+ Three Rounds of Encryption: 
+			Encrypts the plaintext three times with different keys.
+		+ Final Permutation: 
+			It completes the Triple DES encryption process. In this step, the resulting ciphertext block undergoes a final permutation (FP) 
+			operation which essentialy just the inverse of the initial permutation to generate the ciphertext.
+
+	Advantages:
+		Enhanced security due to triple-layered encryption.
+		Backward compatibility with DES.
+		Widely used in financial transactions, online banking, and more
+
+
+6. The RC5 algorithm: 
+is a symmetric key block encryption algorithm designed by Ron Rivest in 1994. It’s known for its simplicity and speed, which comes from using only primitive computer operations like XOR and shift, and it also consumes less memory. Here are some key points about RC5:
 
 
 
