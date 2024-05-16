@@ -248,7 +248,20 @@ data block. It uses three different keys for encryption, providing enhanced secu
 
 
 6. The RC5 algorithm: 
-is a symmetric key block encryption algorithm designed by Ron Rivest in 1994. It’s known for its simplicity and speed, which comes from using only primitive computer operations like XOR and shift, and it also consumes less memory. Here are some key points about RC5:
+is a symmetric key block encryption algorithm designed by Ron Rivest in 1994. It’s known for its simplicity and speed, which comes from 
+using only primitive computer operations like XOR and shift, and it also consumes less memory. Here are some key points about RC5:
+	+ Block Cipher: 
+		RC5 works on two-word blocks at a time.
+	+ Variable Parameters: 
+		It can be customized with different word sizes (16, 32, 64 bits), number of rounds (0 to 255), and key sizes (0 to 255 bytes).
+	+ Notation: 
+		Instances of RC5 are denoted as RC5-w/r/b, where w=word size in bits, r=number of rounds, and b=key size in bytes.
+	+ Magic Constants: 
+		RC5 uses two magic constants, P and Q, which are derived from the word size.
+	+ Key Expansion: 
+		The secret key is expanded into an array that initializes the sub-keys used in encryption and decryption.
+	+ Encryption Process: 
+		Involves modular additions, XORs, and data-dependent rotations.
 
 
 
