@@ -177,6 +177,12 @@ Applications of the Public Key Encryption:
 		This algorithm can use in both Key-management and securely transmission of data.
 	+ Digital signature
 
+Key principles of public key cryptosystems:
+	+ Confidentiality and Authenticity
+	+ Asymetric keys
+	+ Key distribution
+	+ Authenticating public keys
+
 
 2. Advanced Encryption Standard (AES): 
 is a specification for the encryption of electronic data established by the U.S National Institute of Standards and Technology (NIST). 
@@ -241,6 +247,7 @@ The encryption process involves 16 rounds, each performing substitution and tran
 5. Triple DES (3DES): 
 is an encryption algorithm based on the original Data Encryption Standard (DES). Triple DES applies the DES cipher three times to each 
 data block. It uses three different keys for encryption, providing enhanced security. Each block contains 64 bits of data same as DES.
+
 	Working:
 		+ Key Generation:
 			This is the first step of the Encryption process of Triple DES. In this step, three unique keys are generated using a key 
@@ -276,6 +283,22 @@ using only primitive computer operations like XOR and shift, and it also consume
 		Involves modular additions, XORs, and data-dependent rotations.
 
 
+7. The Diffie-Hellman Key Exchange (DHKE): 
+is a cryptographic method that allows two parties to securely exchange cryptographic keys over an insecure channel. Here’s how it works:
+	+ Public Parameters:
+		Both parties agree on publicly available numbers: a prime number P and a primitive root G of P. These parameters are shared openly.
+	+ Private Keys:
+		Each party selects a private key: Alice chooses a, and Bob chooses b.
+	+ Public Values:
+		Alice computes her public value: (x = G^a \mod P).
+		Bob computes his public value: (y = G^b \mod P).
+	+ Exchange:
+		Alice shares her public value x with Bob.
+		Bob shares his public value y with Alice.
+	+ Secret Key:
+		Alice computes the secret key: (k_a = y^a \mod P).
+		Bob computes the secret key: (k_b = x^b \mod P).
+		Both have the same secret key, which they can use for encrypted communication.
 
 
 
