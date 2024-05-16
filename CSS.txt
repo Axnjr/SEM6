@@ -321,7 +321,7 @@ access to a resource is indeed who it claims to be. Authentication is necessary 
 		with their authenticated account. Without authentication, users would need to re-enter their details every time they visit 
 		a website or use an application.
 
-		
+
 2. Types of authentication:
 	+ Single-Factor Authentication (SFA):
 		This is the most basic form of authentication and typically involves using a username and password. However, it’s considered 
@@ -370,9 +370,10 @@ Here’s a explanation of how MAC works:
 Applications:
 	<-> Data integrity
 	<-> Message alteration detection
-Limitations:
+Limitations: (THESE Limitations ARE SOLVED BY USING Digital Signatures)
 	<-> Shared secret key establishment
 	<-> Non repudiation
+	<-> No timestamping
 
 4. Hash functions:
 A hash function in cryptography is a versatile one-way algorithm that maps an input of any size to a unique output of a fixed length 
@@ -429,6 +430,7 @@ considered secure and is widely used. It was a joint effort between the NSA and 
 Properties:
 	- Security: SHA-512 provides strong collision resistance and is computationally more secure.
 	- Word Size: It operates with 64-bit words, which contributes to its robustness.
+
 
 8. X.509 digital certificate: 
 	<"A digital certificate is a cryptographic document that serves as a form of digital identification Digital certificates are 
@@ -497,11 +499,19 @@ Example:
 	- When you visit a secure website (using HTTPS), your browser checks the website’s digital 
 		certificate. If it’s valid and issued by a trusted Certificate Authority (CA), your browser trusts the website. CAs are entities 
 		that issue digital certificates after verifying the identity of the certificate holder.
-	- VPN and Wi-Fi Security: PKI is used to secure virtual private networks (VPNs) and Wi-Fi connections.
-	- Email Encryption: PKI can encrypt email messages to protect their contents.
+	- VPN and Wi-Fi Security: 
+		PKI is used to secure virtual private networks (VPNs) and Wi-Fi connections.
+	- Email Encryption: 
+		PKI can encrypt email messages to protect their contents.
 	- PKI helps establish trust in the digital world. 
 
-10. The Needham-Schroeder Authentication Protocol: 
+
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE - 4
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+
+
+1. The Needham-Schroeder Authentication Protocol: - NDY
 is a cryptographic protocol designed to ensure secure communication between two parties. It is commonly used to prevent replay attacks 
 and verify the identity of communicating agents. A Key Distribution Center (KDC) plays a crucial role. The KDC acts as a trusted third 
 party that facilitates secure communication between two parties (e.g., Alice and Bob). Its primary responsibilities include distributing 
@@ -542,6 +552,7 @@ bits used only once in cryptographic communication. Here's why two nonces are ne
 		impersonate one of the parties. With two nonces, each party includes a fresh random number (nonce) in its messages, making it 
 		impossible for an attacker to replay previous messages and successfully impersonate either the client or the server. 
 	
+
 12. Digital Signatures: A digital signature is a cryptographic technique used to verify the authenticity and integrity of a message sent 
 electronically. It ensures that the message was indeed sent by the intended user and hasn’t been tampered with by any third party 
 (attacker). It provides a way to ensure that a message or document has not been altered since it was signed and that it indeed came 
@@ -556,9 +567,6 @@ from the claimed sender. Digital signatures provide several key services:
 		Digital signatures can be accompanied by timestamps, indicating the exact time at which the signature was applied. This feature 
 		helps establish the chronological order of events, aiding in legal disputes and providing additional evidence of the authenticity 
 		of the document. 
-	+ Efficiency and Convenience: 
-		Digital signatures streamline the signing process, eliminating the need for physical documents and handwritten signatures. This 
-		not only saves time but also reduces costs associated with printing, scanning, and storing paper documents. 
 Use Cases:
 	+ Emails: 
 		Digital signatures can be used to sign and verify emails.
@@ -568,6 +576,7 @@ Use Cases:
 		Provides a secure way to sign contracts electronically.
 	+ Secure Web Communication: 
 		Used in HTTPS/TLS to verify the authenticity of websites.
+
 
 13. Explain different types of attacks on Digital Signature.  
 Attacks on digital signatures can exploit weaknesses in the algorithms, implementations, or processes surrounding their creation and 
@@ -601,6 +610,7 @@ verification. Here are some common types of attacks on digital signatures:
 		impersonate the legitimate signer. Countermeasures against replay attacks include including timestamping or nonce values 
 		in the signature process.
 
+
 14. RSA (Rivest–Shamir–Adleman): 
 RSA is the most popular asymmetric cryptographic algorithm. While it is primarily used for encrypting messages, it can also be employed 
 for creating digital signatures.  
@@ -627,8 +637,9 @@ corresponding public keys
 																MODULE - 5
 // ----------------------------------------------------------------------------------------------------------------------------------- //
 
+
 1. Memory protection: 
-Refers to the mechanisms put in place by an operating system or hardware to control access to memory segments. These mechanisms help 
+Refers to the mechanisms used by an operating system or hardware to control access to memory segments. These mechanisms help 
 prevent processes or users from accessing memory areas that they are not authorized to access. Memory protection is essential 
 for maintaining the stability and security of a system. Here's how it works: 
 	- Segmentation: 
@@ -652,6 +663,7 @@ Memory protection mechanisms help prevent various security threats, including bu
 attacks, unauthorized access to sensitive data, and denial-of-service attacks that exploit 
 vulnerabilities in memory management.
 
+
 2. Address protection: 
 also known as address space layout randomization (ASLR), is a security technique used to prevent attackers from predicting the memory 
 addresses of system components and exploiting vulnerabilities such as buffer overflows and code injection attacks. Here's how 
@@ -662,6 +674,7 @@ address protection works:
 	making it difficult for attackers to predict the location of critical data or code. 
 ASLR is an essential defense mechanism that adds unpredictability to memory layout, making it more challenging for attackers to exploit 
 vulnerabilities.
+
 
 3. File Protection mechanism:
 File protection in an operating system refers to the various mechanisms and techniques used to secure files from unauthorized access, 
@@ -681,6 +694,7 @@ alteration, or deletion.
 		Universe: All other users in the system.
 Access-control lists (ACLs) associate identity-dependent access with files and directories, specifying which users have access and the 
 type of access they are allowed.
+
 
 4. User authentication:
 is the process of verifying the identity of an individual or entity attempting to access a system, network, or application. It ensures 
