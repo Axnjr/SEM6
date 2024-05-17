@@ -527,6 +527,7 @@ and verify the identity of communicating agents. A Key Distribution Center (KDC)
 party that facilitates secure communication between two parties (e.g., Alice and Bob). Its primary responsibilities include distributing 
 secret keys and verifying the identities of communicating agents. The authentication process involves several steps: 
 
++ Symmetric 
 	+Alice sends a request to the KDC asking for a session key to communicate with Bob (B) with a random number (naunce)
 	+KDC verifies Alice and generates a session key for her and sends her the key by encrypting with her secret key. 
 		It also sends a ticket of session key encrypted with bobs secret key.
@@ -534,6 +535,12 @@ secret keys and verifying the identities of communicating agents. The authentica
 	+Bob also decrypts the message and gets the session key.
 	+Bob sends naunce (Nb) value encrypted with session key to Alice
 	+Alice responds back with naunce (Nb - 1) to confirm authenticated connection.
+
++ Public
+	+Alice sends a message to Bob including her identity and a nonce (Na) encrypted with Bobs public key
+	+Bob decrypts the message and sends nonce (Na) & naunce (Nb) encrypted with Alice's public key
+	+Alice verifies its naunce (Na) and sends the bobs naunce (Nb) again to bob
+	+Bob also does the same 
 
 
 11.  Why is there a need for two nonces in the Needham-Schroeder protocol?  
