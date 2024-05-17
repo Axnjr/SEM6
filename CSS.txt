@@ -879,6 +879,21 @@ Benefits of Session Management:
 	Personalizes Experience: Websites can remember your preferences and tailor content accordingly.
 	Tracks Activity: Allows features like shopping carts or multi-step forms.
 
+Session hijacking:
+
+	Attack occurs when an unauthorized individual gains control over a user’s active session.
+	+ Session sniffing: 
+		Attackers use sniffers to capture valid session tokens transmitted over the network.
+	+ Cross-Site Scripting (XSS): 
+		Malicious code injected into a website can steal session tokens from unsuspecting users.
+	+ Malicious JavaScript Codes: 
+		Similar to XSS, attackers can execute JavaScript code to manipulate session tokens.
+	+ Trojans: 
+		Malware on the client-side can compromise session tokens.
+	+ Man-in-the-middle attack: 
+		An attacker intercepts communication between the client and the server, potentially stealing session tokens.
+
+
 
 8. Secure Electronic Transaction (SET): 
 is a protocol developed to facilitate secure online payment transactions over the internet. It was jointly developed by Mastercard, Visa, 
