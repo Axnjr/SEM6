@@ -983,6 +983,10 @@ encryption to ensure the secure transmission of data between clients and servers
 	associated with data interception and tampering.
 
 
+11. Firewalls, Different types of firewalls and the layers: - NDY ❌
+play a crucial role in network security by controlling traffic based on specific rules
+
+
 	
 1. Distinguish between message integrity and message authentication: ✅
 
