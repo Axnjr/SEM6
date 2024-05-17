@@ -887,9 +887,14 @@ establish a standardized, secure framework for conducting e-commerce transaction
 authentication of sensitive payment information. 
 
 Components of SET:
-	Encryption: SET uses strong encryption algorithms to secure data transmission between the customer’s browser and the merchant’s server.
-	Digital Certificates: Each participant (customer, merchant, and payment gateway) has a digital certificate issued by a trusted Certificate Authority (CA). These certificates verify the identity of the parties involved.
-	Digital Signatures: SET employs digital signatures to ensure the integrity of messages exchanged during the transaction. These signatures prevent tampering with data.
+	+ Encryption: 
+		SET uses strong encryption algorithms to secure data transmission between the customer’s browser and the merchant’s server.
+	+ Digital Certificates: 
+		Each participant (customer, merchant, and payment gateway) has a digital certificate issued by a trusted 
+		Certificate Authority (CA). These certificates verify the identity of the parties involved.
+	+ Digital Signatures: 
+		SET employs digital signatures to ensure the integrity of messages exchanged during the transaction. These 
+		signatures prevent tampering with data.
 
 Transaction Flow: A typical SET transaction involves the following steps:
 	Initialization: The customer initiates a purchase on the merchant’s website.
