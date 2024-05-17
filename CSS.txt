@@ -859,7 +859,7 @@ disguised as legitimate content.
 	or sharing sensitive information.
 
 
-11. Session management:
+7. Session management:
 HTTP is a “stateless” protocol. Which means there is no “built-in” standard to keep track of interrelated requests. Each request is 
 treated as independent. This makes it difficult for websites to track a user's activity across multiple page visits, hence we use 
 session management. 
