@@ -847,7 +847,7 @@ gather information about their behavior.
 	deployed by malicious actors to conduct surveillance or deliver targeted advertising. 
 
 
-13. Clickjacking: 
+6. Clickjacking: 
 also known as UI redressing, is a deceptive technique used by attackers to trick users into clicking on unintended or malicious elements 
 disguised as legitimate content. 
 
