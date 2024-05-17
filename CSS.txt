@@ -785,7 +785,12 @@ security levels (e.g., top secret, confidential) and then restricts access based
 can only see the data they're authorized for, even if they're able to access the database itself.
 
 
-8.  Phishing: 
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE - 6
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+
+
+1.  Phishing: 
 is a type of cyber attack where attackers impersonate legitimate entities (such as banks, social media platforms, or government agencies) 
 to trick individuals into disclosing sensitive information, such as usernames, passwords, or financial details. 
 
@@ -852,6 +857,7 @@ disguised as legitimate content.
 	-When users interact with the visible content, they unknowingly trigger actions on the 
 	hidden elements, such as enabling microphone or camera access, downloading malware, 
 	or sharing sensitive information.
+
 
 11. Session management:
 HTTP is a “stateless” protocol. Which means there is no “built-in” standard to keep track of interrelated requests. Each request is 
