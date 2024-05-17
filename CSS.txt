@@ -526,28 +526,14 @@ is a cryptographic protocol designed to ensure secure communication between two 
 and verify the identity of communicating agents. A Key Distribution Center (KDC) plays a crucial role. The KDC acts as a trusted third 
 party that facilitates secure communication between two parties (e.g., Alice and Bob). Its primary responsibilities include distributing 
 secret keys and verifying the identities of communicating agents. The authentication process involves several steps: 
-	1. Authentication of Alice by the KDC: 
-		- Alice sends a message to the KDC requesting a session key to communicate with Bob. 
-		- Alice authenticates herself to the KDC by including her identity in the message. 
-		- The KDC verifies Alice's identity and generates a session key for Alice to use in communicating with Bob. 
-	2. Authentication of Bob by the KDC: 
-		- The KDC verifies Bob's identity based on his identity included in Alice's message. 
-		- If Bob's identity is valid, the KDC generates a session key for Alice to communicate securely with Bob. 
-	3. Authentication of the KDC to Alice: 
-		- After verifying Alice's identity and generating a session key for her, the KDC sends the session key encrypted with Alice's 
-		public key to Alice. 
-		- Alice can decrypt this message using her private key, confirming that the message originated from the KDC. 
-	4. Authentication of the KDC to Bob: 
-		- Similarly, after verifying Bob's identity, the KDC sends the session key encrypted with Bob's public key to Bob. 
-		- Bob can decrypt this message using his private key, confirming that the message originated from the KDC. 
-	5. Authentication of Alice to Bob: 
-		- Alice constructs a message containing her identity and the session key encrypted with Bob's public key. 
-		- Alice sends this message to Bob. 
-		- When Bob receives the message, he decrypts it using his private key, confirming that it originated from Alice. 
-	6. Authentication of Bob to Alice: 
-		- Bob constructs a message containing his identity and the session key encrypted with Alice's public key. 
-		- Bob sends this message to Alice. 
-		- When Alice receives the message, she decrypts it using her private key, confirming that it originated from Bob.
+
+	+Alice sends a request to the KDC asking for a session key to communicate with Bob (B) with a random number (naunce)
+	+KDC verifies Alice and generates a session key for her and sends her the key by encrypting with her secret key. 
+		It also sends a ticket of session key encrypted with bobs secret key.
+	+Alice decrypts the message and forwards the ticket to bob
+	+Bob also decrypts the message and gets the session key.
+	+Bob sends naunce (Nb) value encrypted with session key to Alice
+	+Alice responds back with naunce (Nb - 1) to confirm authenticated connection.
 
 
 11.  Why is there a need for two nonces in the Needham-Schroeder protocol?  
