@@ -880,7 +880,7 @@ Benefits of Session Management:
 	Tracks Activity: Allows features like shopping carts or multi-step forms.
 
 
-12. Secure Electronic Transaction (SET): 
+8. Secure Electronic Transaction (SET): 
 is a protocol developed to facilitate secure online payment transactions over the internet. It was jointly developed by Mastercard, Visa, 
 IBM, and other industry leaders in the late 1990s to address security concerns related to online credit card payments. SET aimed to 
 establish a standardized, secure framework for conducting e-commerce transactions while ensuring the confidentiality, integrity, and 
