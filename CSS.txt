@@ -752,7 +752,7 @@ in Windows:
 
 
 6. An inference attack: 
-occurs when a user can deduce more robust information about a database without directly accessing it.  an inference attack on a database 
+occurs when a user can deduce more robust information about a database without directly accessing it. an inference attack on a database 
 is a data analysis technique where an attacker with authorized access to a subset of the database infers sensitive information that 
 should be restricted. This is achieved by exploiting relationships and patterns between seemingly innocuous data points.
 
@@ -815,17 +815,136 @@ is a common web application security vulnerability that allows attackers to inje
 
 	-XSS attacks occur when an attacker embeds malicious JavaScript code into a web page or 
 	web application input fields that are later executed by unsuspecting users' browsers. 
-	
+
 	-The injected script can steal session cookies, redirect users to malicious websites, deface 
 	web pages, or perform other malicious actions, depending on the attacker's objectives.
 
 
+11. DNS attacks: 
+target the Domain Name System (DNS), which translates domain names into IP addresses to facilitate communication between devices on the 
+internet. 
+	DNS attacks can take various forms, including DNS spoofing, DNS cache poisoning, 
+	DNS hijacking, and distributed denial-of-service (DDoS) attacks targeting DNS infrastructure. 
+	These attacks can disrupt internet connectivity, redirect users to malicious websites, intercept communications, or facilitate phishing 
+	and malware distribution. 
 
 
+12. Web Bugs: 
+also known as web beacons or tracking pixels, are tiny, transparent images embedded in web pages or emails to track user activity and 
+gather information about their behavior. 
+
+	-Web bugs are often used for legitimate purposes, such as web analytics and email 
+	tracking. However, they can also be exploited by attackers to monitor users' browsing 
+	habits, track their interactions with websites, or collect personal information without their 
+	consent. 
+
+	-Privacy concerns arise when web bugs are used for intrusive tracking or when they are 
+	deployed by malicious actors to conduct surveillance or deliver targeted advertising. 
 
 
+13. Clickjacking: 
+also known as UI redressing, is a deceptive technique used by attackers to trick users into clicking on unintended or malicious elements 
+disguised as legitimate content. 
+
+	-In a clickjacking attack, the attacker overlays transparent or opaque layers containing 
+	hidden buttons, links, or forms on top of legitimate web pages. 
+	
+	-When users interact with the visible content, they unknowingly trigger actions on the 
+	hidden elements, such as enabling microphone or camera access, downloading malware, 
+	or sharing sensitive information.
+
+11. Session management:
+HTTP is a “stateless” protocol. Which means there is no “built-in” standard to keep track of interrelated requests. Each request is 
+treated as independent. This makes it difficult for websites to track a user's activity across multiple page visits, hence we use 
+session management. 
+
+How it Works:
+
+	Session Initiation: When you log in to a website or perform an action that requires remembering you (adding items to a shopping cart), a session is typically initiated.
+	Session ID Generation: The server creates a unique identifier for your session (like a secret handshake). This identifier is called a session ID.
+	Session Data Storage: The server stores information about your session, such as your login credentials, preferences, or items in your cart. This data can be stored on the server itself or on your browser (using cookies).
+	Session ID Exchange: The server sends the session ID to your browser, often as a cookie. A cookie is a small piece of data that gets stored on your computer.
+	Subsequent Requests: With each subsequent request to the website, your browser automatically sends the session ID back to the server. The server then uses the ID to look up your session data and personalize your experience.
+	Session Termination: Sessions can expire after a period of inactivity or be terminated explicitly when you log out.
+
+Benefits of Session Management:
+
+	Maintains User State: You don't have to log in or re-enter information repeatedly.
+	Personalizes Experience: Websites can remember your preferences and tailor content accordingly.
+	Tracks Activity: Allows features like shopping carts or multi-step forms.
 
 
+12. Secure Electronic Transaction (SET): 
+is a protocol developed to facilitate secure online payment transactions over the internet. It was jointly developed by Mastercard, Visa, 
+IBM, and other industry leaders in the late 1990s to address security concerns related to online credit card payments. SET aimed to 
+establish a standardized, secure framework for conducting e-commerce transactions while ensuring the confidentiality, integrity, and 
+authentication of sensitive payment information. 
+
+Components of SET:
+	Encryption: SET uses strong encryption algorithms to secure data transmission between the customer’s browser and the merchant’s server.
+	Digital Certificates: Each participant (customer, merchant, and payment gateway) has a digital certificate issued by a trusted Certificate Authority (CA). These certificates verify the identity of the parties involved.
+	Digital Signatures: SET employs digital signatures to ensure the integrity of messages exchanged during the transaction. These signatures prevent tampering with data.
+
+Transaction Flow: A typical SET transaction involves the following steps:
+	Initialization: The customer initiates a purchase on the merchant’s website.
+	Merchant Authentication: The merchant’s server sends its digital certificate to the customer’s browser.
+	Customer Authentication: The customer’s browser generates a unique session key, encrypts it with the merchant’s public key, and
+	sends it back to the server.
+	Payment Authorization: The customer selects the payment method (credit card) and enters the card details. The data is encrypted using 
+	the session key and sent to the merchant.
+	Merchant Forwarding: The merchant forwards the encrypted payment information to the payment gateway.
+	Payment Gateway Processing: The payment gateway decrypts the data, verifies the digital signatures, and sends the authorization 
+	request to the card issuer.
+	Card Issuer Response: The card issuer validates the transaction and sends an authorization response once transaction is complete.
+	Merchant Confirmation: The payment gateway forwards the response to the merchant, who confirms the transaction with the customer.
+
+Benefits of SET:
+	Strong Security: SET provides robust security mechanisms, reducing the risk of fraud and unauthorized access.
+	Privacy: Cardholder information remains confidential during transmission.
+	Global Acceptance: SET was initially supported by major card networks, making it widely accepted.
+
+Challenges and Adoption:
+	Despite its strong security features, SET faced challenges due to complexity, implementation costs, and the emergence of alternative payment methods.
+	Over time, other protocols (such as SSL/TLS) gained prominence, and SET adoption declined.
+
+
+13. SSL: 
+is a cryptographic protocol used to establish a secure and encrypted 
+connection between a web server and a web browser or client application. 
+
+	-SSL ensures the confidentiality, integrity, and authenticity of data exchanged 
+	between the client and server by encrypting communication over the internet. 
+
+	-SSL uses asymmetric encryption (public-key cryptography) to initiate a secure 
+	session between the client and server. During the SSL handshake, the server 
+	presents its digital certificate to the client, which contains its public key and other 
+	identifying information. The client verifies the certificate's authenticity and uses 
+	the server's public key to encrypt a symmetric session key, which is then used for 
+	secure communication. 
+
+	-SSL/TLS (Transport Layer Security) has replaced SSL as the industry-standard 
+	cryptographic protocol for securing internet communication. TLS builds upon the 
+	principles of SSL and provides stronger encryption algorithms and enhanced 
+	security features. 
+
+
+14. HTTPS: 
+is an extension of the HTTP protocol used for secure communication over 
+the internet. It combines the HTTP application layer protocol with SSL/TLS 
+encryption to ensure the secure transmission of data between clients and servers. 
+
+	-HTTPS encrypts data exchanged between the client's web browser and the web 
+	server, protecting it from interception or eavesdropping by unauthorized parties. 	
+
+	-Websites that use HTTPS have an SSL/TLS certificate installed on their web 
+	servers, which enables encryption and authentication of the server's identity. This 
+	certificate is issued by a trusted Certificate Authority (CA) and contains 
+	information about the website's domain, owner, and public key. 
+
+	-HTTPS is essential for safeguarding sensitive information transmitted over the 
+	internet, such as login credentials, payment details, and personal data. It helps 
+	protect users' privacy, build trust in online transactions, and mitigate security risks 
+	associated with data interception and tampering.
 
 
 	
