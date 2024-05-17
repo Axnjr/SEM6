@@ -815,7 +815,7 @@ application in which the user is authenticated.
 	sensitive operations. 
 
 
-10.  Cross-Site Scripting (XSS): 
+3.  Cross-Site Scripting (XSS): 
 is a common web application security vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. 
 
 	-XSS attacks occur when an attacker embeds malicious JavaScript code into a web page or 
