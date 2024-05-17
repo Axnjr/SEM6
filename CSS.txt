@@ -825,7 +825,7 @@ is a common web application security vulnerability that allows attackers to inje
 	web pages, or perform other malicious actions, depending on the attacker's objectives.
 
 
-11. DNS attacks: 
+4. DNS attacks: 
 target the Domain Name System (DNS), which translates domain names into IP addresses to facilitate communication between devices on the 
 internet. 
 	DNS attacks can take various forms, including DNS spoofing, DNS cache poisoning, 
@@ -834,7 +834,7 @@ internet.
 	and malware distribution. 
 
 
-12. Web Bugs: 
+5. Web Bugs: 
 also known as web beacons or tracking pixels, are tiny, transparent images embedded in web pages or emails to track user activity and 
 gather information about their behavior. 
 
