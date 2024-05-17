@@ -802,7 +802,7 @@ to trick individuals into disclosing sensitive information, such as usernames, p
 	victims into taking actions that compromise their security and privacy.
 
 
-9. Cross-Site Request Forgery (CSRF): 
+2. Cross-Site Request Forgery (CSRF): 
 is a web security vulnerability that occurs when an attacker tricks a user's web browser into executing unauthorized actions on a web 
 application in which the user is authenticated. 
 
