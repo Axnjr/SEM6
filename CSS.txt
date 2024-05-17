@@ -897,17 +897,26 @@ Components of SET:
 		signatures prevent tampering with data.
 
 Transaction Flow: A typical SET transaction involves the following steps:
+
 	Initialization: The customer initiates a purchase on the merchant’s website.
+
 	Merchant Authentication: The merchant’s server sends its digital certificate to the customer’s browser.
+
 	Customer Authentication: The customer’s browser generates a unique session key, encrypts it with the merchant’s public key, and
-	sends it back to the server.
+		sends it back to the server.
+
 	Payment Authorization: The customer selects the payment method (credit card) and enters the card details. The data is encrypted using 
-	the session key and sent to the merchant.
+		the session key and sent to the merchant.
+
 	Merchant Forwarding: The merchant forwards the encrypted payment information to the payment gateway.
+
 	Payment Gateway Processing: The payment gateway decrypts the data, verifies the digital signatures, and sends the authorization 
-	request to the card issuer.
+		request to the card issuer.
+
 	Card Issuer Response: The card issuer validates the transaction and sends an authorization response once transaction is complete.
-	Merchant Confirmation: The payment gateway forwards the response to the merchant, who confirms the transaction with the customer.
+
+	Merchant Confirmation: The payment gateway forwards the response to the merchant server, who confirms the transaction with the 
+		customer.
 
 Benefits of SET:
 	Strong Security: SET provides robust security mechanisms, reducing the risk of fraud and unauthorized access.
@@ -915,7 +924,8 @@ Benefits of SET:
 	Global Acceptance: SET was initially supported by major card networks, making it widely accepted.
 
 Challenges and Adoption:
-	Despite its strong security features, SET faced challenges due to complexity, implementation costs, and the emergence of alternative payment methods.
+	Despite its strong security features, SET faced challenges due to complexity, implementation costs, and the emergence of alternative 
+	payment methods.
 	Over time, other protocols (such as SSL/TLS) gained prominence, and SET adoption declined.
 
 
