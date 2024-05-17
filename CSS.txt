@@ -944,7 +944,7 @@ Challenges and Adoption:
 	Over time, other protocols (such as SSL/TLS) gained prominence, and SET adoption declined.
 
 
-13. SSL: 
+9. SSL: 
 is a cryptographic protocol used to establish a secure and encrypted 
 connection between a web server and a web browser or client application. 
 
@@ -964,7 +964,7 @@ connection between a web server and a web browser or client application.
 	security features. 
 
 
-14. HTTPS: 
+10. HTTPS: 
 is an extension of the HTTP protocol used for secure communication over 
 the internet. It combines the HTTP application layer protocol with SSL/TLS 
 encryption to ensure the secure transmission of data between clients and servers. 
