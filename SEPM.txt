@@ -3,7 +3,7 @@ is a discipline that involves the application of engineering principles, techniq
 testing, and maintenance of software systems. It encompasses a systematic approach to the entire software development process, aiming to 
 create high-quality, reliable, and efficient software solutions that meet user requirements within specified constraints such as time 
 and budget. Key characteristics:
-	+ Functionalit
+	+ FunctionalitY
 	+ Reliability
 	+ Efficiency
 	+ Scalability
@@ -220,8 +220,56 @@ adapting as needed.
 - They are essential for ensuring a robust and high-quality system.
 
 
+3. Requirements engineering: 
+is a crucial part of software development. It involves identifying, analyzing, specifying, validating, and managing the needs and 
+expectations of stakeholders for a software system. Let’s break down the process:
+
+	+ Feasibility Study: (ho bhi sakta hai ye ?)
+		Evaluates technical, operational, and economic feasibility.
+		Assesses whether the project is viable in terms of resources, technology, and financial benefits
+	+ Requirements Elicitation: (thike research karte hai !)
+		Gathers knowledge about the project domain and user needs.
+		Techniques like interviews, surveys, and workshops are used to understand requirements.
+	+ Requirements Specification: (thike ye sab kar ke denge !)
+		Documents the requirements in detail.
+		Describes what the system should do, its functionality, and constraints.
+	+ Requirements Validation: (fir se bata do salo ye hi sab chahiye na ?)
+		Ensures that the specified requirements are accurate, complete, and consistent.
+		Involves reviews, inspections, and walkthroughs
+
+	+ Inception: 
+		This is the initial stage where the project is conceptualized and the goals 
+		and objectives are defined. It involves identifying the problem to be solved and determining the overall scope of the project. 
+	+ Elicitation: 
+		Elicitation involves gathering requirements from stakeholders. However, there can be several challenges during this stage: 
+		• Problems of scope: Stakeholders may have different ideas about what the 
+			system should do, leading to scope creep or conflicting requirements. 
+		• Problems of understanding: Stakeholders may have difficulty articulating their 
+			needs or may not fully understand the capabilities and limitations of the system. 
+		• Problems of volatility: Requirements may change frequently due to evolving 
+			business needs, technological advancements, or changing market conditions. 
+	+ Elaboration: 
+		In this stage, the gathered requirements are analyzed, refined, and 
+		detailed further. The goal is to ensure that the requirements are complete, consistent, and unambiguous. 
+	+ Negotiation: 
+		Requirements often involve trade-offs between conflicting priorities, 
+		such as cost, schedule, and functionality. Negotiation involves reaching consensus 
+		among stakeholders and finding compromises that satisfy the needs of all parties involved. 
+	+ Specification: 
+		This stage involves documenting the requirements in detail using 
+		various techniques such as use cases, user stories, and formal requirement documents. 
+		The goal is to create a clear and unambiguous description of what the system is expected to do. 
+	+ Validation: 
+		Validation involves ensuring that the documented requirements accurately 
+		reflect the needs and expectations of stakeholders and are feasible to implement. It 
+		ensures that the requirements are testable and verifiable. 
+	+ Requirements Management: 
+		This stage involves maintaining and controlling changes 
+		to requirements throughout the software development lifecycle. It includes tracking 
+		changes, managing dependencies, and ensuring that requirements remain aligned with project goals and objectives. 
 
 
+4. 
 
 
 
