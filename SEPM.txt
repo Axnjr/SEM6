@@ -122,7 +122,18 @@ loops around it.  The most special thing about this model is that risks are iden
 prototyping. This feature is also called Risk Handling. (draw a spiral diagram with 4 segments like graphs and name all phases)
 
 
-10. 
+10. RAD model (rapid application developement):
+The methodology of RAD model is similar to that of incremental or waterfall model. It is used for small projects. 
+If the project is large then it is divided into many small projects and these small projects are 
+planned one by one and completed. In this way, by completing small projects, the large project gets ready quickly. 
+In this model large project is divided into multiple small projects each of which are completed indedpendently acc. to the time
+deadline and the then all modules are joined together to deliver the final product. The main objective of RAD model is to reuse code, 
+components, tools, processes in project development.
+
+
+10. Concurrent model: 
+is a programming paradigm that focuses on executing multiple processes concurrently. It aims to enhance the efficacy and performance of 
+software systems by utilizing parallel processing
 
 
 
