@@ -3,7 +3,7 @@ is a discipline that involves the application of engineering principles, techniq
 testing, and maintenance of software systems. It encompasses a systematic approach to the entire software development process, aiming to 
 create high-quality, reliable, and efficient software solutions that meet user requirements within specified constraints such as time 
 and budget. Key characteristics:
-	+ FunctionalitY
+	+ Functionality
 	+ Reliability
 	+ Efficiency
 	+ Scalability
@@ -256,10 +256,23 @@ expectations of stakeholders for a software system. Let’s break down the proce
 		changes, managing dependencies, and ensuring that requirements remain aligned with project goals and objectives. 
 
 
-4. 
+4. A Software Requirements Specification (SRS): 
+is a crucial document that outlines the requirements for developing a software system. SRS is a kind of agreement between the customer 
+and the company, which contains complete information about the requirement desired by the customer and the product made by the company.
+In other words, SRS is a document which describes what will be the features of the software and what will be its behaviour.
+The SRS provides a common communication channel between stakeholders, so that everyone agrees as to what the project aims at. It reduces 
+ambiguity and the risks of misunderstandings among team members in clearly defining requirements. It serves below purposes:
+	+ Clarity and Understanding
+	+ Basis for Project Planning
+	+ Guidance for Development Teams
+	+ Facilitates Testing and Quality Assurance
+	+ Change Management
+	+ Client and Stakeholder Satisfaction
+	+ Risk Mitigation
+	+ Enhanced Collaboration
 
 
-
+5. 
 
 
 
