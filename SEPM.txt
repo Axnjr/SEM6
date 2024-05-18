@@ -1,3 +1,138 @@
+1. Software engineering: 
+is a discipline that involves the application of engineering principles, techniques, and methodologies to the design, development, 
+testing, and maintenance of software systems. It encompasses a systematic approach to the entire software development process, aiming to 
+create high-quality, reliable, and efficient software solutions that meet user requirements within specified constraints such as time 
+and budget. Key characteristics:
+	+ Functionalit
+	+ Reliability
+	+ Efficiency
+	+ Scalability
+	+ Usability
+	+ Maintainability
+	+ Portability
+	+ Security
+	+ Compatibility: 
+		Software should be compatible with different hardware platforms, operating systems, and software environments to ensure interoperability and ease of integration with other systems and applications.
+Activities:
+	Requirements Analysis: Understanding and documenting what the software needs to do.
+	Design: Creating a blueprint for the software architecture.
+	Implementation: Writing the actual code.
+	Testing: Verifying that the software works correctly.
+	Maintenance: Keeping the software up-to-date and fixing issues.
+
+
+2. A software process: 
+refers to the methods and techniques used to develop and maintain software.
+
+
+3. Capability maturity model: 
+CMM helps assess an organization’s maturity in software development processes. It provides guidelines to enhance process maturity. 
+CMM defines five maturity levels, each representing a process capability level.
+	Level 1 (Initial): Chaotic processes with no defined structure.
+	Level 2 (Repeatable): Basic project management practices.
+	Level 3 (Defined): Standardized processes across projects.
+	Level 4 (Managed): Quantitatively controlled processes.
+	Level 5 (Optimizing): Continuous process improvement
+Benefits of CMM:
+	Resource Optimization: Efficient use of resources (money, labor, time).
+	Benchmarking: Formal framework for self-evaluation and comparison.
+	Quality Management: Emphasizes quality assurance and control.
+	Process Enhancement: Gradual process improvement.
+	Increased Output: Boosts productivity without compromising quality.
+
+
+4. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1) Agile Principles:
 
 	Customer Satisfaction: Prioritize customer satisfaction through early and continuous delivery of valuable software.
