@@ -224,19 +224,6 @@ adapting as needed.
 is a crucial part of software development. It involves identifying, analyzing, specifying, validating, and managing the needs and 
 expectations of stakeholders for a software system. Let’s break down the process:
 
-	+ Feasibility Study: (ho bhi sakta hai ye ?)
-		Evaluates technical, operational, and economic feasibility.
-		Assesses whether the project is viable in terms of resources, technology, and financial benefits
-	+ Requirements Elicitation: (thike research karte hai !)
-		Gathers knowledge about the project domain and user needs.
-		Techniques like interviews, surveys, and workshops are used to understand requirements.
-	+ Requirements Specification: (thike ye sab kar ke denge !)
-		Documents the requirements in detail.
-		Describes what the system should do, its functionality, and constraints.
-	+ Requirements Validation: (fir se bata do salo ye hi sab chahiye na ?)
-		Ensures that the specified requirements are accurate, complete, and consistent.
-		Involves reviews, inspections, and walkthroughs
-
 	+ Inception: 
 		This is the initial stage where the project is conceptualized and the goals 
 		and objectives are defined. It involves identifying the problem to be solved and determining the overall scope of the project. 
