@@ -69,6 +69,7 @@ the previous phase. In the waterfall model, the output of one phase serves as th
 		Risk of Late Discoveries: Issues may arise late in the process.
 		Not Ideal for Complex Projects: May not handle complex, evolving requirements well.
 
+Iterative waterfall model is an extension of it, which alows Iteratively fixing and improveing the software flexibly.
 
 5. The Prototype Model: 
 in software engineering is a developmental approach where a prototype is created, tested, and refined based on feedback. Involves building 
@@ -92,9 +93,16 @@ Unlike the linear waterfall model, the V-Model bends upward after the coding pha
 		+ Thorough testing ensures high-quality software
 
 
-7. 
+7. Incremental development model: 
+First, a simple working system implementing only a few basic features is built and then that is delivered to the customer. Then 
+thereafter many successive iterations/ versions are implemented and delivered to the customer until the desired system is released. 
 
 
+8. The evolutionary model: 
+is a combination of the Iterative and Incremental models of the software development life cycle. The Evolutionary Model divides the 
+development cycle into smaller, incremental waterfall models. Users get access to the product at the end of each cycle.
+Feedback from users informs the planning of the next cycle, allowing for changes and adaptations.
+The software product evolves over time. This model is suitable for products where 
 
 
 
