@@ -131,15 +131,66 @@ deadline and the then all modules are joined together to deliver the final produ
 components, tools, processes in project development.
 
 
-10. Concurrent model: 
+10. Concurrent paradigm: 
 is a programming paradigm that focuses on executing multiple processes concurrently. It aims to enhance the efficacy and performance of 
 software systems by utilizing parallel processing
 
 
+11. Agile: 
+is a project management approach that emphasizes adaptability, collaboration, and continuous improvement. It follows the iterative as 
+well as incremental approach that emphasizes the importance of delivering of working product very quickly. Below are steps of agile 
+process:
+	Requirements Gathering: Define project requirements, evaluate feasibility, and plan time and effort.
+	Design: Work with stakeholders to define requirements and create high-level diagrams.
+	Construction/Iteration: Developers start working on the project, deploying a working product in stages.
+	Testing: Quality Assurance examines the product for bugs.
+	Deployment: The product is released to the user environment.
+	Feedback: Gather feedback and make improvements
+AGILE PRINCIPLES: 
+	- CUSTOMER SATISFACTION  
+	- WELCOME THE CHANGES  
+	- DELIVER WORKING SOFTWARE FREQUENTLY  
+	- WORKING TOGETHER DAILY  
+	- MOTIVATED INDIVIDUALS  
+	- FACE TO FACE CONVERSATION  
+	- WORKING SOFTWARE  
+	- TECHNICAL EXCELLENCE  
+	- SELF ORGANISING  
+	- SIMPLICITY
+	- SUSTAINABLE DEVELOPEMNT
 
 
+12. Extreme Programming (XP): 
+is an agile software development framework that aims to produce higher quality software without compromising the developer experience.
+The extreme programming model recommends taking the best practices that have worked well in the past in program development projects.
+Below are the best prcatices that have been recognized in the extreme programming model:
+	+ Code reviews
+	+ Test-Driven Development
+	+ Pair Programming
+	+ Coding Standards
+	+ Refactoring
+	+ Customer Involvement
+	+ Incremental Development
+	+ Continues integration
+	+ Simplicity
+	+ Design
+	+ Integration testing
 
 
+13. Scrum: 
+is an agile team collaboration framework commonly used in software development and other industries. It provides a structured approach to 
+managing complex projects, emphasizing teamwork, transparency, and adaptability. The team working on the project under scrum methodology
+consists of:
+	Product Owner: Represents stakeholders, defines product requirements, and prioritizes work.
+	Scrum Master: Facilitates the Scrum process, removes obstacles, and ensures adherence to Scrum principles.
+	Developers: The team responsible for creating the product increment.
+A few key terms / events of scrum framework:
+	Sprint: During sprints, the Scrum team completes the goals and objectives outlined for that particular time frame.
+	Sprint Planning: The team plans for the upcoming sprint.
+	Daily Scrum (Stand-up): A daily meeting where team members share progress and discuss any impediments.
+	Sprint Review: The team demonstrates completed work to stakeholders.
+Scrum decisions are based on observation, experience, and experimentation. The framework encourages learning through small experiments and 
+adapting as needed.
 
 
 
