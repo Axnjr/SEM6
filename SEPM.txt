@@ -47,7 +47,52 @@ Benefits of CMM:
 	Increased Output: Boosts productivity without compromising quality.
 
 
-4. 
+4. The Waterfall Model: 
+is a classic software development life cycle (SDLC) model that follows a structured, sequential approach for project management and 
+software development. We can imagine waterfall in the following way:  
+	“ Once the water starts flowing over the edge of the cliff, it starts falling down the mountain and the water cannot go back up ” 
+Similarly, waterfall model also works, once one phase of development is completed then we move to the next phase but cannot go back to 
+the previous phase. In the waterfall model, the output of one phase serves as the input for the other phase. 
+
+	Phases:
+		+ Reuqirements
+		+ Design
+		+ Implement
+		+ Verification
+		+ Maintanance
+
+	Advantages:
+		Clarity and Simplicity: The linear structure provides a straightforward foundation for project development.
+		Suited for projects with clear and stable requirements.
+	Disadvantages:
+		Inflexible: Changes are difficult once a phase is complete.
+		Risk of Late Discoveries: Issues may arise late in the process.
+		Not Ideal for Complex Projects: May not handle complex, evolving requirements well.
+
+
+5. The Prototype Model: 
+in software engineering is a developmental approach where a prototype is created, tested, and refined based on feedback. Involves building 
+a preliminary version of the final software. This prototype serves as a basic model which refined based on user input.
+	Phases:
+		+ Reqiurments
+		+ Quick Design
+		+ Build a prototype
+		+ User evaluation
+		+ Refining the prototype
+		+ Implemnt and maintanance
+One problem in this model is that if the end users are not satisfied with the prototype model, then a new prototype model is created 
+again, due to which this model consumes a lot of money and time.
+
+
+6. The V-Model: 
+in software engineering is a development process that extends the waterfall model. It emphasizes testing and validation at every stage 
+of the development process. The V-Model gets its name from its “V” shape, representing parallel development and testing phases.
+Unlike the linear waterfall model, the V-Model bends upward after the coding phase.
+	Same Advantages and Disadvantages as of Waterfall model: 
+		+ Thorough testing ensures high-quality software
+
+
+7. 
 
 
 
