@@ -193,8 +193,31 @@ Scrum decisions are based on observation, experience, and experimentation. The f
 adapting as needed.
 
 
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE-2
+// ----------------------------------------------------------------------------------------------------------------------------------- //
 
 
+1. Functional Requirements:
+- These are the specific features and behaviors that the system must provide to meet the user’s needs.
+- Functional requirements answer the question: “What should the software system do?”, Examples of functional requirements include:
+	- User authentication (e.g., login functionality).
+	- Order processing (e.g., adding items to a shopping cart).
+	- Search functionality (e.g., searching for products).
+- These requirements are directly visible in the final product and are typically captured in use cases.
+
+
+2. Non-Functional Requirements:
+- These define the quality attributes that the system must satisfy. They focus on how the system performs rather than what it does.
+- These requirements address aspects beyond functionality and deal with issues like:
+	- Performance: How quickly the system responds to user requests.
+	- Security: Ensuring data protection and access control.
+	- Usability: How user-friendly the system is.
+	- Reliability: System availability and error handling.
+	- Scalability: Handling increased load or users.
+	- Maintainability: Ease of maintaining and updating the system.
+- Non-functional requirements are often specified by technical experts (e.g., architects, developers).
+- They are essential for ensuring a robust and high-quality system.
 
 
 
@@ -302,25 +325,7 @@ adapting as needed.
 	Reflection and Adaptation: Regularly reflect on effectiveness and adjust behavior.
 
 
-2) Functional Requirements:
-	- These are the specific features and behaviors that the system must provide to meet the user’s needs.
-	- Functional requirements answer the question: “What should the software system do?”, Examples of functional requirements include:
-		- User authentication (e.g., login functionality).
-		- Order processing (e.g., adding items to a shopping cart).
-		- Search functionality (e.g., searching for products).
-	- These requirements are directly visible in the final product and are typically captured in use cases.
 
-3) Non-Functional Requirements:
-	- These define the quality attributes that the system must satisfy. They focus on how the system performs rather than what it does.
-	- These requirements address aspects beyond functionality and deal with issues like:
-		- Performance: How quickly the system responds to user requests.
-		- Security: Ensuring data protection and access control.
-		- Usability: How user-friendly the system is.
-		- Reliability: System availability and error handling.
-		- Scalability: Handling increased load or users.
-		- Maintainability: Ease of maintaining and updating the system.
-	- Non-functional requirements are often specified by technical experts (e.g., architects, developers).
-	- They are essential for ensuring a robust and high-quality system.
 
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------- //
