@@ -101,8 +101,29 @@ thereafter many successive iterations/ versions are implemented and delivered to
 8. The evolutionary model: 
 is a combination of the Iterative and Incremental models of the software development life cycle. The Evolutionary Model divides the 
 development cycle into smaller, incremental waterfall models. Users get access to the product at the end of each cycle.
-Feedback from users informs the planning of the next cycle, allowing for changes and adaptations.
-The software product evolves over time. This model is suitable for products where 
+Feedback from users helps in planning the next cycle, allowing for changes and adaptations.
+The software product evolves over time. This model is suitable for products which are prone to constant redesigns and new feature 
+additions. (draw a down flowing diagram with all phases below)
+	Phases:
+		+ Same till designing
+		+ Iterative process:
+			+ Develop a version
+			+ Deliver the version of product to the user
+			+ Take user feedback on it
+			+ Incorporate the feedback in the developement
+		+ Deliver completed project
+
+
+9. Spiral model:
+This model has characteristics of both of iterative and waterfall model. This model is used in projects which are large and complex.  
+It is named as Spiral as in this model we start building the software and then take multiple iterations or loops to deliver the better 
+version of the software, its figure, it looks like a spiral, in which a long-curved line starts from the centre point and makes many 
+loops around it.  The most special thing about this model is that risks are identified in each phase and they are resolved through 
+prototyping. This feature is also called Risk Handling. (draw a spiral diagram with 4 segments like graphs and name all phases)
+
+
+10. 
+
 
 
 
