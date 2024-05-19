@@ -272,10 +272,44 @@ ambiguity and the risks of misunderstandings among team members in clearly defin
 	+ Enhanced Collaboration
 
 
-5. 
+5. 3P's:
+	+ People: 
+		People refer to the human resources involved in the software development 
+		process. This includes developers, testers, project managers, stakeholders, and end
+		users. The success of a software project heavily depends on the skills, experience, 
+		motivation, and collaboration of the people involved. Effective communication and 
+		teamwork among team members are essential for delivering high-quality software on 
+		time and within budget. 
+	+ Process: 
+		Process refers to the methodologies, frameworks, and practices used to 
+		manage and execute software development projects. Examples of software 
+		development processes include Waterfall, Agile, Scrum, and DevOps. Each process 
+		has its own set of principles, practices, and tools for planning, executing, monitoring, 
+		and controlling software development activities. Choosing the right process and 
+		adapting it to the specific needs of the project is crucial for achieving project success. 
+	+ Product: 
+		Product refers to the software or system being developed. This includes its 
+		features, functionality, quality, and usability. The goal of software development is to 
+		deliver a product that meets the needs and expectations of its users while adhering to 
+		project requirements, budget, and schedule constraints. Product quality assurance, 
+		testing, and validation are important aspects of ensuring that the final product meets 
+		its intended purpose and provides value to its users.
 
 
+6. Software metrics:
 
+	+ Direct measures /  Size oriented metrics: 
+		of the software process include cost and effort applied. Direct measures of the product include  
+			lines of code (LOC) produced, 
+			execution speed, 
+			memory size, and 
+			defects reported over some set period of time,
+			No of Persons​,
+			No of errors,
+			cost per line of code (LOC)
+
+	+ Indirect measures / Function oriented metrics:
+		of the product include functionality, quality, complexity, efficiency, reliability,  maintainability,and many other “–abilities”
 
 
 
