@@ -320,7 +320,7 @@ including size, effort, cost, time, and quality.
 		Organic: Suitable for small teams, well-understood problems, and nominal experience.
 		Semi-detached: Falls between organic and embedded, requiring more experience and guidance.
 		Embedded: Complex projects demanding creativity, large teams, and significant experience
-		
+
 	+ COCOMO Phases:
 		Planning and requirements
 		System design
@@ -338,16 +338,29 @@ including size, effort, cost, time, and quality.
 		Resource Optimization
 
 	Disadvantages of the COCOMO Model
-		+ Assumes project size as the main factor: 
-			Assumes that the size of the software is the main factor that determines the cost and effort of a software project, which may 
-			not always be the case.
-		+ Does not count development team-specific characteristics: 
-			Does not take into account the specific characteristics of the development team, which can have a significant impact on the 
-			cost and effort of a software project.
-		+ Not enough precise cost and effort estimate: 
-			This does not provide a precise estimate of the cost and effort of a software project, as it is based on assumptions and 
-			averages.
 
+		-Assumes that the size of the software is the main factor that determines the cost and effort of a software project, which may 
+		not always be the case.
+	
+		-Does not take into account the specific characteristics of the development team, which can have a significant impact on the 
+		cost and effort of a software project.
+
+		-This does not provide a precise estimate of the cost and effort of a software project, as it is based on assumptions and 
+		averages.
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE-3
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+
+
+1. The software design process: 
+is a systematic approach to creating a blueprint for software. It involves translating user requirements into a structured design that 
+developers can implement. It is an neccesary step for creating a smooth workflow for product / software developement.
+	- UI design
+	- Arhitectural design
+	- Component design
+	- Data design
 
 
 
