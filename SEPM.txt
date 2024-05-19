@@ -450,7 +450,11 @@ with the help of a Risk Information Sheet (RIS)
 		Communication: Effective communication is key to managing risks. Keeping all stakeholders informed about the risks, the status of 
 		mitigation efforts, and any changes to the risk management plan ensures that everyone is prepared and can respond appropriately.
 
-
+	+ Drawbacks of RMMM:
+		It incurs additional project costs.
+		It takes additional time.
+		For larger projects, implementing an RMMM may itself turn out to be another tedious project.
+		RMMM does not guarantee a risk-free project, infact, risks may also come up after the project is delivered.
 
 
 
