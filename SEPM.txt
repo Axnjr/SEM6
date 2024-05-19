@@ -312,8 +312,41 @@ ambiguity and the risks of misunderstandings among team members in clearly defin
 		of the product include functionality, quality, complexity, efficiency, reliability,  maintainability,and many other “–abilities”
 
 
+7. The COCOMO (Constructive Cost Model): 
+is a widely used software cost estimation model based on the number of Lines of Code (LOC). It helps predict various project parameters, 
+including size, effort, cost, time, and quality. 
 
+	+ Types of COCOMO:
+		Organic: Suitable for small teams, well-understood problems, and nominal experience.
+		Semi-detached: Falls between organic and embedded, requiring more experience and guidance.
+		Embedded: Complex projects demanding creativity, large teams, and significant experience
+		
+	+ COCOMO Phases:
+		Planning and requirements
+		System design
+		Detailed design
+		Module code and test
+		Integration and test
+		Cost Constructive model
 
+	+ Importance of the COCOMO Model:
+		Cost Estimationent
+		Resource Management
+		Project Planning
+		Risk management
+		Benchmarking		
+		Resource Optimization
+
+	Disadvantages of the COCOMO Model
+		+ Assumes project size as the main factor: 
+			Assumes that the size of the software is the main factor that determines the cost and effort of a software project, which may 
+			not always be the case.
+		+ Does not count development team-specific characteristics: 
+			Does not take into account the specific characteristics of the development team, which can have a significant impact on the 
+			cost and effort of a software project.
+		+ Not enough precise cost and effort estimate: 
+			This does not provide a precise estimate of the cost and effort of a software project, as it is based on assumptions and 
+			averages.
 
 
 
