@@ -439,7 +439,7 @@ with the help of a Risk Information Sheet (RIS)
 		-Reviewing: Regular reviews and audits are conducted to reassess risks and the effectiveness of the mitigation strategies. This 
 			can be done through scheduled meetings, status reports, and risk logs.
 
-		-Updating: The risk management plan is a living document that needs to be updated regularly based on new information, changes in 
+		-Updating: (RIS) needs to be updated regularly based on new information, changes in 
 			the project scope, or when new risks are identified.
 
 	+ Risk Managment:
