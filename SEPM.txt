@@ -534,8 +534,8 @@ activity conducted by a group of peers to identify defects, improve quality, and
 
 
 4. Software Quality Assurance (SQA): 
-is simply a way to assure quality in the software. It is the set of activities which ensure processes, procedures as well as standards 
-are suitable for the project and implemented correctly. Software Quality Assurance (SQA) focuses on:
+is simply a way to assure quality in the software. s. It runs parallel to software development and ensures that processes, procedures, 
+and standards are suitable for the project. Software Quality Assurance (SQA) focuses on:
 software’s portability
 software’s usability
 software’s reusability
