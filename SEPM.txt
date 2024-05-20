@@ -527,31 +527,7 @@ with the help of a Risk Information Sheet (RIS)
 
 
 
-1) Agile Principles:
 
-	Customer Satisfaction: Prioritize customer satisfaction through early and continuous delivery of valuable software.
-	
-	Changing Requirements: Welcome changing requirements, even late in the project, to benefit the customer.
-
-	Frequent Deliveries: Deliver working software frequently, with a preference for shorter timescales.
-
-	Collaboration: Business people and developers must work together daily.
-
-	Motivated Individuals: Build projects around motivated individuals, trusting them to get the job done.
-
-	Effective Communication: Face-to-face conversation is the most effective way to convey information within the team.
-
-	Working Software: Measure progress by working software.
-
-	Sustainable Development: Promote sustainable development for sponsors, developers, and users.
-
-	Technical Excellence: Focus on technical excellence and good design.
-
-	Simplicity: Maximize work not done.
-
-	Self-Organizing Teams: Allow self-organizing teams to emerge.
-
-	Reflection and Adaptation: Regularly reflect on effectiveness and adjust behavior.
 
 
 
@@ -587,21 +563,33 @@ Module 4:
 
 4) Describe the details of FTR and Walkthrough ❌
 
-5) Explain SQA activities ✅: Software Quality Assurance (SQA) is simply a way to assure quality in the software. It is the set of activities which ensure processes, procedures as well as standards are suitable for the  project and implemented correctly. Major Software Quality Assurance Activities:  
+5) Explain SQA activities ✅: 
+Software Quality Assurance (SQA) is simply a way to assure quality in the software. It is the set of activities which ensure processes, 
+procedures as well as standards are suitable for the  project and implemented correctly. Major Software Quality Assurance Activities:  
 
-1. SQA Management Plan: Make a plan for how you will carry out the SQA throughout  the project. Think about which set of software engineering activities are the best for project. check level of SQA team skills.  
+	+ SQA Management Plan: 
+		Make a plan for how you will carry out the SQA throughout  the project. Think about which set of software engineering activities 
+		are the best for project. check level of SQA team skills.  
 
-2. Set The Check Points: SQA team should set checkpoints. Evaluate the performance of  the project on the basis of collected data on different check points.  
+	+ Set The Check Points: 
+		SQA team should set checkpoints. Evaluate the performance of  the project on the basis of collected data on different check 
+		points.  
 
-3. Measure Change Impact: The changes for making the correction of an error sometimes re introduces more errors keep the measure of impact of change on project. Reset the new change to check the compatibility of this fix with whole project.  
+	+ Measure Change Impact: 
+		The changes for making the correction of an error sometimes re introduces more errors keep the measure of impact of change on 
+		project. Reset the new change to check the compatibility of this fix with whole project.  
 
-4. Multi testing Strategy: Do not depend on a single testing approach. When you have a lot of testing approaches available use them.  
+	+ Multi testing Strategy: 
+		Do not depend on a single testing approach. When you have a lot of testing approaches available use them.  
 
-5. Manage Good Relations: In the working environment managing good relations with other teams involved in the project development is mandatory. Bad relation of SQA team with programmers’ team will impact directly and badly on project. Don’t play politics.  
+	+ Manage Good Relations: 
+		In the working environment managing good relations with other teams involved in the project development is mandatory. Bad 
+		relation of SQA team with programmers’ team will impact directly and badly on project. Don’t play politics.  
 
-6. Managing Reports and Records: Document and share QA activities (test cases, defects, client changes) for future reference and stakeholder alignment. 
+	+ Managing Reports and Records: 
+		Document and share QA activities (test cases, defects, client changes) for future reference and stakeholder alignment. 
 
-Module 5: 
+MODULE - 5
 
 1)	Difference between white box and black box testing ✅
 
