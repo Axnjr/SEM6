@@ -539,7 +539,14 @@ activity conducted by a group of peers to identify defects, improve quality, and
 4. Walkthrough:
 in software testing is a review process where the author of the code or document guides peers, managers, and fellow team members through 
 the material. The goal is to gather feedback, identify defects, and reach a consensus. Unlike formal inspections, walkthroughs are 
-informal and open-ended discussions
+informal and open-ended discussions.
+	+ Advantages and Objectives of Walkthrough:  
+		 To detect defects in developed software products. 
+		 To fully understand and learn the development of software products. 
+		 To properly explain and discuss the information present in the document. 
+		 To verify the validity of the proposed system. 
+		 To give suggestions and report them appropriately with new solutions and ideas. 
+		 To provide an early “proof of concept”. 
 
 
 5. Software Quality Assurance (SQA): 
@@ -566,6 +573,27 @@ product of the company emplies all industry standards, compliance and safety reg
 		software’s correctness
 		software’s maintainability
 		software’s error control
+
+
+4. Software testing: 
+is the process of evaluating a software application to identify if it meets specified requirements and to identify any defects. 
+The following are common testing strategies: 
+	+Black box testing – Tests the functionality of the software without looking at the internal code structure
+	+White box testing – Tests the internal code structure and logic of the software. 
+	+Unit testing – Tests individual units or components of the software to ensure they are functioning as intended
+	+Integration testing – Tests the integration of different components of the software to ensure they work together as a system
+	+Functional testing – Tests the functional requirements of the software to ensure they are met
+	+System testing – Tests the complete software system to ensure it meets the specified requirements
+	+Acceptance testing – Tests the software to ensure it meets the customer’s or end-user’s expectations
+	+Regression testing – Tests the software after changes or modifications have been made to ensure the changes have not introduced new 
+		defects
+	+Performance testing – Tests the software to determine its performance characteristics such as speed, scalability, and stability
+	+Security testing – Tests the software to identify vulnerabilities and ensure it meets security requirements
+
+
+	
+
+
 
 
 COCOMO - working
