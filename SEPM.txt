@@ -535,13 +535,28 @@ activity conducted by a group of peers to identify defects, improve quality, and
 
 4. Software Quality Assurance (SQA): 
 is simply a way to assure quality in the software. s. It runs parallel to software development and ensures that processes, procedures, 
-and standards are suitable for the project. Software Quality Assurance (SQA) focuses on:
-software’s portability
-software’s usability
-software’s reusability
-software’s correctness
-software’s maintainability
-software’s error control
+and standards are suitable for the project. SQA are typically done by some third party organization to check wheather an software
+product of the company emplies all industry standards, compliance and safety regulations, etc.
+	+ Elements of SQA:
+		-Standards: Ensures adherence to industry standards
+		-Reviews and audits: Technical reviews are a quality control activity performed by software engineers for software engineers. Their 
+			intent is to uncover errors. Audits are a type of review performed by SQA personnel (people employed in an organization) with 
+			the intent of ensuring that quality guidelines are being followed for software engineering work.
+		-Testing: Properly planned and efficient testing to find errors.
+		-Security management: SQA ensures that appropriate process and technology are used to achieve software security.
+		-Risk management: The SQA organization ensures that risk management activities are properly conducted and that risk-related 
+			contingency plans have been established.
+	+ Types of Quality Assurance Testing:
+		Functional Testing: Validates functionality against requirements.
+		Performance Testing: Assesses system performance under various conditions.
+		Security Testing: Identifies vulnerabilities and ensures data protection
+	+ Software Quality Assurance (SQA) focuses on:
+		software’s portability
+		software’s usability
+		software’s reusability
+		software’s correctness
+		software’s maintainability
+		software’s error control
 
 
 COCOMO - working
