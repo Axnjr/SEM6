@@ -34,11 +34,29 @@ high quality, maintainable software that meets the user’s requirements.
 3. Capability maturity model: 
 CMM helps assess an organization’s maturity in software development processes. It provides guidelines to enhance process maturity. 
 CMM defines five maturity levels, each representing a process capability level.
+
 	Level 1 (Initial): Chaotic processes with no defined structure.
-	Level 2 (Repeatable): Basic project management practices.
-	Level 3 (Defined): Standardized processes across projects.
-	Level 4 (Managed): Quantitatively controlled processes.
-	Level 5 (Optimizing): Continuous process improvement
+
+	Level 2 (Repeatable):  
+		Processes are documented and standardized / managed to some extent. Basic project 
+		management practices are in place to track cost, schedule, and functionality. However, 
+		processes may still be reactive and not fully controlled. 
+
+	Level 3 (Defined):  
+		Standardized processes across projects. Standard procedures exist for project management, quality assurance, and other key 
+		processes.
+
+	Level 4 (Managed): 
+		Processes are measured and controlled using statistical and 
+		other quantitative techniques. Metrics are used to monitor process performance, and 
+		processes are continuously optimized to improve quality and efficiency.
+
+	Level 5 (Optimizing): 
+		The organization focuses on continuous process improvement and 
+		innovation. Processes are agile, adaptable, and responsive to changing needs and 
+		opportunities. Best practices are identified and shared across the organization to drive 
+		further improvements.
+	
 Benefits of CMM:
 	Resource Optimization: Efficient use of resources (money, labor, time).
 	Benchmarking: Formal framework for self-evaluation and comparison.
