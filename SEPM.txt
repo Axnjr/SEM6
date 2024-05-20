@@ -521,7 +521,16 @@ that software products are consistent, traceable, and reproducible throughout th
 		Simplified rollbacks to previous versions
 
 
-
+3. A formal technical review (FTR): 
+is a systematic process for evaluating a software artifact,  such as design documents, code, or test plans. It is a quality control 
+activity conducted by a group of peers to identify defects, improve quality, and verify compliance with established standards. 
++ Here are the objectives of an FTR in software engineering:
+	Uncover errors in logic, function, or implementation.
+	Verify the software meets its requirements.
+	Ensure the software adheres to predefined standards.
+	Promote a uniform development approach.
+	Enhance project manageability.
+	Foster knowledge sharing among developers, especially junior engineers who can learn from more experienced reviewers.
 
 
 
