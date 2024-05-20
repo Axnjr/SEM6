@@ -432,7 +432,12 @@ referred to as the golden rules of UI design:
 		Use a User Interface toolkit to build windows, menus, and other interactive elements
 
 
-4. Risk Mitigation, Monitoring, and Management (RMMM): 
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE-3
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+
+
+1. Risk Mitigation, Monitoring, and Management (RMMM): 
 is a systematic approach used in software engineering to identify, assess, and address potential risks throughout the software development
 lifecycle. As part of the overall project plan project manager generally uses this RMMM plan. In some software teams, risk is documented 
 with the help of a Risk Information Sheet (RIS)
