@@ -23,6 +23,15 @@ Activities:
 
 2. A software process: 
 refers to the methods and techniques used to develop and maintain software.
+	+ A Software Process Framework: 
+		is basically a blueprint that defines the order and structure for developing software. It outlines the steps involved in the 
+		software development lifecycle, ensuring a smooth and efficient process from start to finish.
+	+ Umbrella activities: 
+		in software development are essentially the behind-the-scenes tasks that support and oversee the entire development process.  
+			- Risk mangament
+			- Configuration Management
+			- Project Tracking and Control:
+			- Quality Assurance
 
 
 3. The software development life cycle (SDLC): 
@@ -479,9 +488,37 @@ with the help of a Risk Information Sheet (RIS)
 		RMMM does not guarantee a risk-free project, infact, risks may also come up after the project is delivered.
 
 
+2. Software Configuration Management (SCM): 
+is a critical aspect of software engineering that focuses on controlling and managing changes in software projects. SCM aims to ensure 
+that software products are consistent, traceable, and reproducible throughout the software development lifecycle. 
+	+ What it Does:
+		+Tracks Changes: An SCM system keeps a history of all changes made to the project's files. This allows developers to see who made 
+			a change, what the change was, and when it was made.
+		+Maintains Control: The SCM process helps to ensure that only authorized developers can make changes to the codebase. This helps 
+			to prevent accidental or unauthorized changes.
+		+Enables Collaboration: With SCM, multiple developers can work on the same project at the same time. The SCM system helps to merge 
+			changes from different developers without conflicts.
+		+Improves Efficiency: By tracking changes and maintaining a history, the SCM process makes it easier for developers to find and 
+			fix bugs. It also allows them to revert to previous versions of the code if necessary.
 
-
-
+	+ The Steps Involved:
+		+Configuration Identification: This involves identifying all the different elements that make up the software project, such as 
+			source code, documentation, and test data.
+		+Version Control: This is the heart of the SCM process. It involves keeping track of all the different versions of the project's 
+			files. A version control system (VCS) is a tool that automates this process. Popular VCS options include Git and Subversion.
+		+Change Control: This involves establishing a process for reviewing and approving changes to the codebase. This helps to ensure 
+			that only high-quality changes are integrated into the project.
+		+Status Accounting: This involves keeping track of the current status of the project. This includes information on which version 
+			of the code is currently being worked on, what bugs have been fixed, and what new features are being developed.
+		+Configuration Audits: This involves periodically reviewing the project's configuration to ensure that it is still meeting its 
+			requirements.
+			
+	+ Benefits of Using SCM:
+		Improved code quality
+		Easier collaboration
+		Increased efficiency
+		Better bug tracking and fixing
+		Simplified rollbacks to previous versions
 
 
 
