@@ -1,6 +1,6 @@
 1. Software engineering: 
 is a discipline that involves the application of engineering principles, techniques, and methodologies to the design, development, 
-testing, and maintenance of software systems. It encompasses a systematic approach to the entire software development process, aiming to 
+testing, and maintenance of software systems. It encompasses a systematic approach to 
 create high-quality, reliable, and efficient software solutions that meet user requirements within specified constraints such as time 
 and budget. Key characteristics:
 	+ Functionality
@@ -27,7 +27,7 @@ refers to the methods and techniques used to develop and maintain software.
 		is basically a blueprint that defines the order and structure for developing software. It outlines the steps involved in the 
 		software development lifecycle, ensuring a smooth and efficient process from start to finish.
 	+ Umbrella activities: 
-		in software development are essentially the behind-the-scenes tasks that support and oversee the entire development process.  
+		in software development are essentially the behind-the-scenes tasks that support the entire development process.  
 			- Risk mangament
 			- Configuration Management
 			- Project Tracking and Control:
@@ -533,9 +533,20 @@ activity conducted by a group of peers to identify defects, improve quality, and
 	Foster knowledge sharing among developers, especially junior engineers who can learn from more experienced reviewers.
 
 
+4. Software Quality Assurance (SQA): 
+is simply a way to assure quality in the software. It is the set of activities which ensure processes, procedures as well as standards 
+are suitable for the project and implemented correctly. Software Quality Assurance (SQA) focuses on:
+software’s portability
+software’s usability
+software’s reusability
+software’s correctness
+software’s maintainability
+software’s error control
 
 
-
+COCOMO - working
+SQA Types
+Walkthrough / FTR
 
 
 
