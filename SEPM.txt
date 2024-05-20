@@ -530,10 +530,19 @@ activity conducted by a group of peers to identify defects, improve quality, and
 	Ensure the software adheres to predefined standards.
 	Promote a uniform development approach.
 	Enhance project manageability.
+	Risk Mitigation
+	Quality Assurance
+	Consistency and Compliance: Verify that all procedures, coding standards, and policies are followed.
 	Foster knowledge sharing among developers, especially junior engineers who can learn from more experienced reviewers.
 
 
-4. Software Quality Assurance (SQA): 
+4. Walkthrough:
+in software testing is a review process where the author of the code or document guides peers, managers, and fellow team members through 
+the material. The goal is to gather feedback, identify defects, and reach a consensus. Unlike formal inspections, walkthroughs are 
+informal and open-ended discussions
+
+
+5. Software Quality Assurance (SQA): 
 is simply a way to assure quality in the software. s. It runs parallel to software development and ensures that processes, procedures, 
 and standards are suitable for the project. SQA are typically done by some third party organization to check wheather an software
 product of the company emplies all industry standards, compliance and safety regulations, etc.
