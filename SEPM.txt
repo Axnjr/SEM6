@@ -113,7 +113,7 @@ Unlike the linear waterfall model, the V-Model bends upward after the coding pha
 
 7. Incremental development model: 
 First, a simple working system implementing only a few basic features is built and then that is delivered to the customer. Then 
-thereafter many successive iterations/ versions are implemented and delivered to the customer until the desired system is released. 
+thereafter many successive iterations / versions are implemented and delivered to the customer until the desired system is released. 
 
 
 8. The evolutionary model: 
