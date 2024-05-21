@@ -411,7 +411,7 @@ is a widely used software cost estimation model primarily based on the size of t
 8. The COCOMO-II: 
 is the revised version of the original Cocomo (Constructive Cost Model) and is developed at the University of Southern California. This 
 model calculates the development time and effort taken as the total of the estimates of all the individual subsystems. In this model, 
-whole software is divided into different modules		
+whole software is divided into different modules.
 
 
 // ----------------------------------------------------------------------------------------------------------------------------------- //
@@ -481,7 +481,7 @@ referred to as the golden rules of UI design:
 
 
 // ----------------------------------------------------------------------------------------------------------------------------------- //
-																MODULE-3
+																MODULE-4
 // ----------------------------------------------------------------------------------------------------------------------------------- //
 
 
@@ -614,7 +614,60 @@ product of the company emplies all industry standards, compliance and safety reg
 		software’s error control
 
 
-4. Software testing: 
+
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE-4
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+
+
+1. Reverse engineering: 
+is the process of analyzing an existing software program to understand its internal workings. It's essentially taking something apart to 
+understand how it works, like disassembling a toy car to see how the engine makes the wheels move. There are many reasons why someone 
+might reverse engineer software. Here are a few common reasons:	
+	+ To understand how a program works in order to modify it: 
+		This could be useful for fixing bugs, adding new features, or making the program work on a different platform.
+	+ To identify security vulnerabilities
+	+ To create compatible software or hardware
+	+ To learn from the design of the program: 
+		Reverse engineering can be a great way to learn about different software architectures and design patterns. This can be helpful 
+		for software developers who are looking to improve their own coding skills.
+Reverse engineering can be a complex and time-consuming process. It often involves a combination of static analysis 
+(examining the code without running it) and dynamic analysis (running the code and observing its behavior). 
+
+
+2. Forward engineering = Software developement
+
+
+3. Re-engineering: 
+also known as software re-engineering or software renovation, is
+the process of updating, modernizing, or improving existing software systems.
+Instead of starting from scratch, re-engineering involves analyzing and
+restructuring existing software to enhance its functionality, performance, maintainability, or other aspects. 
+Here's how it typically works:
+	+ Assessment: 
+		The first step in re-engineering is to assess and analyzing its code, 
+		architecture, documentation, and functionality to identify areas that need improvement or updating.
+	+  Understanding: 
+		Next, developers and engineers work to understand the existing software system thoroughly. They examine how it works, why it was 
+		built the way it was.
+	+  Goals and Requirements: 
+		Based on the assessment and understanding of the
+		existing system, stakeholders define the goals and requirements for the
+		re-engineering project. These could include improving performance, adding new
+		features, modernizing technology, or enhancing user experience.
+	+  Restructuring: 
+		Once the goals and requirements are clear, developers begin the
+		process of restructuring the software. This may involve redesigning the
+		architecture, refactoring the code, replacing outdated components, or integrating
+		new technologies.
+	+ Testing
+	+ Deployment
+	+ Maintanance
+
+
+4. 4. Software testing: 
 is the process of evaluating a software application to identify if it meets specified requirements and to identify any defects. 
 The following are common testing strategies: 
 	+Black box testing – Tests the functionality of the software without looking at the internal code structure
@@ -629,12 +682,24 @@ The following are common testing strategies:
 	+Performance testing – Tests the software to determine its performance characteristics such as speed, scalability, and stability
 	+Security testing – Tests the software to identify vulnerabilities and ensure it meets security requirements
 
+The process involves several key steps:- 
+		- Requirement Analysis: 
+			Understanding the requirements and expectations of the software.
+		- Test Planning: 
+			Creating a comprehensive test plan that outlines the objectives, scope, resources, and schedule for testing.
+		- Test Design: 
+			Designing test cases and scenarios based on requirements, covering various functionalities and potential use cases.
+   		- Test Execution: 
+			Running the tests according to the test plan and documenting the results.
+		- Defect Reporting: 
+			Identifying and documenting any defects or issues encountered during testing.
+		- Defect Resolution: 
+			Addressing and fixing the reported defects, followed by retesting to ensure they are resolved.
+		- Regression Testing
+		- Test Closure: 
+			Summarizing the testing process, documenting lessons learned, and preparing test closure reports
 
 	
-
-
-
-
 
 
 
