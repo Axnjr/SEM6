@@ -377,6 +377,8 @@ is a widely used software cost estimation model primarily based on the size of t
 			This is the most granular level, offering the most detailed and potentially most accurate effort and time estimates. It breaks 
 			down the entire software development life cycle (SDLC) into phases and applies COCOMO principles to each phase individually. 
 			This allows for a more precise assessment of the effort required for each development stage.
+			-Advantages: Most accurate estimation among COCOMO models, considers complexities throughout the SDLC.
+			-Disadvantages: Most complex and time-consuming to implement, requires significant project details and expertise.
 
 	+ COCOMO Phases:
 		Planning and requirements
@@ -394,7 +396,7 @@ is a widely used software cost estimation model primarily based on the size of t
 		Benchmarking		
 		Resource Optimization
 
-	Disadvantages of the COCOMO Model
+	+ Disadvantages of the COCOMO Model
 
 		-Assumes that the size of the software is the main factor that determines the cost and effort of a software project, which may 
 		not always be the case.
@@ -404,6 +406,12 @@ is a widely used software cost estimation model primarily based on the size of t
 
 		-This does not provide a precise estimate of the cost and effort of a software project, as it is based on assumptions and 
 		averages.
+
+
+8. The COCOMO-II: 
+is the revised version of the original Cocomo (Constructive Cost Model) and is developed at the University of Southern California. This 
+model calculates the development time and effort taken as the total of the estimates of all the individual subsystems. In this model, 
+whole software is divided into different modules		
 
 
 // ----------------------------------------------------------------------------------------------------------------------------------- //
