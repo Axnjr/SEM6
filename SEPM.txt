@@ -339,13 +339,44 @@ ambiguity and the risks of misunderstandings among team members in clearly defin
 
 
 7. The COCOMO (Constructive Cost Model): 
-is a widely used software cost estimation model based on the number of Lines of Code (LOC). It helps predict various project parameters, 
-including size, effort, cost, time, and quality. 
+is a widely used software cost estimation model primarily based on the size of the software project, typically measured in lines of code 
+(LOC). It helps predict various project parameters, including size, effort, cost, time, and quality. 
 
-	+ Types of COCOMO:
-		Organic: Suitable for small teams, well-understood problems, and nominal experience.
-		Semi-detached: Falls between organic and embedded, requiring more experience and guidance.
-		Embedded: Complex projects demanding creativity, large teams, and significant experience
+	+ Types of project:
+		Organic: 
+			A software project is said to be an organic type if the team size required is adequately small, the problem is well understood 
+			and has been solved in the past and also the team members have a nominal experience regarding the problem.
+		Semi-detached: 
+			Falls between organic and embedded, requiring more experience and guidance. The projects classified as Semi-Detached are 
+			comparatively less familiar and difficult to develop compared to the organic ones and require more experience better guidance 
+			and creativity
+		Embedded: 
+			Complex projects demanding creativity, large teams, and significant experience
+
+	Types COCOMO:
+
+		+ Basic COCOMO:
+			This is the simplest and fastest method for making preliminary estimations. It uses a formula with two constants (a and b) and 
+			the project size in KLOC (Kilo Lines of Code) as the main input. The constants (a and b) vary depending on the type of software 
+			project (organic, semi-detached, or embedded).
+			-Advantages: Quick and easy to use, suitable for rough estimates in early stages.
+			-Disadvantages: Ignores project complexities, least accurate among COCOMO models.
+
+		+ Intermediate COCOMO:
+			This builds upon Basic COCOMO by introducing 15 "cost drivers" that affect the project effort and schedule. These cost 
+			drivers consider factors like:
+				Product factors: Complexity, reliability, size of the primary memory.
+				Platform factors: The maturity of the target environment and the experience with the hardware/software.
+				Personnel factors: The capability and experience of the team.
+				Project factors: The type of development approach and the level of customer involvement.
+				Environmental factors: The constraints imposed by the work environment (e.g., tools, automation).
+			-Advantages: Considers project complexities, improves estimation accuracy over Basic COCOMO.
+			-Disadvantages: Requires more project information to assess the cost drivers, may not capture all project nuances.
+
+		+ Detailed COCOMO:
+			This is the most granular level, offering the most detailed and potentially most accurate effort and time estimates. It breaks 
+			down the entire software development life cycle (SDLC) into phases and applies COCOMO principles to each phase individually. 
+			This allows for a more precise assessment of the effort required for each development stage.
 
 	+ COCOMO Phases:
 		Planning and requirements
@@ -596,9 +627,7 @@ The following are common testing strategies:
 
 
 
-COCOMO - working
-SQA Types
-Walkthrough / FTR
+
 
 
 
