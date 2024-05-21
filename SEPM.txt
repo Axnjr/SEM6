@@ -646,15 +646,15 @@ Here's how it typically works:
 	+ Assessment: 
 		The first step in re-engineering is to assess and analyzing its code, 
 		architecture, documentation, and functionality to identify areas that need improvement or updating.
-	+  Understanding: 
+	+ Understanding: 
 		Next, developers and engineers work to understand the existing software system thoroughly. They examine how it works, why it was 
 		built the way it was.
-	+  Goals and Requirements: 
+	+ Goals and Requirements: 
 		Based on the assessment and understanding of the
 		existing system, stakeholders define the goals and requirements for the
 		re-engineering project. These could include improving performance, adding new
 		features, modernizing technology, or enhancing user experience.
-	+  Restructuring: 
+	+ Restructuring: 
 		Once the goals and requirements are clear, developers begin the
 		process of restructuring the software. This may involve redesigning the
 		architecture, refactoring the code, replacing outdated components, or integrating
