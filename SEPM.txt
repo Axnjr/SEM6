@@ -321,7 +321,11 @@ ambiguity and the risks of misunderstandings among team members in clearly defin
 		project requirements, budget, and schedule constraints. Product quality assurance, 
 		testing, and validation are important aspects of ensuring that the final product meets 
 		its intended purpose and provides value to its users.
-
+	+ Project:
+		It is a blue print of the process. In this phase, the project manager plays a critical 
+		role. They are responsible to guide the team members to achieve the project’s target and 
+		objectives, helping & assisting them with issues, checking on cost and budget, and 
+		making sure that the project stays on track with the given deadlines.
 
 6. Software metrics:
 
