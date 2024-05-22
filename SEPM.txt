@@ -740,10 +740,42 @@ The process involves several key steps:-
 5. Project scheduling: 
 is a crucial aspect of project management that involves defining and planning the timeline for the project's activities, tasks, and 
 milestones. It involves breaking down the project into smaller activities, estimating their durations, and determining their 
-interdependencies.
+interdependencies. The main goal of project scheduling is to ensure that the project is completed within the defined time frame, budget,
+and scope. Effective project scheduling leads to success of project, reduced cost, and increased customer satisfaction.  It involves the 
+following steps:
+	Defining Activities: Identifying all the tasks that need to be completed.
+	Sequencing Activities: Determining the order in which tasks should be performed.
+	Estimating Resources: Identifying the resources (people, equipment, materials) required for each task.
+	Estimating Durations: Estimating the time required to complete each task.
+	Developing the Schedule: Combining all the information to create a comprehensive schedule.
+	Controlling the Schedule: Monitoring the progress of the project and making adjustments as needed.
 
 
+6. PERT: 
+Programme Evaluation and Review Technique (PERT) is an effective visual network 
+method specifically designed for planning, monitoring, and controlling complex and unique 
+projects. PERT offers a systematic approach that ensures project success by breaking down the 
+entire project into smaller, manageable activities and establishing their interdependencies within 
+a network diagram. The process of developing a PERT involves several key steps:
 
+	Activity Breakdown: The project is carefully dissected into smaller activities, enabling a 
+		more granular analysis and logical sequencing of tasks. 
+		
+	Interdependency Identification: The relationships and dependencies between the 
+		activities are thoroughly examined and accurately represented in the network diagram, 
+		providing a comprehensive view of the project’s structure. 
+
+	Time Estimation: Each activity is assigned three-time estimates: the optimistic or 
+		shortest time, the pessimistic or longest time, and the normal or most likely time. These 
+		estimates facilitate a more realistic assessment of activity durations. 
+
+	Critical Path Determination: The critical path, the longest path in terms of time, is 
+		identified within the network diagram. It signifies the sequence of activities crucial for 
+		timely project completion. Any delays along the critical path directly impact the overall project timeline. 
+
+	Plan Refinement: Based on the critical path analysis, the initial project plan is carefully 
+		reviewed, modified, and improved to effectively control and minimize the time required 
+		for project completion. This ensures that the project stays on track and any potential delays are mitigated. 
 
 
 
