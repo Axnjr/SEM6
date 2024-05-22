@@ -614,6 +614,41 @@ product of the company emplies all industry standards, compliance and safety reg
 		software’s error control
 
 
+6. What is Risk Management, Discuss Common sources of risk in IT projects: 
+Risk management is a systematic process of identifying, assessing, prioritizing, and mitigating risks that could potentially affect the 
+objectives of an organization, project, or activity. It involves understanding the uncertainties and potential events that could impact 
+the achievement of goals, and taking proactive measures to minimize their negative consequences while maximizing opportunities for 
+success. Common sources of risk in IT projects: 
+	+ Scope Creep: 
+		This occurs when the project's scope expands beyond the initial definition without corresponding increases in time, budget, or 
+		resources. It often leads to delays, increased costs, and stakeholder dissatisfaction. 
+	
+	+ Unclear Requirements: 
+		Inadequate or ambiguous requirements can lead to misunderstandings between stakeholders and developers, resulting in rework, delays, 
+		and dissatisfaction with the final product. 
+	
+	+ Technological Complexity: 
+		Projects involving emerging or complex technologies may encounter difficulties in implementation, integration, or maintenance. 
+		Lack of expertise, compatibility issues, and unexpected technical challenges can pose significant risks. 
+	
+	+ Resource Constraints: 
+		Insufficient budget, time, or skilled personnel can hamper project progress and compromise its success. Resource constraints may 
+		lead to compromises in quality, scope, or timelines. 
+	
+	+ Integration Issues: 
+		IT projects often involve integrating various systems, applications, or platforms. Integration challenges such as data 
+		inconsistency, interoperability issues, and compatibility problems can hinder project progress and functionality. 
+	
+	+ Security Vulnerabilities: 
+		With the increasing frequency and sophistication of cyber threats, security risks pose a significant concern for IT projects. 
+		Data breaches, unauthorized access, malware infections, and other security incidents can result in financial losses, reputational 
+		damage, and legal liabilities. 
+	
+	+ Vendor or Third-Party Dependencies: 
+		Projects relying on external vendors, contractors, or third-party services are susceptible to risks associated with vendor 
+		performance, delivery delays, contractual disputes, and quality assurance. 		
+
+
 // ----------------------------------------------------------------------------------------------------------------------------------- //
 																MODULE-4
 // ----------------------------------------------------------------------------------------------------------------------------------- //
@@ -664,7 +699,7 @@ Here's how it typically works:
 	+ Maintanance
 
 
-4. 4. Software testing: 
+4. Software testing: 
 is the process of evaluating a software application to identify if it meets specified requirements and to identify any defects. 
 The following are common testing strategies: 
 	+Black box testing – Tests the functionality of the software without looking at the internal code structure
@@ -756,21 +791,7 @@ Module 4:
 
 2) Explain SCM Process ❌
 
-3) What is Risk Management? Discuss Common sources of risk in IT projects ✅: Risk management is a systematic process of identifying, assessing, prioritizing, and mitigating risks that could potentially affect the objectives of an organization, project, or activity. It involves understanding the uncertainties and potential events that could impact the achievement of goals, and taking proactive measures to minimize their negative consequences while maximizing opportunities for success. Common sources of risk in IT projects: 
 
-1. Scope Creep: This occurs when the project's scope expands beyond the initial definition without corresponding increases in time, budget, or resources. It often leads to delays, increased costs, and stakeholder dissatisfaction. 
-
-2. Unclear Requirements: Inadequate or ambiguous requirements can lead to misunderstandings between stakeholders and developers, resulting in rework, delays, and dissatisfaction with the final product. 
-
-3. Technological Complexity: Projects involving emerging or complex technologies may encounter difficulties in implementation, integration, or maintenance. Lack of expertise, compatibility issues, and unexpected technical challenges can pose significant risks. 
-
-4. Resource Constraints: Insufficient budget, time, or skilled personnel can hamper project progress and compromise its success. Resource constraints may lead to compromises in quality, scope, or timelines. 
-
-5. Integration Issues: IT projects often involve integrating various systems, applications, or platforms. Integration challenges such as data inconsistency, interoperability issues, and compatibility problems can hinder project progress and functionality. 
-
-6. Security Vulnerabilities: With the increasing frequency and sophistication of cyber threats, security risks pose a significant concern for IT projects. Data breaches, unauthorized access, malware infections, and other security incidents can result in financial losses, reputational damage, and legal liabilities. 
-
-7. Vendor or Third-Party Dependencies: Projects relying on external vendors, contractors, or third-party services are susceptible to risks associated with vendor performance, delivery delays, contractual disputes, and quality assurance. 
 
 
 4) Describe the details of FTR and Walkthrough ❌
