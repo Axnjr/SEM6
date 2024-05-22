@@ -760,7 +760,7 @@ a network diagram. The process of developing a PERT involves several key steps:
 
 	Activity Breakdown: The project is carefully dissected into smaller activities, enabling a 
 		more granular analysis and logical sequencing of tasks. 
-		
+
 	Interdependency Identification: The relationships and dependencies between the 
 		activities are thoroughly examined and accurately represented in the network diagram, 
 		providing a comprehensive view of the project’s structure. 
@@ -778,7 +778,22 @@ a network diagram. The process of developing a PERT involves several key steps:
 		for project completion. This ensures that the project stays on track and any potential delays are mitigated. 
 
 
+7. CPM:
+CPM: Critical Path Method (CPM) is a project management technique that shares similarities 
+with Programme Evaluation and Review Technique (PERT), but it also has some distinguishing 
+characteristics: 
 
+	Simplified Activity Duration: Unlike PERT, CPM assumes a constant duration for each 
+		activity. Therefore, only a single time estimate is assigned to each activity, eliminating 
+		the consideration of uncertainty in duration. 
+
+	Emphasis on Cost: While PERT primarily focuses on time management, CPM places a 
+		greater emphasis on cost control. It enables project managers to optimize resource 
+		allocation and cost efficiency throughout the project’s execution. 
+	
+	Well-Known Activity Durations: CPM is more suitable for projects where activity 
+		durations are well-known and can be accurately estimated. It is particularly effective in 
+		scenarios where historical data or past project experiences provide reliable information for time estimation.
 
 
 
