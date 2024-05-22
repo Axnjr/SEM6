@@ -796,7 +796,14 @@ characteristics:
 		scenarios where historical data or past project experiences provide reliable information for time estimation.
 
 
-
+8. W5HH:
+	Why: This question focuses on the purpose of the software being developed. It ensures everyone involved understands the business need and the value the software will deliver.
+	What: This question defines the specific features and functionalities of the software. It clarifies what the software will do and what it won't do.
+	When: This question establishes the project timeline, including milestones and deadlines. It helps the team plan and track progress.
+	Who: This question assigns ownership and responsibility for different tasks within the project. It ensures everyone knows their role and who to contact for specific issues.
+	Where: While less common in software engineering specifically, this question can refer to the physical location where the development team is situated or the deployment environment for the software.
+	How: This question addresses the technical approach to be used for development. It considers programming languages, frameworks, and development methodologies.
+	How Much: This question focuses on the resources required for the project, such as budget, personnel, and hardware. It helps ensure the project has the necessary resources to succeed.
 
 
 
