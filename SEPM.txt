@@ -769,9 +769,9 @@ a network diagram. The process of developing a PERT involves several key steps:
 		shortest time, the pessimistic or longest time, and the normal or most likely time. These 
 		estimates facilitate a more realistic assessment of activity durations. 
 
-	Critical Path Determination: The critical path, the longest path in terms of time, is 
-		identified within the network diagram. It signifies the sequence of activities crucial for 
-		timely project completion. Any delays along the critical path directly impact the overall project timeline. 
+	Critical Path Determination:  Identify the longest path through the network diagram, which represents the minimum project duration. 
+		The critical path determines the shortest time in which the project can be completed. Any delays along the critical path directly
+		impact the overall project timeline. 
 
 	Plan Refinement: Based on the critical path analysis, the initial project plan is carefully 
 		reviewed, modified, and improved to effectively control and minimize the time required 
