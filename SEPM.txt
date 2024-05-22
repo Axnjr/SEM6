@@ -736,7 +736,11 @@ The process involves several key steps:-
 		- Test Closure: 
 			Summarizing the testing process, documenting lessons learned, and preparing test closure reports
 
-	
+
+5. Project scheduling: 
+is a crucial aspect of project management that involves defining and planning the timeline for the project's activities, tasks, and 
+milestones. It involves breaking down the project into smaller activities, estimating their durations, and determining their 
+interdependencies.
 
 
 
