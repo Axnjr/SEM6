@@ -188,7 +188,7 @@ analysis of the following predictions:
 	False Negatives (FN): Incorrectly predicted negative instances.
 The confusion matrix helps us understand recall, accuracy, precision, and overall effectiveness in class distinction.
 
-<Terams:>
+<Terms:>
 
 	+ Accuracy
 		is used to measure the performance of the model. It is the ratio of Total correct instances to the total instances. 
@@ -208,6 +208,17 @@ The confusion matrix helps us understand recall, accuracy, precision, and overal
 	+ F1-score:
 		is used to evaluate the overall performance of a classification model. It is the harmonic mean of precision and recall
 			f1-score = 2.Precision.Recall / Precision + Recall.
+
+
+10. Least-squares method: 
+can be defined as a statistical method that is used to find the best-fitting line or plane (in higher dimensions) that minimizes the sum
+of the squared differences between the observed and predicted values of the dependent variable. 
+	
+
+11. Linear model: 
+is an equation that describes a relationship between two quantities that show a constant rate of change. Linear models are widely used in 
+fields such as economics, engineering, social sciences, and machine learning. They provide a simple yet powerful way to understand and \
+predict relationships between variables.
 
 
 
