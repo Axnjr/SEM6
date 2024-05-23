@@ -171,7 +171,43 @@ vice versa. The goal is to find the sweet spot where both bias and variance are 
 		data due to their inability to generalize.
 
 
+8. Clustering:  
+is a method of grouping the objects into clusters such that objects with most similarities remains into a group and has less or no 
+similarities with the objects of another group. Clustering is an unsupervised learning method that groups data points based on their 
+similarities. Unlike classification, clustering does not rely on predefined labels or class information.
 
+
+9. Confusion matrix: 
+<Give example if required: classifying a image into dog or cat>
+is essential for assessing a classification model’s performance. summarizes the performance of a machine learning model on a set of test 
+data. It is a means of displaying the number of accurate and inaccurate instances based on the model’s predictions. It provides a detailed
+analysis of the following predictions:
+	True Positives (TP): Correctly predicted positive instances.
+	True Negatives (TN): Correctly predicted negative instances.
+	False Positives (FP): Incorrectly predicted positive instances.
+	False Negatives (FN): Incorrectly predicted negative instances.
+The confusion matrix helps us understand recall, accuracy, precision, and overall effectiveness in class distinction.
+
+<Terams:>
+
+	+ Accuracy
+		is used to measure the performance of the model. It is the ratio of Total correct instances to the total instances. 
+			Accuracy = TP + TN / TP + TN + FP + FN 
+	+ Precision:
+		is a measure of how accurate a model’s positive predictions are. It is defined as the ratio of true positive predictions to the 
+		total number of positive predictions made by the model.
+			P = TP / TP + FP 
+	+ Recall:
+		measures the effectiveness of a classification model in identifying all relevant instances from a dataset. It is the ratio of the 
+		number of true positive (TP) instances to the sum of true positive and false negative (FN) instances.
+			Recall = TP / TP + FN
+	+ Specificity:
+		is another important metric in the evaluation of classification models, particularly in binary classification. It measures the 
+		ability of a model to correctly identify negative instances. Specificity is also known as the True Negative Rate.
+			S = TN / TN + FP
+	+ F1-score:
+		is used to evaluate the overall performance of a classification model. It is the harmonic mean of precision and recall
+			f1-score = 2.Precision.Recall / Precision + Recall.
 
 
 
