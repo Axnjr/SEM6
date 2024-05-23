@@ -1,4 +1,9 @@
-
+1. Machine learning: 
+is a subfield of artificial intelligence (AI) that focuses on developing 
+algorithms and techniques that enable computers to learn from and make predictions 
+or decisions based on data. Instead of being explicitly programmed to perform a certain 
+task, machine learning systems are designed to learn and improve their performance 
+over time as they are exposed to more data.
 
 
 
