@@ -211,7 +211,7 @@ The confusion matrix helps us understand recall, accuracy, precision, and overal
 
 
 // ----------------------------------------------------------------------------------------------------------------------------------- //
-																MODULE - 2
+																MODULE - 3
 // ----------------------------------------------------------------------------------------------------------------------------------- //
 
 
@@ -290,7 +290,7 @@ Importance of regularization in linear regression:
 	+ Feature Selection: 
 		Lasso regression with L1 regularization encourages sparsity in the coefficients, leading to feature selection. It automatically 
 		selects the most relevant features by setting the coefficients of less important features to zero. This can simplify the model 
-		 and improve its interpretability. 
+		and improve its interpretability. 
 	+ Stability: 
 		Regularization adds stability to the model by reducing the sensitivity of the coefficients to small changes in the training data. 
 		This can lead to more consistent and reliable predictions, especially in situations where the training data is limited or noisy.
@@ -391,7 +391,26 @@ SVM, or Support Vector Machine, can be categorized based on the type of decision
 	o Medical diagnosis (e.g., disease classification, cancer detection). 
 		
 
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE - 4
+// ----------------------------------------------------------------------------------------------------------------------------------- //
 
+
+1. The Hebbian Learning Rule: 
+also known as the Hebb Learning Rule, was proposed by Donald O. Hebb. It’s one of the earliest and simplest learning rules in neural 
+networks. Rule states that "neurons that fire together, wire together", it suggests that if two neurons are repeatedly 
+activated at the same time, the strength of the connection (synaptic weight) between them should increase.
+
++ Mechanism: 
+	When a presynaptic neuron repeatedly fires and causes the postsynaptic neuron to fire, the connection between them strengthens. 
+	If the presynaptic neuron consistently precedes the firing of the postsynaptic neuron, the synaptic connection strengthens further. 
+	Conversely, if the presynaptic neuron consistently fails to cause the postsynaptic neuron to fire, the connection weakens.
+
+# Essentially, Hebbian learning allows the network to self-organize by strengthening connections that consistently contribute to the 
+# desired output and weakening those that don't.
+
+Hebbian learning is a simple but powerful rule that has been influential in both neuroscience and artificial neural networks. It provides 
+a basic building block for understanding how neural networks can learn and adapt.
 
 
 
