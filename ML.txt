@@ -410,7 +410,9 @@ activated at the same time, the strength of the connection (synaptic weight) bet
 # desired output and weakening those that don't.
 
 Hebbian learning is a simple but powerful rule that has been influential in both neuroscience and artificial neural networks. It provides 
-a basic building block for understanding how neural networks can learn and adapt.
+a basic building block for understanding how neural networks can learn and adapt. It forms the basis for unsupervised learning algorithms 
+such as Hebbian learning and competitive learning, where networks self organize based on input patterns. 
+
 
 
 
