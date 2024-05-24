@@ -210,18 +210,23 @@ The confusion matrix helps us understand recall, accuracy, precision, and overal
 			f1-score = 2.Precision.Recall / Precision + Recall.
 
 
-10. Least-squares method: 
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE - 2
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+
+
+1. Least-squares method: 
 can be defined as a statistical method that is used to find the best-fitting line or plane (in higher dimensions) that minimizes the sum
 of the squared differences between the observed and predicted values of the dependent variable. 
 	
 
-11. Linear model: 
+2. Linear model: 
 is an equation that describes a relationship between two quantities that show a constant rate of change. Linear models are widely used in 
 fields such as economics, engineering, social sciences, and machine learning. They provide a simple yet powerful way to understand and \
 predict relationships between variables.
 
 
-12. Multiple Regression vs Multi-variate Linear regression:
+3. Multiple Regression vs Multi-variate Linear regression:
 
 + Multiple Regression
 	Regression analysis involving multiple independent variables and one dependent variable.
@@ -246,6 +251,9 @@ predict relationships between variables.
 	Generally more complex due to multiple dependent variables and their relationships.
 
 
+4. Regularization: 
+is a crucial technique in machine learning that helps prevent overfitting by adding a penalty term to the model’s objective function 
+during training. 
 
 
 
