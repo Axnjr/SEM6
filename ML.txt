@@ -254,6 +254,22 @@ predict relationships between variables.
 4. Regularization: 
 is a crucial technique in machine learning that helps prevent overfitting by adding a penalty term to the model’s objective function 
 during training. 
+# It helps to control the complexity of the model by discouraging large coefficient values, thus promoting simpler models that generalize 
+# well to unseen data. 
+It aims to strike the right balance between bias and variance by controlling the complexity of models. It discourages the model from 
+fitting the training data too closely and promotes simpler models that generalize better to unseen data. In the context of linear 
+regression, regularization typically involves adding a regularization term to the standard least squares cost function. There are two 
+common types of regularization techniques used in linear regression: 
+	+ Lasso regression: 
+		in this regularization term added to the cost function is the absolute sum of the coefficients multiplied by a regularization 
+		parameter (lambda). It encourages sparsity in the model by driving some coefficient estimates to exactly zero.
+		Lasso is effective for feature selection in high-dimensional datasets with many irrelevant features.
+
+	+ Ridge Regression (L2 Regularization): 
+		In Ridge regression, the regularization term added to the cost function is the squared sum of the coefficients multiplied 
+		by a regularization parameter (lambda). It helps mitigate overfitting, especially when dealing with multicollinear features.
+		The L2 penalty shrinks the coefficients towards zero but does not lead to sparsity. It helps to reduce the variance of the model 
+		by reducing the impact of large coefficients, thereby improving its generalization performance.
 
 
 
