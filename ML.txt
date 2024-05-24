@@ -289,13 +289,50 @@ Importance of regularization in linear regression:
 		Regularization adds stability to the model by reducing the sensitivity of the coefficients to small changes in the training data. 
 		This can lead to more consistent and reliable predictions, especially in situations where the training data is limited or noisy.
 
-5. 
+
+5. Assumptions required for linear regression or multiple regression:
+	+ Linearity: 
+		The relationship between the independent variables and the dependent variable is linear. This means that changes in the 
+		dependent variable are proportional to changes in the independent variables, with constant coefficients. 
+	+ Independence of Errors: 
+		The errors (residuals) should be independent of each other. In other words, there should be no systematic pattern in the 
+		residuals, and the error terms for one observation should not be correlated with the error terms for other observations.
+	+ Homoscedasticity: 
+		The variance of the errors should be constant across all levels of the independent variables.
+	+ Normality of Errors: 
+		The errors are normally distributed.
+	+ No Multicollinearity: 
+		There should be no multicollinearity among the independent variables.
+	+ No Autocorrelation: 
+		The errors should not be correlated with each other over time or across observations
 
 
+6. Least-Squares Regression for classification:
+also known as Least-Squares Classification (LSC), is a simple method used for binary classification tasks. It aims to find a linear 
+decision boundary that separates the classes in the feature space. It seeks to minimize the squared error between the predicted class 
+labels and the actual class labels. # (sum of the squared differences between the observed and predicted values of the dependent variable)
+Given a dataset with input features and binary class labels (0 or 1), LSC fits a linear regression model to the data.
+The model predicts the class labels using a linear equation of the form: 
+
+	+ y = b0 + b1x1 + b2x2 .... bnxn + e
+	+ where:
+		y = predicted class 0 or 1
+		b0, b1, ... bn are the coefficients
+		x1 .... xn are the input variables
+
+The decision boundary is determined by the threshold value (e.g., 0.5) applied to the predicted class probabilities.
+If the predicted probability is above the threshold, the instance is classified as class 1; otherwise, it is classified as class 0. 
+
+	+ Loss Function: 
+		LSC minimizes the squared error loss between the predicted class labels and the actual class labels.
+		The loss function penalizes misclassifications by squaring the difference between the predicted and actual class labels. 
+		
+Least-Squares Regression for classification is a simple and interpretable method commonly used in situations where linear decision 
+boundaries are appropriate. It can be applied to various binary classification tasks, such as spam detection, medical diagnosis, and 
+sentiment analysis. 
 
 
-
-
+7. 
 
 
 
@@ -619,7 +656,22 @@ and are a linear combinations of the original variables in the dataset. Here's  
 
 
 
-
+# 6. Least Squares Regression for classification: (logistic regression)
+# commonly known as Logistic Regression, is a supervised learning algorithm used for binary classification tasks. In binary classification, 
+# the target variable has two possible outcomes, typically represented as 0 and 1.  It predicts the output of categorical dependent variable, 
+# based on multiple input variables.
+# In Logistic Regression, the goal is to estimate the probability that a given input belongs to a particular class. The algorithm models 
+# this probability using the logistic function (sigmoid function) also know as Sigmoid function it is a mathematical function used to map 
+# the predicted values to probabilities. It maps any real value into another value within a range of 0 and 1.
+# Mathematically, the logistic function is defined as:
+# 	+ f(x) = 1 / 1 + e^-x
+# During training, the model's parameters (weights and bias) are optimized to maximize the likelihood of the observed data. This is 
+# typically done using optimization algorithms such as gradient descent. Once trained, the logistic regression model can predict
+# the	probability that an instance belongs to a given class. If the predicted probability is greater than a threshold value 
+# (usually 0.5), the instance is classified into Class 1; otherwise, it belongs to Class 0.	
+# Logistic Regression is widely used due to its simplicity, interpretability, and efficiency, especially for linearly separable datasets. 
+# However, it's important to note that it assumes a linear relationship between the input features and the log-odds of the output, which 
+# may not always hold true in practice.
 
 
 
