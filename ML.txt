@@ -344,16 +344,52 @@ boundaries are appropriate. It can be applied to various binary classification t
 sentiment analysis. 
 
 
-7. 
+7. Support Vector Machine (SVM): 
+is a powerful machine learning algorithm used for various tasks such as classification, regression, and even outlier detection. 
+It finds the optimal hyperplane in an N-dimensional space that can separate data points into different classes.
+It works by identifying the best separation boundary between classes, maximizing the margin between the classes. 
+	(The margin is the distance from the hyperplane to the nearest data point on each side)
+SVM chooses the hyperplane that represents the largest separation or margin between the two classes.
+	(When such a hyperplane exists, it’s called the maximum-margin hyperplane.)
 
++ Key Concepts: 
 
+	o Margin: 
+		The distance between the hyperplane and the nearest data point from each class. 
+		SVM aims to maximize this margin, leading to better generalization. 
 
+	o Kernel function: 
+		SVM can handle non-linearly separable data by mapping input features into a higher-dimensional space using 
+		kernel functions (e.g., polynomial, radial basis function) to find a linear separation boundary. 
 
+	o Regularization Parameter (C): 
+		Controls the trade-off between maximizing the margin and minimizing the classification error on the 
+		training data. Higher values of C allow for fewer margin violations but may lead to overfitting. 
 
+	o Hyperplane: is the decision boundary that is used to separate the data points of different classes in a feature space.
 
+	o Support Vectors: are the closest data points to the hyperplane, which makes a critical role in deciding the hyperplane and margin. 
 
+SVM, or Support Vector Machine, can be categorized based on the type of decision boundary they form. Here are the main types:
 
+	+ Linear SVMs: 
+		classify data by finding the optimal hyperplane that linearly separates the classes in the feature space. 
+		The decision boundary is a straight line (in 2D), or a hyperplane (in higher dimensions) that maximizes the margin between the 
+		classes. Linear SVMs are suitable for linearly separable datasets where classes can be separated by a straight line or plane. 
 
+	+ Non-linear SVMs: 
+		are used for datasets that are not linearly separable in the original feature space. They employ kernel functions to map the input 
+		features into a higher-dimensional space where the classes become separable by a hyperplane. Common kernel functions include 
+		polynomial kernel, radial basis function (RBF) kernel, sigmoid kernel, etc. Non-linear SVMs are capable of capturing complex 
+		decision boundaries and can handle more intricate patterns in the data.
+
++ SVM is widely used in various fields, including: 
+	o Text classification (e.g., spam detection, sentiment analysis). 
+	o Image recognition (e.g., object detection, facial recognition). 
+	o Bioinformatics (e.g., gene expression classification, protein structure prediction). 
+	o Finance (e.g., credit scoring, stock market prediction). 
+	o Medical diagnosis (e.g., disease classification, cancer detection). 
+		
 
 
 
