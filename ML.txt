@@ -253,11 +253,10 @@ predict relationships between variables.
 
 4. Regularization: 
 is a crucial technique in machine learning that helps prevent overfitting by adding a penalty term to the model’s objective function 
-during training. 
-# It helps to control the complexity of the model by discouraging large coefficient values, thus promoting simpler models that generalize 
-# well to unseen data. 
-It aims to strike the right balance between bias and variance by controlling the complexity of models. It discourages the model from 
-fitting the training data too closely and promotes simpler models that generalize better to unseen data. In the context of linear 
+during training. It helps to control the complexity of the model by discouraging large coefficient values, it discourages the model from 
+fitting the training data too closely and promotes simpler models that generalize better to unseen data
+# well to unseen data. thus promoting simpler models that generalize 
+It aims to strike the right balance between bias and variance by controlling the complexity of models. . In the context of linear 
 regression, regularization typically involves adding a regularization term to the standard least squares cost function. There are two 
 common types of regularization techniques used in linear regression: 
 	+ Lasso regression: 
