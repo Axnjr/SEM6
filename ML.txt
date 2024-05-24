@@ -265,12 +265,18 @@ common types of regularization techniques used in linear regression:
 		selects the most relevant features by setting the coefficients of less important features to zero. This can simplify the model 
 		and improve its interpretability. Lasso is effective for feature selection in high-dimensional datasets with many irrelevant 
 		features.
+			- May not handle multi-collineraity effectively.
+			- coefficients can drop to zero abruptly
+			- Efficient for higher dimesional datasets
 
 	+ Ridge Regression (L2 Regularization): 
 		In Ridge regression, the regularization term added to the cost function is the squared sum of the coefficients multiplied 
 		by a regularization parameter (lambda). It helps mitigate overfitting, especially when dealing with multicollinear features.
 		The L2 penalty shrinks the coefficients towards zero but does not lead to sparsity. It helps to reduce the variance of the model 
 		by reducing the impact of large coefficients, thereby improving its generalization performance.
+			- Effective in handling multi-collinearity
+			- Coeffiecients are continously shrunk towards zero
+			- Computationally expensive for higher dimensional datasets
 
 Importance of regularization in linear regression: 
 
@@ -288,6 +294,12 @@ Importance of regularization in linear regression:
 	+ Stability: 
 		Regularization adds stability to the model by reducing the sensitivity of the coefficients to small changes in the training data. 
 		This can lead to more consistent and reliable predictions, especially in situations where the training data is limited or noisy.
+
++ Regularized regression finds application across various domains: 
+	 Finance: Predicting stock prices, risk assessment. 
+	 Healthcare: Patient outcome prediction, disease diagnosis. 
+	 Marketing: Customer churn prediction, sales forecasting. 
+	 Environmental Science: Modeling environmental impacts on ecosystems. 
 
 
 5. Assumptions required for linear regression or multiple regression:
