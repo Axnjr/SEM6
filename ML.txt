@@ -527,11 +527,12 @@ It has a threshold function also called as activation function which computes a 
 If the sum exceeds a predefined threshold, the neuron fires (outputs 1); otherwise, it remains inactive.
 Input Signals: These are the neuron's inputs, represented as x1, x2, x3. Each input has a corresponding weight.
 Weights: Each input signal is associated with a weight w1, w2, w3 representing its importance. These weights are real numbers
+
 	+ weighted sum = summation of wi * xi
 	
-+ Applications:
-	The McCulloch-Pitts model laid the foundation for artificial neural networks.
-	Although it’s a simplified model, it helped researchers understand the basic principles of neural computation.
+	+ Applications:
+		The McCulloch-Pitts model laid the foundation for artificial neural networks.
+		Although it’s a simplified model, it helped researchers understand the basic principles of neural computation.
 
 
 6. Perceptron model with Bias ✅ : The perceptron model is one of the simplest types of artificial neural networks, originally 
