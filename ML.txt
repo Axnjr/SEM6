@@ -430,16 +430,24 @@ EM works in an iterative fashion, consisting of two main steps:
 
 	+ Expectation Step (E-step): 
 		In this step, the algorithm estimates the probability of each data point belonging to each cluster, given the current model 
-		parameters. It essentially uses the current cluster assignments (even if estimated) to calculate 
+		parameters. It essentially uses the current cluster assignments to calculate 
 		the likelihood of data points being in those clusters.
 
 	+ Maximization Step (M-step): 
 		Here, the algorithm uses the probabilities estimated in the E-step to refine the model parameters. It aims to find the parameters 
-		that maximize the overall likelihood of the data given the current cluster assignments (inferred in the E-step). This improves 
+		that maximize the overall likelihood of the data given the current cluster assignments. This improves 
 		the model's ability to represent the data's clustering structure.
 
+	+ Convergence:
+		The EM algorithm iterates between the E-step and M-step until convergence i.e likelihood of the data (given the model parameters) 
+		stops increasing significantly. At this point, the EM algorithm has identified a maximum likelihood solution for the model 
+		parameters and the latent cluster assignments for each data point.
 
-
+@ Advantages:
+	-The EM algorithm for clustering is widely used in various domains, including image segmentation, document clustering, and gene 
+		expression analysis. 
+	-It is particularly useful when the data contains hidden or latent variables and when the underlying data distribution is complex 
+		and cannot be easily modeled by a single probability distribution.
 
 
 
