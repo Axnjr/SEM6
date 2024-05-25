@@ -414,7 +414,19 @@ a basic building block for understanding how neural networks can learn and adapt
 such as Hebbian learning and competitive learning, where networks self organize based on input patterns. 
 
 
-2. 
+2. The Expectation-Maximization (EM) algorithm: 
+is a powerful iterative optimization method commonly used in machine learning and statistics. It’s particularly useful for estimating 
+parameters in probabilistic models where some variables are hidden or unobserved. 
+
+@ In real-world machine learning applications, we often encounter situations where some features are observable while others remain hidden 
+or partially observable.
+
+@ The EM algorithm addresses this by leveraging the instances where the variable is observable to learn and predict its values in instances 
+where it’s not observable. 
+
+@ It’s especially applicable to latent variables (variables inferred from other observed variables but not directly observable).
+
+
 
 
 
