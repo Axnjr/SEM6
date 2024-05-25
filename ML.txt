@@ -566,8 +566,25 @@ Here's an explanation of the perceptron model with bias:
 		perceptron learning rule, to update the weights and bias iteratively until it achieves the desired output for a given set of 
 		inputs
 
-7. Activation functions,  Binary,  Bipolar,  continuous,  Ramp. 
 
+7. Activation functions,  Binary,  Bipolar,  continuous,  Ramp:
+
+	+ Activation functions: 
+		are mathematical functions used in artificial neural networks to introduce non-linearity into the system, allowing 
+		the network to learn and model complex relationships in the data.
+
+	+ Binary Activation Function:- Output is binary: 1 if input is greater than or equal to zero, 0 otherwise.
+	+ Bipolar Activation Function:- Output is bipolar: 1 if input is positive,-1 if input is negative
+	+ Continuous Activation Function: 
+		Provides continuous output across the entire input range.
+		Examples include sigmoid, tanh, and softmax functions
+			. Sigmoid function: f(x) = (1 / 1 + e^-x) squashes the input values between 0 and 1.
+			. Tanh function: f(x) = (e^x - e^-x / e^x + e^-x) squashes the input values between -1 and 1.
+			. Softmax function: f (xi) = (e^xi / summation e^xj) used in multi-class classification to output probabilities for each class
+	+ Ramp Activation Function:
+		Gradually increases output as input increases, instead of abruptly changing at a threshold.
+
+		
 8. Multi-layer perceptron network: A basic perceptron works very successfully for data sets which possess linearly 
 separable patterns. However, in practical situations, that is not an ideal situation to have.  A multi-layer perceptron (MLP) 
 is a type of artificial neural network (ANN) consisting of multiple layers of interconnected neurons. The major highlights 
