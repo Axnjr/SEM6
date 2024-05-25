@@ -494,10 +494,15 @@ machine learning.
 		artificial neurons are arranged in a series of layers that together constitute the whole Artificial Neural Network in a 
 		system. A layer can have dozen of units or millions of units as this depends on how the complex neural networks will be 
 		required to learn the hidden patterns in the dataset. Commonly, Artificial Neural Network has an input layer, an output layer 
-		as well as hidden layers. The input layer receives data from the outside world which the neural network needs to analyze or learn 
-		about. Then this data passes through one or multiple hidden layers that transform the input into data that is valuable for the 
-		output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to input 
-		data provided.
+		as well as hidden layers. 
+			-The input layer receives data from the outside world which the neural network needs to analyze or learn about. 
+			-Then this data passes through one or multiple hidden layers that transform the input into data that is valuable for the 
+			output layer. 
+				+Each neuron in a layer connects to every neuron in the next layer through weighted connections.
+				+Each connection has a weight, and neurons apply an activation function to the weighted sum of inputs to decide the output
+			-Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to input 
+			data provided. Each neuron in this layer represents a possible output.
+		
 
 Neural Network Architecture: There are different types of neural network architectures:
 
@@ -511,11 +516,23 @@ Neural Network Architecture: There are different types of neural network archite
 		Suitable for sequential data (e.g., time series). They have loops to allow information to persist.
 
 
-5. McCulloch-Pitts Model. Designing a simple network ✅: The McCulloch-Pitts neural model, which was the earliest ANN model, has only two 
-types of inputs — Excitatory and Inhibitory. The excitatory inputs have weights of positive 
-magnitude and the inhibitory weights have weights of negative magnitude. The inputs of the 
-McCulloch-Pitts neuron could be either 0 or 1. It has a threshold function as an activation 
-function.
+5. McCulloch-Pitts Model. Designing a simple network: 
+is a simplified neural model that represents the behavior of a biological neuron, it was the earliest ANN model.  
+In this model a neuron is represented as a binary threshold unit.
+Each neuron receives input signals from other neurons or external sources.
+The inputs are either excitatory (positive) or inhibitory (negative)
+The excitatory inputs have weights of positive magnitude and the inhibitory weights have weights of negative magnitude. 
+The inputs of the McCulloch-Pitts neuron could be either 0 or 1. 
+It has a threshold function also called as activation function which computes a weighted sum of its inputs.
+If the sum exceeds a predefined threshold, the neuron fires (outputs 1); otherwise, it remains inactive.
+Input Signals: These are the neuron's inputs, represented as x1, x2, x3. Each input has a corresponding weight.
+Weights: Each input signal is associated with a weight w1, w2, w3 representing its importance. These weights are real numbers
+	+ weighted sum = summation of wi * xi
+	
++ Applications:
+	The McCulloch-Pitts model laid the foundation for artificial neural networks.
+	Although it’s a simplified model, it helped researchers understand the basic principles of neural computation.
+
 
 6. Perceptron model with Bias ✅ : The perceptron model is one of the simplest types of artificial neural networks, originally 
 proposed by Frank Rosenblatt in 1957. It consists of a single layer of neurons, each connected to the inputs via weighted connections. 
