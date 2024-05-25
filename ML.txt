@@ -426,8 +426,17 @@ where it’s not observable.
 
 @ It’s especially applicable to latent variables (variables inferred from other observed variables but not directly observable).
 
+EM works in an iterative fashion, consisting of two main steps:
 
+	+ Expectation Step (E-step): 
+		In this step, the algorithm estimates the probability of each data point belonging to each cluster, given the current model 
+		parameters. It essentially uses the current cluster assignments (even if estimated) to calculate 
+		the likelihood of data points being in those clusters.
 
+	+ Maximization Step (M-step): 
+		Here, the algorithm uses the probabilities estimated in the E-step to refine the model parameters. It aims to find the parameters 
+		that maximize the overall likelihood of the data given the current cluster assignments (inferred in the E-step). This improves 
+		the model's ability to represent the data's clustering structure.
 
 
 
