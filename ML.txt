@@ -1,3 +1,16 @@
+
++ Numerical Problems on: 
+
+	Hebb,
+	MP neuron,
+	Perceptron,
+	Backpropogation,
+	Logistic regression,
+	Principal Component Analysis,
+	Linear regression,
+	diagonalization
+
+
 1. Machine learning: 
 is a subfield of artificial intelligence (AI) that focuses on developing 
 algorithms and techniques that enable computers to learn from and make predictions 
@@ -390,6 +403,13 @@ SVM, or Support Vector Machine, can be categorized based on the type of decision
 	o Finance (e.g., credit scoring, stock market prediction). 
 	o Medical diagnosis (e.g., disease classification, cancer detection). 
 		
++ Comparison with logistic regression:
+	The risk of overfitting is generally less in SVM compared to logistic regression.
+	SVM works well with unstructured and semi-structured data like text and images.
+	SVM can find any arbitrarily shaped decision boundary using the kernel trick, while logistic regression can only separate linearly 
+		separable classes.
+	SVM finds the “best” margin that separates classes, reducing the risk of error on the data.
+
 
 // ----------------------------------------------------------------------------------------------------------------------------------- //
 																MODULE - 4
@@ -566,6 +586,9 @@ Here's an explanation of the perceptron model with bias:
 		perceptron learning rule, to update the weights and bias iteratively until it achieves the desired output for a given set of 
 		inputs
 
+	+ Limitations:
+		Limited to linearly separable problems; unable to learn non-linear decision boundaries.
+		Convergence is not guaranteed if the data is not linearly separable
 
 7. Activation functions,  Binary,  Bipolar,  continuous,  Ramp:
 
@@ -584,7 +607,7 @@ Here's an explanation of the perceptron model with bias:
 	+ Ramp Activation Function:
 		Gradually increases output as input increases, instead of abruptly changing at a threshold.
 
-		
+
 8. Multi-layer perceptron network: A basic perceptron works very successfully for data sets which possess linearly 
 separable patterns. However, in practical situations, that is not an ideal situation to have.  A multi-layer perceptron (MLP) 
 is a type of artificial neural network (ANN) consisting of multiple layers of interconnected neurons. The major highlights 
@@ -800,8 +823,6 @@ and are a linear combinations of the original variables in the dataset. Here's  
 
 
 14. Flowcharts and alogorithm for  Hebb,  MP neuron,  Perceptron,  Backpropogation
-
-15. Problem on Hebb,MP neuron,Perceptron,Backpropogation,Logistic regression, and  Principal Component Analysis. ❌
 
 
 
