@@ -490,9 +490,9 @@ machine learning.
 		 Speed of processing is slow being it is complex. 
 
 	- ANNs: 
-		are mathematical models inspired by the organization of biological neural networks. They consist of interconnected 
-		artificial neurons, which are arranged in a series of layers that together constitute the whole Artificial Neural Network in a 
-		system. A layer can dozen of units or millions of units as this depends on how the complex neural networks will be 
+		are mathematical models inspired by the organization of biological neural networks. Interconnected 
+		artificial neurons are arranged in a series of layers that together constitute the whole Artificial Neural Network in a 
+		system. A layer can have dozen of units or millions of units as this depends on how the complex neural networks will be 
 		required to learn the hidden patterns in the dataset. Commonly, Artificial Neural Network has an input layer, an output layer 
 		as well as hidden layers. The input layer receives data from the outside world which the neural network needs to analyze or learn 
 		about. Then this data passes through one or multiple hidden layers that transform the input into data that is valuable for the 
