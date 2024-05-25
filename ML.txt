@@ -450,12 +450,104 @@ EM works in an iterative fashion, consisting of two main steps:
 		and cannot be easily modeled by a single probability distribution.
 
 
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE - 5
+// ----------------------------------------------------------------------------------------------------------------------------------- //
 
 
+1. Introduction,  Fundamental concept,  Evolution of Neural Networks:  
+Neural Networks are computational models that mimic the complex functions of the human brain. The neural networks consist of 
+interconnected nodes or neurons that process and learn from data, enabling tasks such as pattern recognition and decision making in 
+machine learning. 
+	-1940s 1st neuron but did'nt worked due to lack of computaional capabilities
+	-1960s perceptron
+	-then came backproposition and connectionism
+	-then early 2000s deep learning was Introduced
+	-Convolutional neural networks (CNNs) and recurrent neural networks (RNNs), two deep learning architectures, dominated machine 
+		learning.
 
 
+2. Biological Neuron,  Artificial Neural Networks,  NN architecture: 
+
+	- BNNs: 
+		refers to a system of interconnected brain cells, known as neurons, that make up the central nervous system in living organisms
+
+	- Neurons: 
+		These are the basic building blocks of BNNs. Neurons have multiple dendrites that receive input signals from other 
+		neurons. The soma (cell body) processes these incoming signals, and the axon transmits the processed signals to other cells.
+
+	- Synapses: 
+		These are the points of connection between neurons, where information is transmitted. 
+		# The contact point between the axon terminal of one neuron and the dendrite of another neuron.
+		In BNNs, synapses are flexible and can be modified by learning and experience.
+
+	+ Advantages of BNN:   
+		 The synapses are the input processing element. 
+		 It is able to process highly complex parallel inputs. 
+
+	+ Disadvantages of BNN: 	
+		 There is no controlling mechanism. 
+		 Speed of processing is slow being it is complex. 
+
+	- ANNs: 
+		are mathematical models inspired by the organization of biological neural networks. They consist of interconnected 
+		artificial neurons, which are arranged in a series of layers that together constitute the whole Artificial Neural Network in a 
+		system. A layer can dozen of units or millions of units as this depends on how the complex neural networks will be 
+		required to learn the hidden patterns in the dataset. Commonly, Artificial Neural Network has an input layer, an output layer 
+		as well as hidden layers. The input layer receives data from the outside world which the neural network needs to analyze or learn 
+		about. Then this data passes through one or multiple hidden layers that transform the input into data that is valuable for the 
+		output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to input 
+		data provided.
+
+Neural Network Architecture: There are different types of neural network architectures:
+
+	- Feedforward Neural Networks (FNNs): 
+		These are the simplest type of ANNs. Information flows from input nodes to output nodes without cycles.
+
+	- Convolutional Neural Networks (CNNs): 
+		Designed for image and video recognition. They use convolutional layers to extract features.
+
+	- Recurrent Neural Networks (RNNs): 
+		Suitable for sequential data (e.g., time series). They have loops to allow information to persist.
 
 
+5. McCulloch-Pitts Model. Designing a simple network ✅: The McCulloch-Pitts neural model, which was the earliest ANN model, has only two 
+types of inputs — Excitatory and Inhibitory. The excitatory inputs have weights of positive 
+magnitude and the inhibitory weights have weights of negative magnitude. The inputs of the 
+McCulloch-Pitts neuron could be either 0 or 1. It has a threshold function as an activation 
+function.
+
+6. Perceptron model with Bias ✅ : The perceptron model is one of the simplest types of artificial neural networks, originally 
+proposed by Frank Rosenblatt in 1957. It consists of a single layer of neurons, each connected to the inputs via weighted connections. 
+The perceptron model can be extended to include a bias term, which improves its ability to learn and represent complex patterns in 
+data. Here's an explanation of the perceptron model with bias: 
+
+	1. Inputs: The perceptron model takes a set of input values x1,x2,...,xn, each representing a feature or attribute of the input data. 
+
+	2. Weights: Each input is associated with a weight w1,w2,...,wn, which determines the importance of that input in the computation. 
+	These weights are adjusted during the training process to optimize the performance of the perceptron. 
+
+	3. Bias: The bias term, denoted as b, is an additional parameter in the perceptron model. It helps shift the decision boundary 
+	It allows the Perceptron to learn an offset from the origin. 
+
+	4. Activation Function: In the basic perceptron model, the activation function is a step function (typically the Heaviside step 
+	function), which outputs 1 if the weighted sum  of inputs plus bias exceeds a certain threshold, and 0 otherwise. Mathematically, 
+	the output of the perceptron can be represented as: 
+		summation of wi * xi + bias > 0
+
+
+7. Activation functions,  Binary,  Bipolar,  continuous,  Ramp. 
+
+8. Multi-layer perceptron network: A basic perceptron works very successfully for data sets which possess linearly 
+separable patterns. However, in practical situations, that is not an ideal situation to have.  A multi-layer perceptron (MLP) 
+is a type of artificial neural network (ANN) consisting of multiple layers of interconnected neurons. The major highlights 
+of this model are as follows: 
+	 The neural network contains one or more intermediate layers between the input and output nodes, which are hidden from both input and 
+	output nodes 
+	 Each neuron in the network includes a non-linear activation function that is differentiable. 
+	 The neurons in each layer are connected with some or all the neurons in the previous layer. 
+	 They can learn nonlinear relationships in data, making them suitable for real-world problems.
+	 MLPs are powerful models for tasks such as classification, regression, and pattern recognition.
 
 
 
@@ -580,89 +672,7 @@ In Hebbian learning weight change will be calculated as follows: Hebbian Learnin
 
 2. Expectation - Maximization algorithm for clustering
 
-3. Introduction,  Fundamental concept,  Evolution of Neural Networks ✅:  Neural Networks are computational models that mimic the 
-complex functions of the human brain. The neural networks consist of interconnected nodes or neurons that process and learn from data, 
-enabling tasks such as pattern recognition and decision making in machine learning. 
-	- 1940s 1st neuron but did'nt worked due to lack of computaional capabilities
-	- 1960s perceptron
-	- then came backproposition and connectionism
-	- then early 2000s deep learning was Introduced
-	- Convolutional neural networks (CNNs) and recurrent neural networks (RNNs), two deep learning architectures, dominated machine learning.
 
-4. Biological Neuron,  Artificial Neural Networks,  NN architecture ✅: 
-
-	- BNNs are the neural networks found in living organisms, including our brains. They consist of interconnected nerve cells (neurons) 
-	that communicate through synapses. 
-
-		- Neurons: These are the basic building blocks of BNNs. Neurons have multiple dendrites that receive input signals from other 
-		neurons. The soma (cell body) processes these incoming signals, and the axon transmits the processed signals to other cells.
-
-		- Synapses: These are the points of connection between neurons, where information is transmitted. In BNNs, synapses are 
-		flexible and can be modified by learning and experience.
-
-	Advantages of BNN:   
-		 The synapses are the input processing element. 
-		 It is able to process highly complex parallel inputs. 
-	Disadvantages of BNN: 	
-		 There is no controlling mechanism. 
-		 Speed of processing is slow being it is complex. 
-
-	- ANNs are mathematical models inspired by the organization of biological neural networks. They consist of interconnected 
-	artificial neurons, which are arranged in a series of layers that together constitute the whole Artificial Neural Network in a 
-	system. A layer can have only a dozen units or millions of units as this depends on how the complex neural networks will be 
-	required to learn the hidden patterns in the dataset. Commonly, Artificial Neural Network has an input layer, an output layer 
-	as well as hidden layers. The input layer receives data from the outside world which the neural network needs to analyze or learn 
-	about. Then this data passes through one or multiple hidden layers that transform the input into data that is valuable for the 
-	output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to input 
-	data provided.
-
-	- Neural Network Architecture: There are different types of neural network architectures:
-		- Feedforward Neural Networks (FNNs): These are the simplest type of ANNs. Information flows from input nodes to output 
-		nodes without cycles.
-
-		- Convolutional Neural Networks (CNNs): Designed for image and video recognition. They use convolutional layers to 
-		extract features.
-
-		- Recurrent Neural Networks (RNNs): Suitable for sequential data (e.g., time series). They have loops to allow information 
-		to persist.
-
-5. McCulloch-Pitts Model. Designing a simple network ✅: The McCulloch-Pitts neural model, which was the earliest ANN model, has only two 
-types of inputs — Excitatory and Inhibitory. The excitatory inputs have weights of positive 
-magnitude and the inhibitory weights have weights of negative magnitude. The inputs of the 
-McCulloch-Pitts neuron could be either 0 or 1. It has a threshold function as an activation 
-function.
-
-6. Perceptron model with Bias ✅ : The perceptron model is one of the simplest types of artificial neural networks, originally 
-proposed by Frank Rosenblatt in 1957. It consists of a single layer of neurons, each connected to the inputs via weighted connections. 
-The perceptron model can be extended to include a bias term, which improves its ability to learn and represent complex patterns in 
-data. Here's an explanation of the perceptron model with bias: 
-
-	1. Inputs: The perceptron model takes a set of input values x1,x2,...,xn, each representing a feature or attribute of the input data. 
-
-	2. Weights: Each input is associated with a weight w1,w2,...,wn, which determines the importance of that input in the computation. 
-	These weights are adjusted during the training process to optimize the performance of the perceptron. 
-
-	3. Bias: The bias term, denoted as b, is an additional parameter in the perceptron model. It helps shift the decision boundary 
-	It allows the Perceptron to learn an offset from the origin. 
-
-	4. Activation Function: In the basic perceptron model, the activation function is a step function (typically the Heaviside step 
-	function), which outputs 1 if the weighted sum  of inputs plus bias exceeds a certain threshold, and 0 otherwise. Mathematically, 
-	the output of the perceptron can be represented as: 
-		summation of wi * xi + bias > 0
-
-
-7. Activation functions,  Binary,  Bipolar,  continuous,  Ramp. 
-
-8. Multi-layer perceptron network: A basic perceptron works very successfully for data sets which possess linearly 
-separable patterns. However, in practical situations, that is not an ideal situation to have.  A multi-layer perceptron (MLP) 
-is a type of artificial neural network (ANN) consisting of multiple layers of interconnected neurons. The major highlights 
-of this model are as follows: 
-	 The neural network contains one or more intermediate layers between the input and output nodes, which are hidden from both input and 
-	output nodes 
-	 Each neuron in the network includes a non-linear activation function that is differentiable. 
-	 The neurons in each layer are connected with some or all the neurons in the previous layer. 
-	 They can learn nonlinear relationships in data, making them suitable for real-world problems.
-	 MLPs are powerful models for tasks such as classification, regression, and pattern recognition.
 
 
 9. Error back propagation algorithm.
