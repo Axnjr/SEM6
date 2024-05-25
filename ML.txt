@@ -414,7 +414,7 @@ a basic building block for understanding how neural networks can learn and adapt
 such as Hebbian learning and competitive learning, where networks self organize based on input patterns. 
 
 
-
+2. 
 
 
 
