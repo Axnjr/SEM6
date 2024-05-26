@@ -685,33 +685,32 @@ data. This is what makes it a powerful tool for various machine learning applica
 
 
 1. Curse of Dimensionality:  
-refers to the various challenges and limitations that arise when dealing with high-dimensional data 
-spaces. As the number of dimensions (features or variables) increases, several issues emerge that can significantly impact the 
+refers to the various challenges and limitations that arise when dealing with high-dimensional data spaces. As the number of dimensions (features or variables) increases, several issues emerge that can significantly impact the 
 effectiveness of various algorithms and techniques used in machine learning and data analysis. Here are some key 
 aspects of the Curse of Dimensionality: 
 
-	1. Increased Sparsity: As the dimensionality increases, the available data becomes 
-	sparser. In high-dimensional spaces, the data points tend to spread out, leading to 
-	fewer data points per unit volume. This sparsity can make it difficult to generalize 
-	from the data or to estimate reliable statistics. 
+	+ Increased Sparsity: 
+		As the dimensionality increases, the available data becomes sparser. 
+		In high-dimensional spaces, the data points tend to spread out, leading to 
+		fewer data points per unit volume. This sparsity can make it difficult to generalize 
+		from the data or to estimate reliable statistics. 
 
-	2. Increased Computational Complexity: Algorithms often become computationally 
-	more demanding as the dimensionality increases. Many algorithms have a time 
-	complexity that grows exponentially with the number of dimensions. This makes 
-	tasks such as distance calculations, clustering, and optimization more computationally 
-	expensive and time-consuming. 
+	+ Increased Computational Complexity: 
+		Algorithms often become computationally more demanding as the dimensionality increases. 
+		Many algorithms have a time complexity that grows exponentially with the number of dimensions. 
+		This makes tasks such as distance calculations, clustering, and optimization more computationally expensive and time-consuming. 
 
-	3. Degraded Performance of Distance-based Methods: Distance-based methods, such as 
-	k-nearest neighbours (k-NN) and clustering algorithms, rely on measuring distances 
-	between data points. Due to the data being spread out sparsly such methods are no longer suitable.
+	+ Degraded Performance of Distance-based Methods: 
+		Distance-based methods, such as k-nearest neighbours (k-NN) and clustering algorithms, rely on measuring distances 
+		between data points. Due to the data being spread out sparsly such methods are no longer suitable.
 
-	4. Overfitting: With an increasing number of dimensions, the risk of overfitting also 
-	increases. In high-dimensional spaces, there is a higher likelihood that models will 
-	capture noise or spurious correlations in the data, leading to poor generalization 
-	performance on unseen data. 
+	+ Overfitting: 
+		With an increasing number of dimensions, the risk of overfitting also increases. 
+		In high-dimensional spaces, there is a higher likelihood that models will 
+		capture noise in the data, leading to poor generalization performance on unseen data. 
 
 
-12. Dimensionality Reduction Techniques ✅:  Dimensionality reduction is the process of reducing the number of features in a 
+12. Dimensionality Reduction Techniques:  Dimensionality reduction is the process of reducing the number of features in a 
 dataset while retaining as much information as possible. This can be done for a variety of reasons, such as to reduce the 
 complexity of a model, to improve the performance of a learning algorithm, or to make it easier to visualize the data. 
 Some common dimensionality reduction techniques include:
