@@ -629,13 +629,9 @@ Working:
 		This process is repeated multiple times until the error converges to an acceptable minimum value.
 	
 Applications:
-	+ Adaptive Filtering: 
-		Widrow-Hoff is used in systems for reducing unwanted noise or interference and enhancing the desired signal.
-	+ Pattern Recognition: 
-		Widrow-Hoff assists in categorizing input data into defined groups based on their features.
-	+ Signal Processing: 
-		Widrow-Hoff is helpful where signals are distorted or have different conditions.
-		
+	The Widrow-Hoff algorithm finds applications in various fields, including adaptive filtering, noise cancellation, Pattern Recognition,
+	Signal Processing, and linear regression problems
+	
 
 9. Multi-layer perceptron network: A basic perceptron works very successfully for data sets which possess linearly 
 separable patterns. However, in practical situations, that is not an ideal situation to have.  A multi-layer perceptron (MLP) 
