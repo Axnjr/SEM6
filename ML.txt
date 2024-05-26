@@ -257,7 +257,7 @@ predict relationships between variables.
 		.
 		.
 		.
-	ym = ß0m + 1mx1+ß2mx2+ ... +ßnm*xn+ Em
+	ym = ß0m + ß1mx1+ß2mx2+ ... +ßnm*xn+ Em
 	Understand the relationship between multiple dependent variables and the independent variables.
 	Analyzing the effects of factors like humidity, and wind speed on multiple weather variables like temperature, 
 	precipitation, etc.
