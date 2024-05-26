@@ -631,12 +631,13 @@ Working:
 Applications:
 	The Widrow-Hoff algorithm finds applications in various fields, including adaptive filtering, noise cancellation, Pattern Recognition,
 	Signal Processing, and linear regression problems
-	
 
-9. Multi-layer perceptron network: A basic perceptron works very successfully for data sets which possess linearly 
-separable patterns. However, in practical situations, that is not an ideal situation to have.  A multi-layer perceptron (MLP) 
-is a type of artificial neural network (ANN) consisting of multiple layers of interconnected neurons. The major highlights 
-of this model are as follows: 
+
+9. Multi-layer perceptron network: 
+A basic perceptron works well for data sets which possess linearly separable patterns. 
+However, in practical situations, that is not an ideal situation to have.  
+A multi-layer perceptron (MLP) is a type of artificial neural network (ANN) consisting of multiple layers of interconnected neurons. 
+The major highlights of this model are as follows: 
 	 The neural network contains one or more intermediate layers between the input and output nodes, which are hidden from both input and 
 	output nodes 
 	 Each neuron in the network includes a non-linear activation function that is differentiable. 
@@ -645,6 +646,34 @@ of this model are as follows:
 	 MLPs are powerful models for tasks such as classification, regression, and pattern recognition.
 
 
+10. Error Backpropagation: 
+is a fundamental algorithm used to train artificial neural networks, especially those with a feed-forward architecture. It's essentially 
+a way for the network to learn by iteratively adjusting its internal connections to minimize the error between its outputs and the 
+desired targets.
+	How it works:
+		+ Forward Pass: 
+			The network receives an input, and this input is propagated forward through the network layer by layer. At each layer, the 
+			weighted sum of the previous layer's outputs is calculated, and an activation function is applied to determine the output of 
+			the current layer.
+
+		+ Error Calculation: 
+			Once the input reaches the output layer, the errors between the network's predictions and the desired targets are calculated.
+			This error is often quantified using a cost function, which measures the overall performance of the network.
+		
+		+ Backward Pass (Backpropagation): 
+			The errors are propagated backward through the network, starting from the output layer and 
+			going all the way back to the input layer. This is why it's called backpropagation. During backpropagation, the algorithm 
+			calculates how much each weight contributed to the error. This is done using partial derivatives.
+			The general formula for the weight update in backpropagation is:
+				Δw = - η * ∂E / ∂w		
+			- where:
+				Δw (delta w) is the update value for the weight
+				η (eta) is the learning rate, which controls the step size of the weight update
+				∂E / ∂w is the partial derivative of the cost function with respect to the weight
+
+		+ Iteration: 
+			Steps 1 to 3 are repeated for multiple training examples (epochs). With each iteration, the network learns and adjusts its 
+			internal connections, getting better at mapping inputs to the desired outputs.
 
 
 
