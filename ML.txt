@@ -607,7 +607,37 @@ Here's an explanation of the perceptron model with bias:
 		Gradually increases output as input increases, instead of abruptly changing at a threshold.
 
 
-8. Multi-layer perceptron network: A basic perceptron works very successfully for data sets which possess linearly 
+8. Delta Learning Rule / The LMS (Least Mean Square) algorithm: 
+also known as the Widrow-Hoff learning rule, is a fundamental algorithm in machine learning and adaptive signal processing. Developed by 
+Bernard Widrow and Ted Hoff, it works by iteratively adjusting weights in a linear model to minimize the difference between 
+the desired output and the actual output produced. The goal is to Minimize the mean squared error between the predicted and desired output.
+It is used in Supervised learning tasks where a training dataset with known inputs and desired outputs is available.
+
+Working:
+	+ Initialization: 
+		Initialize weights randomly.
+	+ Iterative Update:
+		Weights are updated based on following condition:
+			w(t+1)= w(t) + η(d(t)−y(t)) x (t)
+		+ Here,
+			𝑤(𝑡) & w(t+1) are the weight vectors before and after the update, respectively.
+			η is the learning rate, a small positive constant that determines the step size of the weight update.
+			d(t) is the desired output at time t.
+			y(t)is the predicted output at time t.
+			x(t) is the input vector at time t.
+	+ Convergence: 
+		This process is repeated multiple times until the error converges to an acceptable minimum value.
+	
+Applications:
+	+ Adaptive Filtering: 
+		Widrow-Hoff is used in systems for reducing unwanted noise or interference and enhancing the desired signal.
+	+ Pattern Recognition: 
+		Widrow-Hoff assists in categorizing input data into defined groups based on their features.
+	+ Signal Processing: 
+		Widrow-Hoff is helpful where signals are distorted or have different conditions.
+		
+
+9. Multi-layer perceptron network: A basic perceptron works very successfully for data sets which possess linearly 
 separable patterns. However, in practical situations, that is not an ideal situation to have.  A multi-layer perceptron (MLP) 
 is a type of artificial neural network (ANN) consisting of multiple layers of interconnected neurons. The major highlights 
 of this model are as follows: 
