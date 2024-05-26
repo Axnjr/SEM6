@@ -618,7 +618,7 @@ Working:
 		Initialize weights randomly.
 	+ Iterative Update:
 		Weights are updated based on following condition:
-			w(t+1)= w(t) + η(d(t)−y(t)) x (t)
+			w(t+1) = w(t) + η(d(t)−y(t)) * x(t)
 		+ Here,
 			𝑤(𝑡) & w(t+1) are the weight vectors before and after the update, respectively.
 			η is the learning rate, a small positive constant that determines the step size of the weight update.
