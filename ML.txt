@@ -685,7 +685,8 @@ data. This is what makes it a powerful tool for various machine learning applica
 
 
 1. Curse of Dimensionality:  
-refers to the various challenges and limitations that arise when dealing with high-dimensional data spaces. As the number of dimensions (features or variables) increases, several issues emerge that can significantly impact the 
+refers to the various challenges and limitations that arise when dealing with high-dimensional data spaces. As the number of dimensions 
+(features or variables) increases, several issues emerge that can significantly impact the 
 effectiveness of various algorithms and techniques used in machine learning and data analysis. Here are some key 
 aspects of the Curse of Dimensionality: 
 
