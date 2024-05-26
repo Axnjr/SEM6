@@ -541,7 +541,7 @@ In this model a neuron is represented as a binary threshold unit.
 Each neuron receives input signals from other neurons or external sources.
 The inputs are either excitatory (positive) or inhibitory (negative)
 The excitatory inputs have weights of positive magnitude and the inhibitory weights have weights of negative magnitude. 
-The inputs of the McCulloch-Pitts neuron could be either 0 or 1. 
+# The inputs of the McCulloch-Pitts neuron could be either 0 or 1. 
 It has a threshold function also called as activation function which computes a weighted sum of its inputs.
 If the sum exceeds a predefined threshold, the neuron fires (outputs 1); otherwise, it remains inactive.
 
@@ -577,8 +577,8 @@ Here's an explanation of the perceptron model with bias:
 
 	+ Activation Function: 
 		In the basic perceptron model, the activation function is a step function, which outputs 1 if the weighted sum  of inputs plus 
-		bias exceeds a certain threshold, and 0 otherwise. Mathematically, the output of the perceptron can be represented as: summation 
-		of wi * xi + bias > 0
+		bias exceeds a certain threshold, and 0 otherwise. Mathematically, the output of the perceptron can be represented as: 
+			summation of wi * xi + bias > 0
 
 	+ Learning: 
 		The perceptron learns by adjusting its weights and bias based on the observed errors. It uses a learning algorithm, such as the 
