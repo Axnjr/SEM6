@@ -254,9 +254,9 @@ predict relationships between variables.
 	Multiple dependent variables (responses) and two or more independent variables (predictors).
 	y1=ß01+ ß11x1+ß21x2+ ... + ßn1xn +ɛ1
 	y2=ß02+ß12x1+ß22x2+ ... +ßn2xn + ɛ2
-	.
-	.
-	.
+		.
+		.
+		.
 	ym = ß0m + 1mx1+ß2mx2+ ... +ßnm*xn+ Em
 	Understand the relationship between multiple dependent variables and the independent variables.
 	Analyzing the effects of factors like humidity, and wind speed on multiple weather variables like temperature, 
