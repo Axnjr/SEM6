@@ -710,7 +710,8 @@ aspects of the Curse of Dimensionality:
 		capture noise in the data, leading to poor generalization performance on unseen data. 
 
 
-12. Dimensionality Reduction Techniques:  Dimensionality reduction is the process of reducing the number of features in a 
+12. Dimensionality Reduction Techniques:  
+Dimensionality reduction is the process of reducing the number of features in a 
 dataset while retaining as much information as possible. This can be done for a variety of reasons, such as to reduce the 
 complexity of a model, to improve the performance of a learning algorithm, or to make it easier to visualize the data. 
 Some common dimensionality reduction techniques include:
@@ -811,54 +812,6 @@ Practical Use Cases:
 	- Data Compression: SVD helps find the best low-rank approximation to a matrix, reducing its dimensionality.
 	- Signal Processing: SVD aids in noise reduction, feature extraction, and denoising.
 	- Process Control: SVD assists in modeling and analyzing complex systems.
-
-2) Steps involved in ML:
-	- Data collection
-	- Data pre-processing & visulalization
-	- Feature selection
-	- Model training
-	- Model evaluation
-	- Prediction
-	- Deployment
-
-3)
-
-
-4) Issues in ML:
-	- Lack of data
-	- Incorrect data / data quality
-	- overfitting & underfitting
-	
-
-
-5) A confusion matrix: is a tabular summary that showcases the number of correct and incorrect predictions made by a classifier. It’s commonly used to measure the performance of a classification model. By comparing predicted values against actual values, the confusion matrix provides insights into how well the model is doing. When assessing a classification model’s performance, the confusion matrix is essential. A few key metrics:
-
-	- Accuracy: Ratio of total correct instances to the total instances. TP + TN / TN + TP + FP + FN
-
-	- Precision: Accuracy of positive predictions. It is defined as the ratio of true positive predictions to the total number of positive predictions 	  made by the model. TP / TP + FP
-
-	- Recall: Ability to identify positive instances. It is the ratio of the number of true positive (TP) instances to the sum of true positive and 	  false negative (FN) instances. TP / TP + FN
-
-	- F1-score: is used to evaluate the overall performance of a classification model. It is the harmonic mean of precision and recall
-
-	- Specificity: It  measures  the  ability  of  a  model  to  correctly  identify  negative  instances, ratio of true negative to all actual negative 	  examples (the sum of true negative and false positive)
-
-
-// ------------------------------------------------------------------------------------------------------------------------------------------------------ //
-// ------------------------------------------------------------------------------------------------------------------------------------------------------ //
-// ------------------------------------------------------------------------------------------------------------------------------------------------------ //
-
-
-
-
-14. Flowcharts and alogorithm for  Hebb,  MP neuron,  Perceptron,  Backpropogation
-
-
-
-
-
-
-
 
 
 # 6. Least Squares Regression for classification: (logistic regression)
