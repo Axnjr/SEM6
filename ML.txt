@@ -649,39 +649,113 @@ The major highlights of this model are as follows:
 10. Error Backpropagation: 
 is a fundamental algorithm used to train artificial neural networks, especially those with a feed-forward architecture. It's essentially 
 a way for the network to learn by iteratively adjusting its internal connections to minimize the error between its outputs and the 
-desired targets.
-	How it works:
-		+ Forward Pass: 
-			The network receives an input, and this input is propagated forward through the network layer by layer. At each layer, the 
-			weighted sum of the previous layer's outputs is calculated, and an activation function is applied to determine the output of 
-			the current layer.
+desired targets. How it works:
 
-		+ Error Calculation: 
-			Once the input reaches the output layer, the errors between the network's predictions and the desired targets are calculated.
-			This error is often quantified using a cost function, which measures the overall performance of the network.
-		
-		+ Backward Pass (Backpropagation): 
-			The errors are propagated backward through the network, starting from the output layer and 
-			going all the way back to the input layer. This is why it's called backpropagation. During backpropagation, the algorithm 
-			calculates how much each weight contributed to the error. This is done using partial derivatives.
-			The general formula for the weight update in backpropagation is:
-				Δw = - η * ∂E / ∂w		
-			- where:
-				Δw (delta w) is the update value for the weight
-				η (eta) is the learning rate, which controls the step size of the weight update
-				∂E / ∂w is the partial derivative of the cost function with respect to the weight
+	+ Forward Pass: 
+		The network receives an input, and this input is propagated forward through the network layer by layer. At each layer, the 
+		weighted sum of the previous layer's outputs is calculated, and an activation function is applied to determine the output of 
+		the current layer.
 
-		+ Iteration: 
-			Steps 1 to 3 are repeated for multiple training examples (epochs). With each iteration, the network learns and adjusts its 
-			internal connections, getting better at mapping inputs to the desired outputs.
+	+ Error Calculation: 
+		Once the input reaches the output layer, the errors between the network's predictions and the desired targets are calculated.
+		This error is often quantified using a cost function, which measures the overall performance of the network.
+	
+	+ Backward Pass (Backpropagation): 
+		The errors are propagated backward through the network, starting from the output layer and 
+		going all the way back to the input layer. This is why it's called backpropagation. During backpropagation, the algorithm 
+		calculates how much each weight contributed to the error. This is done using partial derivatives.
+		The general formula for the weight update in backpropagation is:
+			Δw = - η * ∂E / ∂w		
+		- where:
+			Δw (delta w) is the update value for the weight
+			η (eta) is the learning rate, which controls the step size of the weight update
+			∂E / ∂w is the partial derivative of the cost function with respect to the weight
 
+	+ Iteration: 
+		Steps 1 to 3 are repeated for multiple training examples (epochs). With each iteration, the network learns and adjusts its 
+		internal connections, getting better at mapping inputs to the desired outputs.
 
-
-
-
+By continuously adjusting the connections based on the error, backpropagation allows the neural network to learn complex patterns from 
+data. This is what makes it a powerful tool for various machine learning applications.
 
 
+// ----------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE - 6
+// ----------------------------------------------------------------------------------------------------------------------------------- //
 
+
+1. Curse of Dimensionality:  
+refers to the various challenges and limitations that arise when dealing with high-dimensional data 
+spaces. As the number of dimensions (features or variables) increases, several issues emerge that can significantly impact the 
+effectiveness of various algorithms and techniques used in machine learning and data analysis. Here are some key 
+aspects of the Curse of Dimensionality: 
+
+	1. Increased Sparsity: As the dimensionality increases, the available data becomes 
+	sparser. In high-dimensional spaces, the data points tend to spread out, leading to 
+	fewer data points per unit volume. This sparsity can make it difficult to generalize 
+	from the data or to estimate reliable statistics. 
+
+	2. Increased Computational Complexity: Algorithms often become computationally 
+	more demanding as the dimensionality increases. Many algorithms have a time 
+	complexity that grows exponentially with the number of dimensions. This makes 
+	tasks such as distance calculations, clustering, and optimization more computationally 
+	expensive and time-consuming. 
+
+	3. Degraded Performance of Distance-based Methods: Distance-based methods, such as 
+	k-nearest neighbours (k-NN) and clustering algorithms, rely on measuring distances 
+	between data points. Due to the data being spread out sparsly such methods are no longer suitable.
+
+	4. Overfitting: With an increasing number of dimensions, the risk of overfitting also 
+	increases. In high-dimensional spaces, there is a higher likelihood that models will 
+	capture noise or spurious correlations in the data, leading to poor generalization 
+	performance on unseen data. 
+
+
+12. Dimensionality Reduction Techniques ✅:  Dimensionality reduction is the process of reducing the number of features in a 
+dataset while retaining as much information as possible. This can be done for a variety of reasons, such as to reduce the 
+complexity of a model, to improve the performance of a learning algorithm, or to make it easier to visualize the data. 
+Some common dimensionality reduction techniques include:
+
+	- PCA: statistical technique which transforma the original features into a set of orthogonal axes that capture maximum variance 
+	in the data.
+
+	- Linear Discriminant Analysis (LDA): is a supervised dimensionality reduction technique that finds the linear combinations 
+	of features that best separate different classes in the data. It aims to maximize the between-class variance while 
+	minimizing the within-class variance.
+
+	- t-Distributed Stochastic Neighbour Embedding (t-SNE): t-SNE is a technique commonly used for visualizing high-dimensional 
+	data by reducing it to two or three  dimensions.
+
+	- Isomap: Isomap is a nonlinear dimensionality reduction technique that constructs a low-dimensional embedding of the data 
+	based on the geodesic distances in a high-dimensional space. 
+
+
+13. Principal Component Analysis ✅:  Principal  Component  Analysis  (PCA)  is  a  widely  used  technique  in statistics and data  
+science for dimensionality  reduction.  Its primary  goal  is  to  simplify  complex  data  sets by  transforming  them  into  a  
+new  coordinate  system where set of orthogonal axes capture the maximum varience in the data. These are called principal components 
+and are a linear combinations of the original variables in the dataset. Here's  a  breakdown  of  how  PCA  works: 
+
+	1. Data Centering: The first step in PCA involves centering the data by subtracting the 
+	mean of each feature from the respective feature values. This ensures that the new 
+	coordinate system is not biased towards any particular feature. 
+
+	2. Covariance Matrix Computation: After centering the data, PCA calculates the 
+	covariance matrix, which summarizes the relationships between different features. 
+	The covariance between two features measures how they vary together. A positive 
+	covariance indicates that they tend to increase or decrease together, while a negative 
+	covariance indicates an inverse relationship. 
+
+	3. Eigenvalue Decomposition: The covariance matrix is then decomposed into its 
+	eigenvectors and eigenvalues. 
+
+	4. Selection of Principal Components: The eigenvectors are ranked based on their 
+	corresponding eigenvalues. The eigenvector with the highest eigenvalue represents 
+	the direction of maximum variance in the data and is termed the first principal 
+	component (PC). Subsequent eigenvectors represent directions of decreasing variance 
+	and are termed the second, third, and so on, principal components. 
+
+	5. Projection: Finally, PCA projects the original data onto the new coordinate system 
+	defined by the principal components. 
 
 
 
@@ -774,106 +848,6 @@ Practical Use Cases:
 // ------------------------------------------------------------------------------------------------------------------------------------------------------ //
 
 
-1. Hebbian Learning rule:✅  Hebbian Learning Rule, also known as Hebb Learning Rule, was proposed by Donald O Hebb. It is one of the 
-first and also easiest learning rules in the neural network. It is used for pattern classification. It is a single layer neural network, 
-i.e. it has one input layer and one output layer. The input layer can have many units, say n. The output layer only has one unit. 
-Hebbian rule works by updating the weights between neurons in the neural network for each training sample. Hebbian Learning Rule: 
-	 It is unsupervised learning rule 
-	 It works on both binary and continuous activation function. 
-	 It is of single neuron layer type learning rule. 
-In Hebbian learning weight change will be calculated as follows: Hebbian Learning Rule Algorithm:  
-	- Initialization:
-		- Set all weights to zero: (wi = 0) for (i = 1) to (n), where (n) is the number of input neurons.
-		- Initialize the bias to zero: (b = 0).
-	- Training Process:
-		- For each input vector (S) (input vector) and its corresponding target output (t), repeat the following steps:
-			- Set activations for input units with the input vector Xi = Si for i = 1 to n. 
-			- Set the corresponding output value to the output neuron, i.e. y = t. 
-			- Update weight and bias by applying Hebb rule for all i = 1 to n:
-
-				- w(new) = w(old) + xi*y ; b(new) = b(old) + y
-
-
-2. Expectation - Maximization algorithm for clustering
-
-
-
-
-9. Error back propagation algorithm.
-
-10. Logistic regression ,Logit function
-
-11. Curse of Dimensionality ✅:  refers to the various challenges and limitations that arise when dealing with high-dimensional data 
-spaces. As the number of dimensions (features or variables) increases, several issues emerge that can significantly impact the 
-effectiveness of various algorithms and techniques used in machine learning and data analysis. Here are some key 
-aspects of the Curse of Dimensionality: 
-
-	1. Increased Sparsity: As the dimensionality increases, the available data becomes 
-	sparser. In high-dimensional spaces, the data points tend to spread out, leading to 
-	fewer data points per unit volume. This sparsity can make it difficult to generalize 
-	from the data or to estimate reliable statistics. 
-
-	2. Increased Computational Complexity: Algorithms often become computationally 
-	more demanding as the dimensionality increases. Many algorithms have a time 
-	complexity that grows exponentially with the number of dimensions. This makes 
-	tasks such as distance calculations, clustering, and optimization more computationally 
-	expensive and time-consuming. 
-
-	3. Degraded Performance of Distance-based Methods: Distance-based methods, such as 
-	k-nearest neighbours (k-NN) and clustering algorithms, rely on measuring distances 
-	between data points. Due to the data being spread out sparsly such methods are no longer suitable.
-
-	4. Overfitting: With an increasing number of dimensions, the risk of overfitting also 
-	increases. In high-dimensional spaces, there is a higher likelihood that models will 
-	capture noise or spurious correlations in the data, leading to poor generalization 
-	performance on unseen data. 
-
-
-12. Dimensionality Reduction Techniques ✅:  Dimensionality reduction is the process of reducing the number of features in a 
-dataset while retaining as much information as possible. This can be done for a variety of reasons, such as to reduce the 
-complexity of a model, to improve the performance of a learning algorithm, or to make it easier to visualize the data. 
-Some common dimensionality reduction techniques include:
-
-	- PCA: statistical technique which transforma the original features into a set of orthogonal axes that capture maximum variance 
-	in the data.
-
-	- Linear Discriminant Analysis (LDA): is a supervised dimensionality reduction technique that finds the linear combinations 
-	of features that best separate different classes in the data. It aims to maximize the between-class variance while 
-	minimizing the within-class variance.
-
-	- t-Distributed Stochastic Neighbour Embedding (t-SNE): t-SNE is a technique commonly used for visualizing high-dimensional 
-	data by reducing it to two or three  dimensions.
-
-	- Isomap: Isomap is a nonlinear dimensionality reduction technique that constructs a low-dimensional embedding of the data 
-	based on the geodesic distances in a high-dimensional space. 
-
-
-13. Principal Component Analysis ✅:  Principal  Component  Analysis  (PCA)  is  a  widely  used  technique  in statistics and data  
-science for dimensionality  reduction.  Its primary  goal  is  to  simplify  complex  data  sets by  transforming  them  into  a  
-new  coordinate  system where set of orthogonal axes capture the maximum varience in the data. These are called principal components 
-and are a linear combinations of the original variables in the dataset. Here's  a  breakdown  of  how  PCA  works: 
-
-	1. Data Centering: The first step in PCA involves centering the data by subtracting the 
-	mean of each feature from the respective feature values. This ensures that the new 
-	coordinate system is not biased towards any particular feature. 
-
-	2. Covariance Matrix Computation: After centering the data, PCA calculates the 
-	covariance matrix, which summarizes the relationships between different features. 
-	The covariance between two features measures how they vary together. A positive 
-	covariance indicates that they tend to increase or decrease together, while a negative 
-	covariance indicates an inverse relationship. 
-
-	3. Eigenvalue Decomposition: The covariance matrix is then decomposed into its 
-	eigenvectors and eigenvalues. 
-
-	4. Selection of Principal Components: The eigenvectors are ranked based on their 
-	corresponding eigenvalues. The eigenvector with the highest eigenvalue represents 
-	the direction of maximum variance in the data and is termed the first principal 
-	component (PC). Subsequent eigenvectors represent directions of decreasing variance 
-	and are termed the second, third, and so on, principal components. 
-
-	5. Projection: Finally, PCA projects the original data onto the new coordinate system 
-	defined by the principal components. 
 
 
 14. Flowcharts and alogorithm for  Hebb,  MP neuron,  Perceptron,  Backpropogation
