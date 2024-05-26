@@ -729,32 +729,34 @@ Some common dimensionality reduction techniques include:
 	based on the geodesic distances in a high-dimensional space. 
 
 
-13. Principal Component Analysis ✅:  Principal  Component  Analysis  (PCA)  is  a  widely  used  technique  in statistics and data  
-science for dimensionality  reduction.  Its primary  goal  is  to  simplify  complex  data  sets by  transforming  them  into  a  
-new  coordinate  system where set of orthogonal axes capture the maximum varience in the data. These are called principal components 
-and are a linear combinations of the original variables in the dataset. Here's  a  breakdown  of  how  PCA  works: 
+13. Principal Component Analysis:  
+is a widely used technique in statistics and data science for dimensionality reduction.  
+Its primary goal is to simplify complex data sets by transforming them into a new coordinate system where set of orthogonal 
+axes capture the maximum varience in the data. These are called principal components and are a linear combinations of the original 
+variables in the dataset. Here's  a  breakdown  of  how  PCA  works: 
 
-	1. Data Centering: The first step in PCA involves centering the data by subtracting the 
-	mean of each feature from the respective feature values. This ensures that the new 
-	coordinate system is not biased towards any particular feature. 
+	+ Data Centering: 
+		The first step in PCA involves centering the data by subtracting the mean of each feature from the respective feature values. 
+		This ensures that the new coordinate system is not biased towards any particular feature. 
 
-	2. Covariance Matrix Computation: After centering the data, PCA calculates the 
-	covariance matrix, which summarizes the relationships between different features. 
-	The covariance between two features measures how they vary together. A positive 
-	covariance indicates that they tend to increase or decrease together, while a negative 
-	covariance indicates an inverse relationship. 
+	+ Covariance Matrix Computation: 
+		After centering the data, PCA calculates the covariance matrix, which summarizes the relationships between different features. 
+		The covariance between two features measures how they vary together. 
+		A positive covariance indicates that they tend to increase or decrease together, while a negative covariance indicates an 
+		inverse relationship. 
 
-	3. Eigenvalue Decomposition: The covariance matrix is then decomposed into its 
-	eigenvectors and eigenvalues. 
+	+ Eigenvalue Decomposition: 
+		The covariance matrix is then decomposed into its eigenvectors and eigenvalues. 
 
-	4. Selection of Principal Components: The eigenvectors are ranked based on their 
-	corresponding eigenvalues. The eigenvector with the highest eigenvalue represents 
-	the direction of maximum variance in the data and is termed the first principal 
-	component (PC). Subsequent eigenvectors represent directions of decreasing variance 
-	and are termed the second, third, and so on, principal components. 
+	+ Selection of Principal Components: 
+		The eigenvectors are ranked based on their corresponding eigenvalues. 
+		The eigenvector with the highest eigenvalue represents the direction of maximum variance in the data and is termed the first 
+		principal component (PC). 
+		Subsequent eigenvectors represent directions of decreasing variance and are termed the second, third, and so on, principal 
+		components. 
 
-	5. Projection: Finally, PCA projects the original data onto the new coordinate system 
-	defined by the principal components. 
+	+ Projection: 
+		Finally, PCA projects the original data onto the new coordinate system defined by the principal components. 
 
 
 
