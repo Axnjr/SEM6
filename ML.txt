@@ -717,18 +717,21 @@ dataset while retaining as much information as possible. This can be done for a 
 complexity of a model, to improve the performance of a learning algorithm, or to make it easier to visualize the data. 
 Some common dimensionality reduction techniques include:
 
-	- PCA: statistical technique which transforma the original features into a set of orthogonal axes that capture maximum variance 
-	in the data.
+	- PCA: 
+		statistical technique which transforma the original features into a set of orthogonal axes that capture maximum variance 
+		in the data.
 
-	- Linear Discriminant Analysis (LDA): is a supervised dimensionality reduction technique that finds the linear combinations 
-	of features that best separate different classes in the data. It aims to maximize the between-class variance while 
-	minimizing the within-class variance.
+	- Linear Discriminant Analysis (LDA): 
+		is a supervised dimensionality reduction technique that finds the linear combinations 
+		of features that best separate different classes in the data. It aims to maximize the between-class variance while 
+		minimizing the within-class variance.
 
-	- t-Distributed Stochastic Neighbour Embedding (t-SNE): t-SNE is a technique commonly used for visualizing high-dimensional 
-	data by reducing it to two or three  dimensions.
+	- t-Distributed Stochastic Neighbour Embedding (t-SNE): 
+		t-SNE is a technique commonly used for visualizing high-dimensional data by reducing it to two or three dimensions.
 
-	- Isomap: Isomap is a nonlinear dimensionality reduction technique that constructs a low-dimensional embedding of the data 
-	based on the geodesic distances in a high-dimensional space. 
+	- Isomap: 
+		is a nonlinear dimensionality reduction technique that constructs a low-dimensional embedding of the data 
+		based on the geodesic distances in a high-dimensional space. 
 
 
 13. Principal Component Analysis:  
