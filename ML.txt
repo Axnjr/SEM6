@@ -523,7 +523,6 @@ machine learning.
 			-Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to input 
 			data provided. Each neuron in this layer represents a possible output.
 		
-
 Neural Network Architecture: There are different types of neural network architectures:
 
 	- Feedforward Neural Networks (FNNs): 
