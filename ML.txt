@@ -608,7 +608,7 @@ Here's an explanation of the perceptron model with bias:
 		Examples include sigmoid, tanh, and softmax functions
 			. Sigmoid function: f(x) = (1 / 1 + e^-x) squashes the input values between 0 and 1.
 			. Tanh function: f(x) = (e^x - e^-x / e^x + e^-x) squashes the input values between -1 and 1.
-			. Softmax function: f (xi) = (e^xi / summation e^xj) used in multi-class classification to output probabilities for each class
+			. Softmax function: f(xi) = (e^xi / summation e^xj) used in multi-class classification to output probabilities for each class
 	+ Ramp Activation Function:
 		Gradually increases output as input increases, instead of abruptly changing at a threshold.
 
