@@ -1,14 +1,11 @@
-
 + Numerical Problems on: 
-
-	Hebb ✅
+	Hebb,
 	MP neuron,
 	Perceptron,
 	Logistic regression,
 	Principal Component Analysis,
 	Linear regression,
 	diagonalization
-
 
 1. Machine learning: 
 is a subfield of artificial intelligence (AI) that focuses on developing 
