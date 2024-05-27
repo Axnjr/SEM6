@@ -4,7 +4,6 @@
 	Hebb ✅
 	MP neuron,
 	Perceptron,
-	Backpropogation,
 	Logistic regression,
 	Principal Component Analysis,
 	Linear regression,
