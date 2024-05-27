@@ -771,40 +771,9 @@ variables in the dataset. Here's  a  breakdown  of  how  PCA  works:
 		Finally, PCA projects the original data onto the new coordinate system defined by the principal components. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1) SVD: It stands for singular value decomposition, it is a matrix factorization technique. SVD is a method for decomposing a matrix. For a given matrix "A"
-it can be decomposed into three matrices "U", "∑" & "V^T" such that: 
+14. SVD: 
+It stands for singular value decomposition, it is a matrix factorization technique. SVD is a method for decomposing a matrix. For a given 
+matrix "A" it can be decomposed into three matrices "U", "∑" & "V^T" such that: 
 	
 	- A = U ∑ V^T
 
