@@ -426,6 +426,14 @@ activated at the same time, the strength of the connection (synaptic weight) bet
 	If the presynaptic neuron consistently precedes the firing of the postsynaptic neuron, the synaptic connection strengthens further. 
 	Conversely, if the presynaptic neuron consistently fails to cause the postsynaptic neuron to fire, the connection weakens.
 
++ Formula:
+	At first assume w1 = w2 = b = 0
+		+ w(new) = w(old) + △w
+		+ b(new) = b(old) + △b
+		+ △w = xi*yi 
+		+ △b = yi
+
+
 # Essentially, Hebbian learning allows the network to self-organize by strengthening connections that consistently contribute to the 
 # desired output and weakening those that don't.
 
