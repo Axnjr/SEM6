@@ -1,7 +1,7 @@
 
 + Numerical Problems on: 
 
-	Hebb,
+	Hebb ✅
 	MP neuron,
 	Perceptron,
 	Backpropogation,
