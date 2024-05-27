@@ -432,8 +432,8 @@ activated at the same time, the strength of the connection (synaptic weight) bet
 		+ △w = xi*yi 
 		+ △b = yi
 
-# Essentially, Hebbian learning allows the network to self-organize by strengthening connections that consistently contribute to the 
-# desired output and weakening those that don't.
+Essentially, Hebbian learning allows the network to self-organize by strengthening connections that consistently contribute to the 
+desired output and weakening those that don't.
 
 Hebbian learning is a simple but powerful rule that has been influential in both neuroscience and artificial neural networks. It provides 
 a basic building block for understanding how neural networks can learn and adapt. It forms the basis for unsupervised learning algorithms 
