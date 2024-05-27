@@ -649,7 +649,8 @@ The major highlights of this model are as follows:
 10. Error Backpropagation: 
 is a fundamental algorithm used to train artificial neural networks, especially those with a feed-forward architecture. It's essentially 
 a way for the network to learn by iteratively adjusting its internal connections to minimize the error between its outputs and the 
-desired targets. How it works:
+desired targets. It is used in Supervised learning tasks where a training dataset with known inputs and desired outputs is available.
+How it works:
 
 	+ Forward Pass: 
 		The network receives an input, and this input is propagated forward through the network layer by layer. At each layer, the 
