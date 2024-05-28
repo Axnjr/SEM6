@@ -491,15 +491,21 @@ goals of video processing include:
 	Enhancement: Improving the visual quality of video frames by adjusting brightness, contrast, and color balance.
 	Compression: Reducing the amount of data needed to represent video while maintaining acceptable quality.
 	Analysis: Extracting useful information from video, such as detecting objects, tracking motion, or recognizing patterns.
+	Motion Compensation: Handles motion estimation and compensation.
+	Digital Zoom and Pan: Allows zooming and panning within a video frame.
+	Aspect Ratio Control: Adjusts the display aspect ratio.
 Video codecs (such as MPEG, AVC, and VP9) encode and decode video data for efficient storage and transmission.
 
 
-(2) Sampled video: refers to video content that has been captured or generated at specific intervals (time points) rather than 
+2. Sampled video: 
+# refers to capturing discrete samples of an video’s continuous spatial domain
+refers to video content that has been captured or generated at specific intervals (time points) rather than 
 continuously. A video is a series of images called frames captured across a interval of time, Sampling refers to the process of selecting 
 specific frames from this continuous stream of video data.
 	- Uses: It is usefull reducing the video data while still representing the essential content.
 
-(3) Compare composite and component video. 
+
+3. Compare composite and component video. 
 
 - Composite Video:
 	Composite video combines all video information into a single signal.
@@ -520,7 +526,7 @@ specific frames from this continuous stream of video data.
 	Use case: Component video provides superior picture quality and is suitable for modern high-definition devices
 
 
-(4) Explain any three video file formats. 
+4. Explain any three video file formats. 
 
 - MPEG (Moving Picture Experts Group):  
 	• MPEG is a widely used standard for digital video compression and encoding.  
@@ -547,4 +553,4 @@ specific frames from this continuous stream of video data.
 	• Applications: MP4 is used for streaming video over the internet, mobile devices, social 
 	media platforms, video sharing websites (e.g., YouTube), and digital video players.  
 
-
+	
