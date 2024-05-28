@@ -389,6 +389,7 @@ is a technique used to reduce the size of digital images while preserving their 
 It’s particularly important for efficient storage and transmission of images. There are two main types of image compression: 
 lossy and lossless.
 
+
 2. Redundancy: 
 refers to the unnecessary information present in an image that can be removed without affecting its essential content.
 Image compression techniques exploit redundancy to reduce file size while maintaining visual quality. Types of redundancy in images 
@@ -419,9 +420,25 @@ include:
 
 	- Temporal Redundancy: In video compression, this refers to similarities between consecutive frames.
 
+
 3. Fidelity criteria: 
 evaluate the quality of a compressed image compared to the original. They help determine how well the compression 
-algorithm preserves important features of the image while reducing the image size.
+algorithm preserves important features of the image while reducing the image size. There are two main types of fidelity criteria:
+	+ Objective Fidelity Criteria:
+		These are quantitative measures that directly compare pixel values or statistical properties of the original and processed images
+		Common objective criteria include:
+			- Mean Squared Error (MSE): 
+				Calculates the average squared difference between corresponding pixels in the original and processed images.
+			- Entropy: 
+				Quantifies the uncertainty or randomness in pixel intensity distributions.
+			- Normalized Cross-Correlation (NCC): 
+				Measures the similarity between two images using their normalized cross-correlation.
+			- Structural Similarity Index (SSIM): 
+				Evaluates structural patterns, luminance, and contrast similarity between images.
+	+ Subjective Fidelity Criteria:
+		These criteria are based on human perception and involve visual inspection.
+		Human observers assess the quality of the processed image subjectively.
+
 
 4. Difference between Lossy Compression and Lossless Compression:
 	-Lossy compression is the method which eliminate the data which is not noticeable.	
@@ -444,6 +461,7 @@ algorithm preserves important features of the image while reducing the image siz
 
 	-Lossy compression is also termed as irreversible compression.	
 	Lossless Compression is also termed as reversible compression.
+
 
 5. Lossless compression techniques:
 
@@ -474,6 +492,7 @@ algorithm preserves important features of the image while reducing the image siz
 	tree is then used for both encoding and decoding the data. Huffman coding ensures unambiguous decoding by using prefix codes, where 
 	no code is a prefix of another code. Huffman coding is widely used in file compression formats (e.g., ZIP, JPEG, MP3) and 
 	communication protocols. It efficiently represents data while minimizing redundancy
+
 
 6. Vector quantization & imporved gray scale quantization - NDY
 
@@ -553,4 +572,3 @@ specific frames from this continuous stream of video data.
 	• Applications: MP4 is used for streaming video over the internet, mobile devices, social 
 	media platforms, video sharing websites (e.g., YouTube), and digital video players.  
 
-	
