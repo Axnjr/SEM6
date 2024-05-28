@@ -363,7 +363,8 @@ computational complexity from O(n^2) (where n is the data size) to O(n log n).
 		+ Image compression, denoising, and feature extraction
  
 
-4. Discrete hadamrad tranform: (DHT), also known as the Walsh transform or Walsh-Hadamard transform, is a mathematical operation used 
+4. Discrete hadamrad tranform: (DHT)
+also known as the Walsh transform or Walsh-Hadamard transform, is a mathematical operation used 
 to analyze discrete signals. It is a mathematical operation that transforms a vector of real or complex numbers into another vector.
 
 H† (transpose) = H ; https://www.youtube.com/watch?v=eWFC8rU1z10
