@@ -160,6 +160,17 @@ Major Characteristics (criteria on which we do segementation):
 	in terms of position are likely to belong to the same object or region. Techniques like region growing, watershed, and graph-based 
 	segmentation use spatial proximity to group pixels.
 
+	- Discontinuity: 
+	This characteristic refers to abrupt changes or discontinuities in pixel 
+	properties such as intensity, colour, texture, or gradient magnitude. Segmentation 
+	algorithms utilize these discontinuities to identify boundaries between different 
+	regions or objects in the image.  
+
+	- Similarity: 
+	refers to the degree to which pixels or regions in the image 
+	share common properties such as colour, intensity, texture, or motion. Segmentation 
+	methods group together pixels or regions that are similar to each other while 
+	distinguishing them from neighbouring regions with different properties. 
 
 3. Point processing: 
 fundamental technique where individual pixel values are directly transformed to create a new image. These operations 
@@ -233,10 +244,9 @@ There are prominently three methods of performing segmentation:
 	- Edges based segmentation: it is an important concept in digital image processing. It involves dividing images into regions and 
 	objects based abrupt changes in the intensity levels of the pixels. This type has 2 steps:
 		(NOTE: edge is an set of connected pixels that form a boundary between 2 disjoint regions in an image)
-			1. Edge Detection: Locating edges between different regions in the image.
-			2. Edge linking: We try to refine the edge detection by linking the adjacent edges and combine to form the whole object.  
-			we group these individual pixels into meaningful edges or contours. Edge linking aims to connect adjacent edge pixels to form 
-			continuous curves or boundaries.
+			+Edge Detection: Locating edges between different regions in the image.
+			+Edge linking: We try to refine the edge detection by linking the adjacent edges to form the whole object.  
+			Edge linking aims to connect adjacent edge pixels to form continuous curves or boundaries.
 		Pros :
 			- This approach is similar to how the humans brain approaches the segmentation task.
 			- Works well in images with good contrast between object and background.
@@ -267,6 +277,7 @@ There are prominently three methods of performing segmentation:
 	Prewitt operator provides us two masks one for detecting edges in horizontal direction and another for vertical direction:
 		- Prewitt Operator [X-axis] = [ -1 0 1; -1 0 1; -1 0 1]
 		- Prewitt Operator [Y-axis] = [-1 -1 -1; 0 0 0; 1 1 1]
+	<PREWITT Operator GIVES A SMOOTHING EFFECT AND ENHANCES THE IMAGES>
 	Steps:
 		Read the image.
 		Convert into grayscale if it is colored.
