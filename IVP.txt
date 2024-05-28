@@ -3,10 +3,11 @@ NDY - NUMERICALS
 	- Histogram equllization ❌
 	- Histogram specification ❌
 	- Power law transformation ❌
-	- Contrast streching ❌
+	- Contrast streching ✅ 
+		<https://www.youtube.com/watch?v=FAsI-Hq4flQ>
 	---------------------------------------------------------------------------------------------------------------------------------
 	- Discrete cosine transform ✅ https://www.youtube.com/watch?v=lQnUex31f5Q
-	- Fast fourier transform ❌
+	- Fast fourier transform ✅ 
 	- Discrte fouurier transform ✅ 
 		F[k] = ∑ f(x) e ^ -j*2⊓*k*x/N 
 			Where: 
@@ -111,7 +112,30 @@ format. Each format of the image has a different advantage and disadvantage.
 			Not recommended for images that require high fidelity (e.g., detailed graphics or text).
 			It is a very common format and is good for digital cameras, non-professional prints, E-Mail, Powerpoint, etc.
 	
+
+// ------------------------------------------------------------------------------------------------------------------------------------- //
+																MODULE - 3
+// ------------------------------------------------------------------------------------------------------------------------------------- //																
+
  
+1. Contrast stretching: 
+also known as normalization, is a straightforward image enhancement technique that aims to improve the contrast in an image by 
+“stretching” the range of intensity values it contains. It is crucial technique in image processing to increases the contrast of the image
+by making darker areas more dark by assigning slope less than 1 and brighter areas more bright by assigning slope greater than 1. 
+Parameters: r1, r2, s1, s2
+	S = alpha*gamma   ; 0r3
+	S = beta(r-r1)+s1 ; 3r5
+	S = r(r-r2)+s2    ; 5r7
+
+
+2. Image thresholding: 
+is a fundamental technique in image processing that simplifies a grayscale image into a binary image. The goal is to reduce the image to 
+only two levels of intensity, making it easier to identify and isolate objects of interest. 
+
+
+
+
+
 // ------------------------------------------------------------------------------------------------------------------------------------- //
 																MODULE - 3
 // ------------------------------------------------------------------------------------------------------------------------------------- //																
@@ -300,6 +324,7 @@ There are prominently three methods of performing segmentation:
 	Advantages:
 		+ Smoothing and Noise Reduction
 		+ Efficiency: The Sobel operator is relatively simple and computationally efficient.
+	<SOBEL Operator GIVES A SMOOTHING EFFECT AND ENHANCES THE IMAGES>
 
 	[3] Robert Operator: This gradient-based operator computes the sum of squares of the differences between diagonally adjacent pixels 
 	in an image through discrete differentiation. Then the gradient approximation is made. 
