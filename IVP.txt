@@ -483,7 +483,8 @@ algorithm preserves important features of the image while reducing the image siz
 // ------------------------------------------------------------------------------------------------------------------------------------- //
 
 
-(1) Digital video processing: involves manipulating video signals to enhance, compress, or analyze video content. In this field, we work 
+1. Digital video processing: 
+involves manipulating video signals to enhance, compress, or analyze video content. In this field, we work 
 with video data, which consists of a sequence of frames. Each frame represents an image captured at a specific time. Video processing is 
 closely related to image processing. However, instead of working with individual images, we process entire video sequences. The primary 
 goals of video processing include:
@@ -491,6 +492,7 @@ goals of video processing include:
 	Compression: Reducing the amount of data needed to represent video while maintaining acceptable quality.
 	Analysis: Extracting useful information from video, such as detecting objects, tracking motion, or recognizing patterns.
 Video codecs (such as MPEG, AVC, and VP9) encode and decode video data for efficient storage and transmission.
+
 
 (2) Sampled video: refers to video content that has been captured or generated at specific intervals (time points) rather than 
 continuously. A video is a series of images called frames captured across a interval of time, Sampling refers to the process of selecting 
