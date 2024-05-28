@@ -360,12 +360,15 @@ computing the DFT using its definition can be slow and impractical, especially f
 transformations by factorizing the DFT matrix into a product of sparse (mostly zero) factors. As a result, it significantly reduces the 
 computational complexity from O(n^2) (where n is the data size) to O(n log n). 
 	Applications:
-		+ Image compression, denoising, and feature extraction
+		Signal Processing: Analyzing audio, vibrations, and other signals to identify their frequency content.
+		Image Processing: Analyzing and manipulating images based on their frequency components.
+		Data Compression: Exploiting the frequency information for efficient data compression.
  
 
 4. Discrete hadamrad tranform: (DHT)
 also known as the Walsh transform or Walsh-Hadamard transform, is a mathematical operation used 
 to analyze discrete signals. It is a mathematical operation that transforms a vector of real or complex numbers into another vector.
+It has applications in signal processing, data compression, and error correction.
 
 H† (transpose) = H ; https://www.youtube.com/watch?v=eWFC8rU1z10
 H = [ 1  1 ]			H = [ 1  1   1  1 ]
@@ -379,8 +382,18 @@ F = H * Matrix * H† i.e H - 2 or more dimension
 5. Fast hadamard transform: 
 The FWHT is an efficient algorithm for computing the WHT. A naive implementation of the WHT would have a 
 computational complexity of O(n2). However, the FWHT reduces this complexity to O(nlogn). The FWHT requires O(n log n) additions and 
-subtraction operations. It is a divide and conquer algorithm which breaks down the WHT recursively:
-	f(x,u)  =  - 1 / N  ∑^n-1 bi(x) * bi(u)
+subtraction operations. Key points about FHT:
+	+ Divide-and-Conquer Strategy: 
+		It breaks down the WHT of size N into smaller WHTs of size N/2 recursively and works based on the below formula:
+			f(x,u)  =  - 1 / N  ∑^n-1 bi(x) * bi(u)
+	+ Butterfly Structure: 
+		Similar to the Fast Fourier Transform (FFT), FHT utilizes a butterfly structure to efficiently compute the transform coefficients.
+	+ Input Requirements: 
+		The FHT typically works on data with lengths that are powers of 2. If the input length isn't a power of 2, zero-padding is applied.
+	+ Applications: 
+		Used in signal processing, error correction, cryptography, and other areas.
+	+ Advantage: 
+		FHT significantly reduces computation time compared to the naive WHT approach.
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------- //
