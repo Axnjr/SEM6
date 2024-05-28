@@ -205,7 +205,9 @@ differ from their neighbors. These isolated points often have distinct gray leve
 
 
 5. Segmentation: 
-is the separation of one or more regions or objects in an image based on a discontinuity or a similarity criterion. 
+refers to the process of partitioning an image into multiple segments or regions based on a discontinuity or a similarity criterion 
+such as colour, intensity, texture. The goal of segmentation is to simplify the representation of an image by breaking it 
+down into meaningful parts, which can then be analysed or manipulated separately. 
 There are prominently three methods of performing segmentation:
 
 	- Pixel Based Segmentation: the goal is to classify individual pixels in an image into different groups or regions.
