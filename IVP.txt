@@ -475,12 +475,11 @@ algorithm preserves important features of the image while reducing the image siz
 	- Arithmetic coding: 
 	is an entropy-based technique that achieves better compression results than RLE & huffman. It assigns variable-length codes based on 
 	the probability of symbols appearing in the data. This means frequently occurring characters are represented with fewer bits, and 
-	less frequent ones with more, resulting in a compressed overall size. In this a sequence of symbols is encoded into a single 
-	fractional value within the interval [0, 1]. The entire sequence is represented by a single fraction, and the decoder can 
-	reconstruct the original sequence from this fraction. 
+	less frequent ones with more, resulting in a compressed overall size. Unlike other entropy encoding methods such as Huffman coding, 
+	which replace individual symbols with codes, arithmetic coding encodes the entire message into a single number within the range 
+	[0.0, 1.0].
 		+ Arithmetic coding encodes the entire message as a single number, 
 		+ while Huffman coding assigns unique bit sequences to each symbol.
-
 		+ Arithmetic codes are dynamically based on the encountered symbols, 
 		+ whereas Huffman coding uses pre-defined codes.
 	While powerful, arithmetic coding can be computationally more complex than Huffman coding.
