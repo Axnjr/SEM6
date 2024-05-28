@@ -372,6 +372,9 @@ H = [ 1  1 ]			H = [ 1  1   1  1 ]
 	[ 1 -1 ]2X2				[ 1 -1   1 -1 ]
 							[ 1  1 |-1 -1 ] --|-> this part stays negative
 							[ 1 -1 |-1  1 ] --|
+F = H * Matrix - 1 dimensional
+F = H * Matrix * H† i.e H - 2 or more dimension
+
 
 5. Fast hadamard transform: 
 The FWHT is an efficient algorithm for computing the WHT. A naive implementation of the WHT would have a 
