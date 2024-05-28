@@ -199,7 +199,8 @@ Varoius non linear point processing methods are:
 			transformation to compensate for this and ensure images are displayed accurately.
 
 
-4. Point detection: In image processing, point detection refers to identifying isolated spots or pixels in an image that significantly 
+4. Point detection: 
+In image processing, point detection refers to identifying isolated spots or pixels in an image that significantly 
 differ from their neighbors. These isolated points often have distinct gray levels compared to the surrounding areas.
 
 
