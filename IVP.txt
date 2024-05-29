@@ -131,11 +131,13 @@ Parameters: r1, r2, s1, s2
 2. Image thresholding: 
 is a fundamental technique in image processing that simplifies a grayscale image into a binary image. The goal is to reduce the image to 
 only two levels of intensity, black and white, making it easier to identify and isolate objects of interest. 
-Formula: S = (L-1) - r
+Formula for image negative: S = (L-1) - r
 	Where: 
 		L is the range in which the max value lies in 2s multiple
 		r is the respective pixel value
-
+	For a given threshold T, the transformation is:
+		If r > T, then s = 255.
+		If r < T, then s = 0
 
 
 
