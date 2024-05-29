@@ -87,9 +87,23 @@ format. Each format of the image has a different advantage and disadvantage.
 		BMP is an uncompressed raster image format.
 		Image file is developed by Microsoft for windows
 		It stores pixel data directly, without any compression or loss of quality.
+
+		The BMP file begins with a header section that contains the necessary metadata for properly interpreting the image data.
+
+		BMP files are platform-independent and can be read and written by most operating systems and image editing software
+
+		While BMP files typically use uncompressed pixel data, there are
+		variations of the format that support compression, such as RLE (Run-Length
+		Encoding). This can reduce file size, but it’s less common compared to compressed
+		formats like JPEG or PNG
+
 		Each pixel is represented by a specific color value.
 		BMP files tend to be large in size due to lack of compression.
-		Commonly used for simple graphics and icons.
+
+		Despite their larger file sizes, BMP files are still used in certain applications
+ 		where image quality and fidelity are paramount, such as professional graphics editing,
+ 		medical imaging, and certain types of digital art
+
 		Due to BMP being a proprietary format, it is generally recommended to use TIFF files.
 		+ Use Cases:
 			BMP is suitable when you need high-quality images without any loss of detail.
