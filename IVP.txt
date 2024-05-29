@@ -730,9 +730,7 @@ transmitting video over a network. This estimation involves several factors:
 	more storage space and bandwidth. Common frame rates include 24 fps (cinematic),
 	30 fps (standard for TV), and 60 fps (high motion).
 	3. Compression: The choice of codec and compression settings significantly affects the
-	f
-	ile size and bandwidth requirements. Different codecs offer varying levels of
-	compression efficiency and quality.
+	file size and bandwidth requirements. Different codecs offer varying levels of compression efficiency and quality.
 	4. Duration: The length of the video (in seconds, minutes, or hours) directly impacts the
 	total file size and transmission time.
 	5. Audio: If the video includes audio, the audio codec, bitrate, and number of channels
@@ -743,3 +741,4 @@ in better quality but require more storage space and bandwidth.
 Estimating the storage and bandwidth requirements for digital video involves considering
 these factors and selecting appropriate encoding settings to achieve the desired balance
 between quality, file size, and transmission efficiency.
+
