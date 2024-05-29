@@ -1,8 +1,8 @@
 NDY - NUMERICALS
 	---------------------------------------------------------------------------------------------------------------------------------
-	- Histogram equllization ❌
+	- Histogram equllization ✅  https://www.youtube.com/watch?v=_PjgOllbAxY
 	- Histogram specification ❌
-	- Power law transformation ❌
+	- Power law transformation ✅ S = c log(r+1)
 	- Contrast streching ✅ 
 		<https://www.youtube.com/watch?v=FAsI-Hq4flQ>
 	---------------------------------------------------------------------------------------------------------------------------------
@@ -135,8 +135,9 @@ format. Each format of the image has a different advantage and disadvantage.
 
  
 1. Contrast stretching: 
-also known as normalization, is a straightforward image enhancement technique that aims to improve the contrast in an image by 
-“stretching” the range of intensity values it contains. It is crucial technique in image processing to increases the contrast of the image
+also known as normalization or histogram streching, is a straightforward image enhancement technique that aims to improve the contrast 
+in an image by “stretching” the range of intensity values it contains. 
+It is crucial technique in image processing to increases the contrast of the image
 by making darker areas more dark by assigning slope less than 1 and brighter areas more bright by assigning slope greater than 1. 
 Parameters: r1, r2, s1, s2
 	S = alpha*gamma   ; 0r3
@@ -155,6 +156,26 @@ Formula for image negative: S = (L-1) - r
 		If r > T, then s = 255.
 		If r < T, then s = 0
 
+
+3. Histogram: 
+A digital image is represented as a two-dimensional matrix, where each cell specifies the intensity level at that point.
+The intensity levels range from 0 (complete black) to L-1 (complete white), where L represents the total number of intensity levels.
+The histogram of an image shows the distribution of intensity levels. It’s a function that maps each intensity level to the number of 
+pixels having on that level.		
+
+
+4. Histogram equalization: 
+is a technique used in digital image processing to enhance the contrast of an image by redistributing its intensity levels
+Histogram equalization aims to improve the global contrast of an image.
+It achieves this by spreading out the intensity levels more uniformly across the entire range.
+Histogram equalization enhances images with poor contrast.
+It can be useful for medical imaging, satellite imagery, and other applications.
+
+
+5. In image processing, histogram matching (also known as histogram specification):
+is a technique used to transform an image so that its histogram matches a specified histogram
+Unlike histogram equalization (which produces a uniformly distributed histogram), histogram matching allows us to match a specific 
+target histogram.
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------- //
