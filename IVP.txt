@@ -365,6 +365,30 @@ There are prominently three methods of performing segmentation:
 												       			MODULE - 4
 // ------------------------------------------------------------------------------------------------------------------------------------- //
 
+
+0. Image transforms: 
+play a crucial role in various image processing tasks. 
+An image transform is a mathematical operation that converts an image signals from one domain to another.
+It allows us to analyze, manipulate, and represent images more effectively.
+Image transforms are widely used in fields like computer vision, image processing, and multimedia. Types of Image Transforms:
+	+ Spatial Domain Transforms:
+		These operate directly on pixel values within the image.
+		Examples: brightness adjustment, contrast enhancement, and gamma correction.
+	+ Frequency Domain Transforms:
+		These convert an image from the spatial domain to the frequency domain.
+		They reveal information about the image’s frequency components.
+		Examples: Fourier Transform, Discrete Cosine Transform (DCT), and Wavelet Transform.
+	+ Applications of Image Transforms:
+		Image Compression:
+			DCT reduces redundancy by concentrating energy in fewer coefficients. JPEG uses DCT for lossy compression.
+		Feature Extraction:
+			Transforms help extract relevant features for tasks like object recognition.
+		Image Enhancement:
+			Frequency domain transforms can enhance specific features.
+		Geometric Transformations:
+			Rotations, scaling, and warping using transforms.
+
+
 1. Unitary transformation: 
 is a mathematical operation that preserves the inner product of vectors. A unitary transform, also known as a 
 unitary matrix or unitary operator, is a linear transformation that preserves the length of vectors and maintains orthogonality. 
@@ -372,6 +396,7 @@ In simpler terms, it's a transformation that doesn't distort distances or angles
 image processing to 
 	- maintain signal energy, 
 	- compact information, 
+	- Unitary transforms preserve energy and compactly represent the image.
 	- decorrelate data, 
 	- preserve information, (crucial for maintaining the integrity of the image data and ensuring that important details are not lost during processing)
 	- ensure efficiency, and 
@@ -657,3 +682,27 @@ specific frames from this continuous stream of video data.
 	• Applications: MP4 is used for streaming video over the internet, mobile devices, social 
 	media platforms, video sharing websites (e.g., YouTube), and digital video players.  
 
+5. Estimation in digital video: 
+refers to predicting the amount of storage space required for
+storing a given video file or stream, as well as estimating the bandwidth needed for
+transmitting video over a network. This estimation involves several factors:
+	1. Video Resolution: Higher resolutions require more storage space and bandwidth.
+	Common resolutions include Standard Definition (SD), High Definition (HD), Full HD
+	(1080p), and Ultra HD (4K).
+	2. Frame Rate: Higher frame rates increase the amount of data per second, requiring
+	more storage space and bandwidth. Common frame rates include 24 fps (cinematic),
+	30 fps (standard for TV), and 60 fps (high motion).
+	3. Compression: The choice of codec and compression settings significantly affects the
+	f
+	ile size and bandwidth requirements. Different codecs offer varying levels of
+	compression efficiency and quality.
+	4. Duration: The length of the video (in seconds, minutes, or hours) directly impacts the
+	total file size and transmission time.
+	5. Audio: If the video includes audio, the audio codec, bitrate, and number of channels
+	also contribute to the overall data size.
+	. Bitrate: Bitrate refers to the amount of data processed per unit of time and is typically
+	measured in bits per second (bps) or kilobits per second (kbps). Higher bitrates result
+in better quality but require more storage space and bandwidth.
+Estimating the storage and bandwidth requirements for digital video involves considering
+these factors and selecting appropriate encoding settings to achieve the desired balance
+between quality, file size, and transmission efficiency.
