@@ -630,6 +630,23 @@ specific frames from this continuous stream of video data.
 	multimedia content. They are also compatible with various media players and editing 
 	software 
 
+- MOV (QuickTime File Format):
+	MOV is a multimedia container format developed by Apple for storing audio, video, and other media types.
+	It is closely associated with QuickTime Player and is commonly used on macOS and iOS devices.
+	MOV files can contain multiple tracks, allowing for the storage of multiple audio and video streams, as well as subtitles and metadata.
+	MOV supports various codecs, including H.264, ProRes, and Animation, making it suitable for a wide range of applications, from 
+	professional video editing to online streaming.
+
+- WMV (Windows Media Video):
+	WMV is a video format developed by Microsoft for use with its Windows Media
+	Player.
+	It offers efficient compression and high-quality video playback, making it
+	suitable for streaming and downloading videos over the internet.
+	WMV files are compatible with Windows-based devices and platforms, but may
+	require additional codecs or plugins for playback on other operating systems.
+	While WMV files can achieve smaller file sizes compared to some other
+	formats, they may sacrifice some quality in favor of compression
+
 - MP4 (MPEG-4 Part 14):  
 	• MP4 is a widely used digital multimedia container format that can store video, audio, subtitles, and still images.  
 	• It supports high-quality video compression with efficient encoding techniques.  
