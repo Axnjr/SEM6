@@ -51,13 +51,15 @@ contents of the img.
 In digital image processing, sampling and quantization are fundamental processes that transform continuous 
 analog signals (such as an image) into a digital format suitable for computation and analysis. 
 
-	- Sampling: Sampling involves digitizing the coordinate values of an continues (analog) signal. When we sample an image, we take 
+	- Sampling: 
+	involves digitizing the coordinate values of an continues (analog) signal. When we sample an image, we take 
 	discrete samples at specific points in both the x-axis (spatially) and the y-axis (amplitude). The sampling rate determines the 
 	spatial resolution of the digitized image. More samples lead to better image quality and reduced noise, but it also increases the 
 	number of pixels in the image. Sampling rate: It determines how frequently the subset samples are taken from the signal. It is 
 	typically measured in pixels per inch
 
-	- Quantization: is the process of digitizing the amplitude values of the sampled image. It involves dividing the continuous range 
+	- Quantization: 
+	is the process of digitizing the amplitude values of the sampled image. It involves dividing the continuous range 
 	of gray levels (amplitudes) into a finite number of distinct values. For instance, we might quantize the gray levels into 5 
 	different partitions, ranging from black (level 0) to white (level 4). Quantization reduces the continuous amplitude values to 
 	a finite set of discrete levels. The number of quantization levels determines the number of gray levels in the digitized image. 
