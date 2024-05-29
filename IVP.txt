@@ -186,7 +186,8 @@ Major Characteristics (criteria on which we do segementation):
 
 	- Spatial Proximity: 
 	Spatial proximity refers to the geometric arrangement of pixels in an image. Pixels that are close to each other
-	in terms of position are likely to belong to the same object or region. Techniques like region growing, watershed, and graph-based 
+	in terms of position are likely to belong to the same object or region, because in an image, adjacent pixels often have similar 
+	colours or intensity levels, especially in smooth regions. Techniques like region growing, watershed, and graph-based 
 	segmentation use spatial proximity to group pixels.
 
 	- Discontinuity: 
@@ -215,7 +216,14 @@ Varoius non linear point processing methods are:
 
 	- Log transformation: 
 	We apply the logarithm function to each pixel intensity value in the image. This compresses the larger values and stretches the 
-	smaller ones. Maps a narrow range of low-intensity input values to a wider range of output values.
+	smaller ones. The log transformations can be defined by this formula
+		s = c log(r + 1)
+		Where s and r are the pixel values of the output and the input image and c is a constant.
+		The value 1 is added to each of the pixel value of the input image because if there is a pixel
+		intensity of 0 in the image, then log (0) is equal to infinity. So 1 is added, to make the
+		minimum value at least 1.
+	During log transformation, the dark pixels in an image are expanded as compare to the higher pixel values. The higher pixel values 
+	are kind of compressed in log transformation.
 	Applications:
 		+ HDR imaging: 
 			Logarithmic encoding is often used as an intermediate step in High Dynamic Range (HDR) image processing. It allows capturing 
@@ -223,14 +231,12 @@ Varoius non linear point processing methods are:
 		+ Compression: 
 			Logarithmic transformation can be a part of some image compression algorithms, as it helps to reduce the overall file size 
 			by focusing on the more significant details.
-		- in this "L" is a the max value of the range in which the max value of the matrix lies from 0
-		- and "n" is number raise to "2" that gives "L"
-		- ex: max val in matrix is 120 therfore: L = 2^7 = 128 ; n = 7
-		- S = C(1+R)
 
 	- Power law transformation: 
 	also known as gamma transformation, is a technique used in image processing to manipulate the image's intensity values.	It involves 
 	raising each pixel intensity value to a specified power (gamma). S = C . R ^ Gamma
+	This type of transformation is used for enhancing images for different type of display devices. The gamma of different display 
+	devices is different. For example Gamma of CRT lies in between of 1.8 to 2.5.
 	Applications:
 		+ Image Enhancement: 
 			By adjusting gamma, you can improve the visibility of details in either dark or bright regions.
@@ -630,6 +636,7 @@ specific frames from this continuous stream of video data.
 	• developed by  International Organization for Standardization (ISO)
 	• Compatible with most devices, including mobile phones.
 	• High video quality, but also smaller file size compared to MPEG.
+	• It supports various codecs such as H.264 and H.265, enabling high-quality video compression
 	• Applications: MP4 is used for streaming video over the internet, mobile devices, social 
 	media platforms, video sharing websites (e.g., YouTube), and digital video players.  
 
